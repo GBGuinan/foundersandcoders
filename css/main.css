@@ -652,159 +652,142 @@ div.clear {
     width: 30px;
   }
 }
-.photo-grid {
-  margin: 1em auto;
-  text-align: center;
-  padding-left: auto;
-}
-
-.photo-grid li.HWW {
-  display: inline-block;
-  margin: 0.9em;
-  width: 300px;
-  height: 265px;
-}
-
-.photo-grid figure {
-  height: 265px;
-  overflow: hidden;
-  width: 300px;
-  position: absolute;
-}
-
-.photo-grid li.HWW:hover figcaption {
-  opacity: 1.5;
-}
-
-.photo-grid figcaption {
-  color: white;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms;
-  -webkit-transition-delay: 100ms;
-  -moz-transition-delay: 100ms;
-  transition-delay: 100ms;
-  z-index: 100;
-}
-.photo-grid figcaption p.mentName {
-  text-align: center;
-  border-radius: 5px;
-  display: block;
-  font-size: 1.1em;
-  position: relative;
-  top: 185px;
-  overflow: hidden;
-  width: 300px;
-  height: 30px;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-}
-.photo-grid li.HWW:hover figcaption p.mentName {
-  -moz-transform: translateY(40px);
-  -webkit-transform: translateY(40px);
-  transform: translateY(40px);
-}
-
+/*==========================
+WHAT WE DO PAGE STARTS HERE
+===========================*/
 .process-page {
   font-family: "Source Sans Pro", sans-serif;
 }
-.process-page .process-heading {
+.process-page .bounties-section {
   height: 100%;
-  background: #27285a;
+  background-color: #27285a;
+  padding: 100px 0;
+  text-align: left;
 }
-.process-page .process-heading .row {
-  padding-top: 10vw;
-  text-align: center;
+.process-page .bounties-section .profit {
+  padding: 0 50px;
 }
-.process-page .process-heading .row h1 {
-  font-size: 60px;
-  font-weight: 400;
-  color: #fff;
-  padding-bottom: 1em;
-}
-.process-page .process-heading .row h2 {
-  font-weight: 300;
-  color: #78b7bb;
-  padding-top: 0;
-  font-size: 22px;
-  font-family: "Source Sans Pro", sans-serif;
-  padding-bottom: 10%;
-}
-.process-page .step-one {
-  height: 100%;
-  background-color: #75ad74;
-  width: 100%;
-  text-align: center;
-}
-.process-page .step-one .text {
-  margin-top: 12vw;
-}
-.process-page .step-one h1 {
-  font-size: 40px;
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-}
-.process-page .step-one p {
-  margin-top: 2vw;
-  margin-bottom: 12vw;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 2;
-  color: #d3ceea;
-  text-align: center;
-  color: #F7F2E0;
-  font-weight: 300;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.process-page .step-one img {
-  width: 100%;
-  margin: 5vw;
-  margin-top: 13em;
-}
-.process-page .step-two {
-  height: 100%;
-  background-color: #006b68;
-  padding-bottom: 40px;
-}
-.process-page .step-two h1 {
+.process-page .bounties-section .profit h1 {
   margin-top: 5vw;
   font-size: 40px;
   font-weight: 400;
-  color: #75ad74;
+  color: #6C9FA8;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.process-page .bounties-section .profit p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #BDC8DA;
+  font-weight: 300;
+}
+.process-page .bounties-section #buttons {
+  padding: 20px 50px;
+}
+.process-page .bounties-section #buttons h2 {
+  color: #65A5B0;
+}
+.process-page .bounties-section #buttons button {
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+}
+.process-page .bounties-section #buttons #get-in-touch {
+  background-color: #7ED0D7;
+  color: #27285a;
+}
+.process-page .bounties-section #buttons #get-in-touch:hover {
+  background-color: #67A4A9;
+}
+.process-page .bounties-section #buttons #support-us {
+  background-color: #C1F0B7;
+  color: #006b68;
+}
+.process-page .bounties-section #buttons #support-us:hover {
+  background-color: #96C38D;
+}
+.process-page .better-together {
+  height: 100%;
+  background-color: #78b7bb;
+  width: 100%;
+  text-align: center;
+  padding: 75px 0;
+}
+.process-page .better-together h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #324673;
   text-align: center;
   padding-bottom: 20px;
 }
-.process-page .step-two p {
+.process-page .better-together p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 20px;
+}
+.process-page .better-together img {
+  width: 100%;
+}
+.process-page .mentors {
+  height: 100%;
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+.process-page .mentors .mentor-text {
+  padding-left: 100px;
+}
+.process-page .mentors .mentor-text h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #78b7bb;
+  padding-top: 100px;
+}
+.process-page .mentors .mentor-text p {
   font-size: 18px;
   font-weight: 400;
   line-height: 2;
-  color: #F7F2E0;
-  text-align: center;
+  color: #27285a;
   font-weight: 300;
 }
-.process-page .step-two .mentor-wrapper {
-  height: 285px;
-  width: 300px;
-  border-radius: 22px;
-  padding-left: 0;
+.process-page .mentors .circle {
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-.process-page .step-two .mentor-wrapper img {
-  width: 300px;
-  height: 265px;
-  border-radius: 3px;
-  opacity: 0.8;
-  filter: alpha(opacity=40);
+.process-page .mentors #campbell {
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  background: url(../img/campbell_360.png) no-repeat center center;
 }
-.process-page .step-two .mentor-wrapper img:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=50);
+.process-page .mentors #dan {
+  margin-left: 70px;
+  width: 300px;
+  height: 300px;
+  background: url(../img/dan.jpg) no-repeat center center;
+}
+.process-page .mentors #nelson {
+  width: 225px;
+  height: 225px;
+  background: url(../img/nelsonCorreia.png) no-repeat center center;
+}
+.process-page .mentors .campbell-name {
+  top: 115px;
+}
+.process-page .mentors .dan-name {
+  top: 130px;
+}
+.process-page .mentors .nelson-name {
+  top: 90px;
 }
 
 .student-page {
