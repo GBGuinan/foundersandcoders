@@ -250,10 +250,9 @@ and (max-device-width : 1024px) {
             padding-bottom: 10px;
         }
         h3 {
-            font-size: 30px;
-            font-weight: 300;
+            font-size: 1.7vmax;
+            font-weight: bold;
             color: #ffffff;
-            padding-top: 10px;
             padding-bottom: 10px;
             letter-spacing: 1px;
         }
@@ -290,19 +289,28 @@ and (max-device-width : 1024px) {
             }
         }
         p {
-            font-size: 18px;
-            margin-top: 20px; 
-            padding-bottom: 20px;
+            font-size: 1.3vmax;
+            margin-top: 1.5vh; 
+            padding-bottom: 15px;
             font-weight: 300;
-            margin-right: 10%;
-            margin-left: 10%;
+            margin-right: 7%;
+            margin-left: 7%;
+            color: #ffffff;
+            letter-spacing: 2.5px;
+            line-height: 1.2;
+        }
+        p#emphasized {
+            font-size: 1.4vmax;
+            margin-top: 2vh; 
+            font-weight: bold;
+            margin-right: 7%;
+            margin-left: 7%;
             color: #ffffff;
             letter-spacing: 2.5px;
             line-height: 1.2;
         }
         div {
             display: inline-block;
-            margin-top: 0.5em;
             margin-right: auto;
             margin-left: auto;
             div {
