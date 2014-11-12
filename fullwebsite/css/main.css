@@ -172,6 +172,9 @@ div.clear {
     width: 100%;
     background: none;
   }
+  .navbar-default .navbar-brand {
+    font-size: 18px;
+  }
   .navbar-default .navbar-header {
     background-color: #fff;
   }
@@ -217,7 +220,7 @@ div.clear {
   color: #70a83b;
 }
 .kickstarter .container {
-  padding-top: 38vh;
+  padding-top: 25vh;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   text-decoration: none;
@@ -225,14 +228,12 @@ div.clear {
 .kickstarter .container h1 {
   font-size: 60px;
   color: #ffffff;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .kickstarter .container h3 {
   font-size: 30px;
   font-weight: 300;
   color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
   letter-spacing: 1px;
 }
 .kickstarter .container a {
@@ -243,28 +244,24 @@ div.clear {
   color: #ffffff;
 }
 .kickstarter .container a button {
-  border: 1px solid #888;
-  background: #0776C0;
-  padding: 6.5px 18px 11px;
-  border-radius: 3px;
-  text-shadow: #000000 0 1px 0;
+  border: none;
+  background: #6FC9D0;
+  padding: 5px 10px 10px 20px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
   vertical-align: middle;
-  margin-top: 2%;
+}
+.kickstarter .container a button span {
+  padding-right: 10px;
 }
 .kickstarter .container a button:hover {
-  border: 1px solid #0a3c59;
-  text-shadow: #1e4158 0 1px 0;
-  background: #3e779d;
+  background: #282732;
   color: #fff;
 }
 .kickstarter .container a button:active {
-  text-shadow: #1e4158 0 1px 0;
-  border: 1px solid #0a3c59;
-  background: #65a9d7;
+  background: #282732;
   color: #fff;
 }
 .kickstarter .container p {
@@ -293,12 +290,24 @@ div.clear {
   margin: 0 5px 0 0;
   padding: 0;
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-bottom: 5%;
+}
+.kickstarter .container div div p#phone {
+  font-size: 1.25vmax;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding-top: 1%;
+  font-weight: bold;
+  padding-bottom: 0;
 }
 .kickstarter .container div div a {
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding-top: 3%;
+  font-weight: bold;
+}
+.kickstarter .container div div a span {
+  margin-top: 8%;
 }
 .kickstarter .container div div a #twitterlogo {
   height: 30px;
@@ -307,6 +316,25 @@ div.clear {
 .kickstarter .container div div a #facebooklogo {
   height: 30px;
   margin-right: 15px;
+}
+.kickstarter .container .outer {
+  position: relative;
+  width: 100%;
+  top: 100px;
+  left: -40px;
+}
+.kickstarter .container .outer .bouncing {
+  position: absolute;
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.kickstarter .container .outer .bouncing .glyphicon {
+  color: #ffffff;
+  font-size: 60px;
 }
 
 @media only screen and (max-device-width: 767px) {
@@ -320,39 +348,37 @@ div.clear {
     padding-top: 100px;
   }
   .kickstarter .container h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .kickstarter .container h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
-  .kickstarter .container button {
-    border: 1px solid #888;
-    background: #0776C0;
-    padding: 5px 5px 5px;
-    font-size: 20px;
+  .kickstarter .container a button {
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .kickstarter .container a button span {
+    padding-right: 5px;
   }
   .kickstarter .container p {
     font-size: 12px;
-    margin-right: 0;
-    margin-left: 0;
     letter-spacing: 1.5px;
+    margin: 20px 0;
+    padding: 0;
   }
-  .kickstarter .container div div {
-    margin-right: 1vw;
+  .kickstarter .container .outer {
+    top: 0px;
+    left: -15px;
   }
-  .kickstarter .container div div p {
-    font-size: 12px;
+  .kickstarter .container .outer .bouncing {
+    position: absolute;
   }
-  .kickstarter .container div div a #twitterlogo {
-    height: 15px;
-    margin-right: 15px;
-  }
-  .kickstarter .container div div a #facebooklogo {
-    height: 15px;
-    margin-right: 15px;
-  }
-  .kickstarter .container div div #supportus {
-    margin-bottom: 50px;
+  .kickstarter .container .outer .bouncing .glyphicon {
+    color: #ffffff;
+    font-size: 30px;
   }
 }
 @-webkit-keyframes bounce {
@@ -379,7 +405,8 @@ div.clear {
   font-family: "Source Sans Pro", sans-serif;
 }
 .home-page .about-list .aboutlist_container {
-  height: 100vh;
+  padding: 50px 0 100px;
+  height: 100%;
   *zoom: 1;
   display: block;
   margin: 0 auto;
@@ -399,16 +426,20 @@ div.clear {
   font-weight: bold;
   font-size: 1.5em;
 }
-.home-page .about-list .aboutlist_container img {
-  width: 45px;
-  height: auto;
-  display: block;
-  float: left;
-  margin-right: 10px;
-}
 .home-page .about-list .aboutlist_container .container {
   margin-top: 5%;
   *zoom: 1;
+}
+.home-page .about-list .aboutlist_container .container h2 {
+  text-align: center;
+  padding-bottom: 1%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+.home-page .about-list .aboutlist_container .container p#subheading {
+  text-align: center;
+  padding-bottom: 3%;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .home-page .about-list .aboutlist_container .container .triptych {
   padding: 0vw 2.5vw 2vw;
@@ -420,9 +451,45 @@ div.clear {
   font-weight: bold;
   padding-bottom: 5px;
 }
+.home-page .more-info {
+  background-color: #75ad74;
+  height: 100vh;
+}
+.home-page .more-info .container {
+  margin-top: 5%;
+}
+.home-page .more-info h2 {
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home-page .more-info p#subheading {
+  color: #333333;
+  text-align: center;
+  padding-bottom: 3%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home-page .more-info .h4-moreinfo {
+  color: #333333;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #222;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.home-page .more-info p {
+  color: #333333;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.3em;
+  text-align: justify;
+}
 .home-page .brands {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #78b7bb;
+  text-align: center;
 }
 .home-page .brands .logo-region {
   margin: 0 auto;
@@ -453,17 +520,23 @@ div.clear {
   height: auto;
   padding-bottom: 50px;
 }
+.home-page .brands .logo-region .brand-logos .angular img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 50px;
+}
 
 @media only screen and (max-device-width: 767px) {
   .home-page .about-list .aboutlist_container {
     height: 100%;
+    padding: 10px 0 20px;
   }
   .home-page .about-list .aboutlist_container p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
   }
   .home-page .about-list .aboutlist_container h4 {
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     letter-spacing: 5px;
     margin-top: 20px;
@@ -482,22 +555,31 @@ div.clear {
     margin-bottom: 50px;
   }
   .home-page .brands .logo-region {
-    padding: 50px 0 0;
+    padding: 15px 0 0;
   }
   .home-page .brands .logo-region .brand-logos .hapi img {
-    width: 70px;
+    width: 50px;
+    padding-bottom: 15px;
   }
   .home-page .brands .logo-region .brand-logos .javascript img {
-    width: 70px;
+    width: 50px;
+    padding-bottom: 15px;
   }
   .home-page .brands .logo-region .brand-logos .nodejs img {
-    width: 70px;
+    width: 50px;
+    padding-bottom: 15px;
   }
   .home-page .brands .logo-region .brand-logos .sass img {
-    width: 70px;
+    width: 50px;
+    padding-bottom: 15px;
   }
   .home-page .brands .logo-region .brand-logos .d3 img {
+    width: 40px;
+    padding-bottom: 15px;
+  }
+  .home-page .brands .logo-region .brand-logos .angular img {
     width: 50px;
+    padding-bottom: 15px;
   }
 }
 .contact {
@@ -543,7 +625,7 @@ div.clear {
 
 @media only screen and (max-device-width: 767px) {
   .contact .contact-region {
-    padding: 75px 0;
+    padding: 50px 0;
   }
   .contact .contact-region h1 {
     font-size: 30px;
@@ -716,42 +798,6 @@ div.clear {
   filter: alpha(opacity=50);
 }
 
-@media only screen and (max-device-width: 767px) {
-  .process-page .process-heading {
-    height: 100vh;
-  }
-  .process-page .process-heading .row {
-    padding-top: 100px;
-  }
-  .process-page .process-heading .row h1 {
-    font-size: 50px;
-  }
-  .process-page .process-heading .row h2 {
-    font-size: 20px;
-  }
-  .process-page .step-one h1 {
-    font-size: 30px;
-  }
-  .process-page .step-one p {
-    margin-bottom: 0;
-    font-size: 15px;
-  }
-  .process-page .step-one img {
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-    margin-top: 0;
-  }
-  .process-page .step-two h1 {
-    font-size: 30px;
-  }
-  .process-page .step-two p {
-    font-size: 15px;
-  }
-  .process-page .step-two .mentor-wrapper img {
-    padding: 10px;
-  }
-}
 .student-page {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -851,31 +897,31 @@ div.clear {
   color: #F7F2E0;
   font-weight: 300;
 }
-.student-page .after-course #buttons {
+.student-page .after-course .buttons {
   padding: 20px 50px;
 }
-.student-page .after-course #buttons h2 {
+.student-page .after-course .buttons h2 {
   color: #75ad74;
 }
-.student-page .after-course #buttons button {
+.student-page .after-course .buttons button {
   margin-top: 20px;
   width: 100%;
   height: 60px;
   border-radius: 0;
   border: none;
 }
-.student-page .after-course #buttons #get-in-touch {
+.student-page .after-course .buttons #get-in-touch {
   background-color: #60C2BE;
   color: #27285a;
 }
-.student-page .after-course #buttons #get-in-touch:hover {
+.student-page .after-course .buttons #get-in-touch:hover {
   background-color: #45A5A1;
 }
-.student-page .after-course #buttons #support-us {
+.student-page .after-course .buttons #support-us {
   background-color: #A3CF73;
   color: #006b68;
 }
-.student-page .after-course #buttons #support-us:hover {
+.student-page .after-course .buttons #support-us:hover {
   background-color: #8BAE64;
 }
 .student-page .schedule {
@@ -938,75 +984,6 @@ div.clear {
 }
 .student-page .schedule .buttons #apply-button:hover {
   background-color: #3A89AB;
-}
-
-@media only screen and (max-device-width: 767px) {
-  .student-page .intro {
-    height: 100%;
-  }
-  .student-page .intro .row {
-    padding-top: 25vh;
-  }
-  .student-page .intro .row h1 {
-    font-size: 35px;
-  }
-  .student-page .intro .row h2 {
-    padding: 40px 0 60px;
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
-  .student-page .about-brief {
-    height: 100%;
-  }
-  .student-page .about-brief .buttons button {
-    height: 40px;
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
-  .student-page .after-course {
-    height: 100%;
-  }
-  .student-page .after-course .profit {
-    padding: 30px;
-  }
-  .student-page .after-course .profit h1 {
-    margin-top: 5vw;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .student-page .after-course .profit p {
-    font-size: 16px;
-  }
-  .student-page .after-course #buttons {
-    padding: 0px 30px;
-  }
-  .student-page .after-course #buttons h2 {
-    font-size: 20px;
-  }
-  .student-page .after-course #buttons button {
-    height: 40px;
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
-  .student-page .schedule #title {
-    font-size: 30px;
-  }
-  .student-page .schedule #accordion .panel-default .panel-heading h4 {
-    font-size: 16px;
-  }
-  .student-page .schedule #accordion .panel-default .panel-heading h4 .description {
-    margin-left: 5px;
-  }
-  .student-page .schedule #accordion .panel-default #headingOne .description {
-    margin-left: 5px;
-  }
-  .student-page .schedule .buttons {
-    padding: 0;
-  }
-  .student-page .schedule .buttons #apply-button {
-    height: 40px;
-    font-size: 12px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

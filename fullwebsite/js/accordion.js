@@ -35,5 +35,4 @@ $(document).ready(function(){
 	$('#headingNine').on('click', function(){
 		$('#arrow9').toggleClass('glyphicon-chevron-down glyphicon-chevron-left');
 	});
-	
 });
