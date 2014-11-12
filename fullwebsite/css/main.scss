@@ -374,6 +374,22 @@ and (max-device-width : 1024px) {
     }
 
 }
+/////////DIRECTIONS SETTINGS
+.directions {
+    background-color: red;
+    height: 200px;
+    h2 {
+        text-align: center;
+        margin-top: 2%;
+    }
+    div {
+        p {
+            margin-top: 2%;
+            text-align: center;
+        }
+    }
+}
+
 
 @media only screen //Phone
 and (max-device-width : 767px) {

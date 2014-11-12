@@ -346,6 +346,19 @@ div.clear {
   font-size: 60px;
 }
 
+.directions {
+  background-color: red;
+  height: 200px;
+}
+.directions h2 {
+  text-align: center;
+  margin-top: 2%;
+}
+.directions div p {
+  margin-top: 2%;
+  text-align: center;
+}
+
 @media only screen and (max-device-width: 767px) {
   .kickstarter {
     height: 100%;
