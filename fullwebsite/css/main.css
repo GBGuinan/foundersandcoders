@@ -471,32 +471,7 @@ div.clear {
   margin: 0 auto;
   padding: 50px 0 0px;
 }
-.home-page .brands .logo-region .brand-logos .hapi img {
-  width: 100px;
-  height: auto;
-  padding-bottom: 50px;
-}
-.home-page .brands .logo-region .brand-logos .javascript img {
-  width: 100px;
-  height: auto;
-  padding-bottom: 50px;
-}
-.home-page .brands .logo-region .brand-logos .nodejs img {
-  width: 100px;
-  height: auto;
-  padding-bottom: 50px;
-}
-.home-page .brands .logo-region .brand-logos .sass img {
-  width: 100px;
-  height: auto;
-  padding-bottom: 50px;
-}
-.home-page .brands .logo-region .brand-logos .d3 img {
-  width: 100px;
-  height: auto;
-  padding-bottom: 50px;
-}
-.home-page .brands .logo-region .brand-logos .angular img {
+.home-page .brands .logo-region .brand-logos .logo img {
   width: 100px;
   height: auto;
   padding-bottom: 50px;
@@ -578,27 +553,7 @@ div.clear {
   .home-page .brands .logo-region {
     padding: 15px 0 0;
   }
-  .home-page .brands .logo-region .brand-logos .hapi img {
-    width: 50px;
-    padding-bottom: 15px;
-  }
-  .home-page .brands .logo-region .brand-logos .javascript img {
-    width: 50px;
-    padding-bottom: 15px;
-  }
-  .home-page .brands .logo-region .brand-logos .nodejs img {
-    width: 50px;
-    padding-bottom: 15px;
-  }
-  .home-page .brands .logo-region .brand-logos .sass img {
-    width: 50px;
-    padding-bottom: 15px;
-  }
-  .home-page .brands .logo-region .brand-logos .d3 img {
-    width: 40px;
-    padding-bottom: 15px;
-  }
-  .home-page .brands .logo-region .brand-logos .angular img {
+  .home-page .brands .logo-region .brand-logos .logo img {
     width: 50px;
     padding-bottom: 15px;
   }
@@ -806,6 +761,20 @@ WHAT WE DO PAGE STARTS HERE
 }
 .process-page .mentors .nelson-name {
   top: 90px;
+}
+.process-page .tech-we-love {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #78b7bb;
+  text-align: center;
+}
+.process-page .tech-we-love .logo-region {
+  margin: 0 auto;
+  padding: 50px 0 0px;
+}
+.process-page .tech-we-love .logo-region .brand-logos .logo img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 /*==========================

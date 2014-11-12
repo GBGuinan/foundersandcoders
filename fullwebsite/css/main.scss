@@ -492,44 +492,8 @@ and (max-device-width : 767px) {
         .logo-region {
             margin: 0 auto;
             padding: 50px 0 0px;
-
             .brand-logos {
-                .hapi {
-                    img {
-                        width: 100px;
-                        height: auto;
-                        padding-bottom: 50px;
-                    }
-                }
-                .javascript {
-                    img {
-                        width: 100px;
-                        height: auto;
-                        padding-bottom: 50px;
-                    }
-                }
-                .nodejs {
-                    img {
-                        width: 100px;
-                        height: auto;
-                        padding-bottom: 50px;
-                    }
-                }
-                .sass {
-                    img {
-                        width: 100px;
-                        height: auto;
-                        padding-bottom: 50px;
-                    }
-                }
-                .d3 {
-                    img {
-                        width: 100px;
-                        height: auto;
-                        padding-bottom: 50px;
-                    }
-                }
-                .angular {
+                .logo {
                     img {
                         width: 100px;
                         height: auto;
@@ -630,37 +594,7 @@ and (max-device-width : 767px) {
             .logo-region {
                 padding: 15px 0 0;
                 .brand-logos {
-                    .hapi {
-                        img {
-                            width: 50px;
-                            padding-bottom: 15px;
-                        }
-                    }
-                    .javascript {
-                        img {
-                            width: 50px;
-                            padding-bottom: 15px;
-                        }
-                    }
-                    .nodejs {
-                        img {
-                            width: 50px;
-                            padding-bottom: 15px;
-                        }
-                    }
-                    .sass {
-                        img {
-                            width: 50px;
-                            padding-bottom: 15px;
-                        }
-                    }
-                    .d3 {
-                        img {
-                            width: 40px;
-                            padding-bottom: 15px;
-                        }
-                    }
-                    .angular {
+                    .logo {
                         img {
                             width: 50px;
                             padding-bottom: 15px;
@@ -882,6 +816,24 @@ WHAT WE DO PAGE STARTS HERE
         }
         .nelson-name {
             top: 90px;
+        }
+    }
+    .tech-we-love {
+        font-family: $FONT;
+        background-color: #78b7bb;
+        text-align: center;
+        .logo-region {
+            margin: 0 auto;
+            padding: 50px 0 0px;
+            .brand-logos {
+                .logo {
+                    img {
+                        width: 100px;
+                        height: auto;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
         }
     }
 }
