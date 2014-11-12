@@ -1,6 +1,8 @@
 $FONT:'Source Sans Pro', sans-serif;
 
-//General Styling Below
+/*==========================
+    GENERAL STYLING BELOW
+===========================*/
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
     display: block
@@ -125,7 +127,9 @@ div.clear {
     visibility: hidden
 }
 
-//Navbar styling below
+/*==========================
+      NAVBAR STYLING
+===========================*/
 
 .navbar-default {
     position: fixed;
@@ -175,6 +179,10 @@ div.clear {
     }
 }
 
+/*==========================
+  NAVBAR STYLING FOR MOBILE
+===========================*/
+
 @media only screen //Phone
 and (max-device-width : 767px) {
 
@@ -193,237 +201,6 @@ and (max-device-width : 767px) {
             float: right;
         }
     }
-}
-
-@media only screen //Tablet
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-
-    
-
-}
-
-
-// home-page styling below
-
-.kickstarter {
-    height: 125vh;
-    background-color: #27285a;
-    background: url(../img/group.jpg) no-repeat center center;
-    background-size: cover;
-
-    .overlay {
-        background-color: rgba(0,0,0,0.65);
-        height: 125vh;
-    }
-    .share_box{
-        position:fixed;
-        width:50px;
-        top:50px;
-        padding:15px;
-        a:hover {
-            text-decoration: none;
-        }
-        z-index: 1;
-        .button {
-            border-radius: 10px;
-            text-align: center;
-            margin: 10px;
-            width: 160px;
-            font-family: "Arial Black", Gadget, sans-serif;
-        }
-        .ksbutton {
-            color: #343433;
-            background-color: #ffffff;
-            border: 2px #70a83b solid;
-            span {
-                color: #70a83b;
-            }
-        }
-    }
-
-    .container {
-        padding-top: 40vh;
-        font-family: $FONT;
-        text-align: center;
-        text-decoration: none;
-        h1 {
-            font-size: 60px;
-            color: #ffffff;
-            padding-bottom: 5px;
-        }
-        h3 {
-            font-size: 1.7vmax;
-            font-weight: bold;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-        a {
-            margin-top: 20px; 
-            margin-bottom: 20px;
-            padding-top: 20px;
-            font-weight: 300;
-            color: #ffffff;
-            button {
-                   border: none;
-                   background: #6FC9D0;
-                   padding: 5px 10px 10px 20px;
-                   color: #ffffff;
-                   font-size: 24px;
-                   font-family: $FONT;
-                   text-decoration: none;
-                   vertical-align: middle;
-                   span {
-                        padding-right: 10px;
-                    }
-            }
-            button:hover {
-               // border: 1px solid #0a3c59;
-               // text-shadow: #1e4158 0 1px 0;
-               background: #282732;
-               color: #fff;
-            }
-            button:active {
-               // text-shadow: #1e4158 0 1px 0;
-               // border: 1px solid #0a3c59;
-               background: #282732;
-               color: #fff;
-            }
-        }
-        p {
-            font-size: 1.3vmax;
-            margin-top: 1.5vh; 
-            padding-bottom: 15px;
-            font-weight: 300;
-            margin-right: 7%;
-            margin-left: 7%;
-            color: #ffffff;
-            letter-spacing: 2.5px;
-            line-height: 1.2;
-        }
-        p#emphasized {
-            font-size: 1.4vmax;
-            margin-top: 2vh; 
-            font-weight: bold;
-            margin-right: 7%;
-            margin-left: 7%;
-            color: #ffffff;
-            letter-spacing: 2.5px;
-            line-height: 1.2;
-        }
-        div {
-            display: inline-block;
-            margin-right: auto;
-            margin-left: auto;
-            div {
-                margin-right: 1vw;
-                p {
-                    font-size: 1.5vmax;
-                    display: inline-block;
-                    margin: 0 5px 0 0;
-                    padding: 0;
-                    font-weight: bold;
-                    padding-bottom: 5%;
-                }
-                p#phone {
-                    font-size: 1.25vmax;
-                    display: inline-block;
-                    margin: 0 5px 0 0;
-                    padding-top: 1%;
-                    font-weight: bold;
-                    padding-bottom: 0;
-                }
-                a {
-                    display: inline-block;
-                    margin: 0;
-                    padding-top: 3%;
-                    font-weight: bold;
-                    span {
-                        margin-top: 8%;
-                    }
-                    #twitterlogo {
-                        height: 30px;
-                        margin-right: 10px;
-                    }
-                    #facebooklogo {
-                        height: 30px;
-                        margin-right: 15px;
-                    }
-                }
-            }
-        }
-        .outer {
-            position: relative;
-            width: 100%;
-            top: 100px;
-            left: -40px;
-            .bouncing {
-                position: absolute;
-                -webkit-animation-name: bounce;
-                -webkit-animation-iteration-count: infinite;
-                -webkit-animation-duration: 2s;
-                animation-name: bounce;
-                animation-iteration-count: infinite;
-                animation-duration: 2s;
-                .glyphicon {
-                    color: #ffffff;
-                    font-size: 60px;
-                }
-            }
-        }
-    }
-
-}
-
-@media only screen //Phone
-and (max-device-width : 767px) {
-
-    .kickstarter {
-        height: 100%;
-        .overlay {
-            height: 100%;
-        }
-        .container {
-            padding-top: 100px;
-            h1 {
-                font-size: 25px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-            a {
-                button {
-                    height: 30px;
-                    font-size: 12px;
-                    padding: 5px 20px;
-                    margin-top: 0;
-                    margin-bottom: 50px;
-                    span {
-                        padding-right: 5px;
-                    }
-                }
-            }
-            p {
-                font-size: 12px;
-                letter-spacing: 1.5px;
-                margin: 20px 0;
-                padding: 0;
-            }
-            .outer {
-            top: 0px;
-            left: -15px;
-            .bouncing {
-                position: absolute;
-                .glyphicon {
-                    color: #ffffff;
-                    font-size: 30px;
-                }
-            }
-        }
-        }
-
-    }
-
 }
 
 //styling below is for bounce feature
@@ -446,12 +223,175 @@ and (max-device-width : 767px) {
       bottom: 20px;
       animation-timing-function: ease-in;
     }
-  }
+}
+
+/*==========================
+  HOME PAGE STYLING
+===========================*/
 
 .home-page {
-    // landing page starts here
-    //===================================
-    // about us section starts here
+    .kickstarter {
+        height: 125vh;
+        background-color: #27285a;
+        background: url(../img/group.jpg) no-repeat center center;
+        background-size: cover;
+        .overlay {
+            background-color: rgba(0,0,0,0.65);
+            height: 125vh;
+        }
+        .share_box{
+            position:fixed;
+            width:50px;
+            top:50px;
+            padding:15px;
+            a:hover {
+                text-decoration: none;
+            }
+            z-index: 1;
+            .button {
+                border-radius: 10px;
+                text-align: center;
+                margin: 10px;
+                width: 160px;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
+            .ksbutton {
+                color: #343433;
+                background-color: #ffffff;
+                border: 2px #70a83b solid;
+                span {
+                    color: #70a83b;
+                }
+            }
+        }
+        .container {
+            padding-top: 40vh;
+            font-family: $FONT;
+            text-align: center;
+            text-decoration: none;
+            h1 {
+                font-size: 60px;
+                color: #ffffff;
+                padding-bottom: 5px;
+            }
+            h3 {
+                font-size: 1.7vmax;
+                font-weight: bold;
+                color: #ffffff;
+                letter-spacing: 1px;
+            }
+            a {
+                margin-top: 20px; 
+                margin-bottom: 20px;
+                padding-top: 20px;
+                font-weight: 300;
+                color: #ffffff;
+                button {
+                       border: none;
+                       background: #6FC9D0;
+                       padding: 5px 10px 10px 20px;
+                       color: #ffffff;
+                       font-size: 24px;
+                       font-family: $FONT;
+                       text-decoration: none;
+                       vertical-align: middle;
+                       span {
+                            padding-right: 10px;
+                        }
+                }
+                button:hover {
+                   background: #282732;
+                   color: #fff;
+                }
+                button:active {
+                   background: #282732;
+                   color: #fff;
+                }
+            }
+            p {
+                font-size: 1.3vmax;
+                margin-top: 1.5vh; 
+                padding-bottom: 15px;
+                font-weight: 300;
+                margin-right: 7%;
+                margin-left: 7%;
+                color: #ffffff;
+                letter-spacing: 2.5px;
+                line-height: 1.2;
+            }
+            p#emphasized {
+                font-size: 1.4vmax;
+                margin-top: 2vh; 
+                font-weight: bold;
+                margin-right: 7%;
+                margin-left: 7%;
+                color: #ffffff;
+                letter-spacing: 2.5px;
+                line-height: 1.2;
+            }
+            div {
+                display: inline-block;
+                margin-right: auto;
+                margin-left: auto;
+                div {
+                    margin-right: 1vw;
+                    p {
+                        font-size: 1.5vmax;
+                        display: inline-block;
+                        margin: 0 5px 0 0;
+                        padding: 0;
+                        font-weight: bold;
+                        padding-bottom: 5%;
+                    }
+                    p#phone {
+                        font-size: 1.25vmax;
+                        display: inline-block;
+                        margin: 0 5px 0 0;
+                        padding-top: 1%;
+                        font-weight: bold;
+                        padding-bottom: 0;
+                    }
+                    a {
+                        display: inline-block;
+                        margin: 0;
+                        padding-top: 3%;
+                        font-weight: bold;
+                        span {
+                            margin-top: 8%;
+                        }
+                        #twitterlogo {
+                            height: 30px;
+                            margin-right: 10px;
+                        }
+                        #facebooklogo {
+                            height: 30px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+            .outer {
+                position: relative;
+                width: 100%;
+                top: 100px;
+                left: -40px;
+                .bouncing {
+                    position: absolute;
+                    -webkit-animation-name: bounce;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-duration: 2s;
+                    animation-name: bounce;
+                    animation-iteration-count: infinite;
+                    animation-duration: 2s;
+                    .glyphicon {
+                        color: #ffffff;
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+
+    }
     .about-list {
         font-family: $FONT;
         .aboutlist_container {
@@ -601,11 +541,60 @@ and (max-device-width : 767px) {
     }
 }
 
+
+
+/*=============================
+  HOME PAGE STYLING FOR MOBILE
+=============================*/
+
 @media only screen //Phone
 and (max-device-width : 767px) {
 
     .home-page {
-        // about us section starts here
+        .kickstarter {
+            height: 100%;
+            .overlay {
+                height: 100%;
+            }
+            .container {
+                padding-top: 100px;
+                h1 {
+                    font-size: 25px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                a {
+                    button {
+                        height: 30px;
+                        font-size: 12px;
+                        padding: 5px 20px;
+                        margin-top: 0;
+                        margin-bottom: 50px;
+                        span {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
+                    margin: 20px 0;
+                    padding: 0;
+                }
+                .outer {
+                    top: 0px;
+                    left: -15px;
+                    .bouncing {
+                        position: absolute;
+                        .glyphicon {
+                            color: #ffffff;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
         .about-list {
             .aboutlist_container {
                 height: 100%;
@@ -681,10 +670,12 @@ and (max-device-width : 767px) {
             }
         }
     }
-
 }
 
-//CONTACT US HERE
+/*=============================
+  CONTACT US - ON EVERY PAGE
+=============================*/
+
 .contact {
     font-family: $FONT;
     background-color: #282732;
@@ -725,6 +716,10 @@ and (max-device-width : 767px) {
         }
     }
 }
+
+/*=============================
+        CONTACT US MOBILE
+=============================*/
 
 @media only screen //Phone
 and (max-device-width : 767px) {
@@ -891,7 +886,17 @@ WHAT WE DO PAGE STARTS HERE
     }
 }
 
-//PROSPECTIVE STUDENTS PAGE STARTS HERE!
+/*==========================
+    WHAT WE DO PAGE MOBILE
+===========================*/
+
+@media only screen //Phone
+and (max-device-width : 767px) {
+}
+
+/*=============================
+ HOW WE LEARN PAGE STARTS HERE
+=============================*/
 
 .student-page {
     font-family: $FONT;
@@ -1082,4 +1087,12 @@ WHAT WE DO PAGE STARTS HERE
             }
         }
     }
+}
+
+/*=============================
+    HOW WE LEARN PAGE MOBILE
+=============================*/
+
+@media only screen //Phone
+and (max-device-width : 767px) {
 }
