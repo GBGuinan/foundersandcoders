@@ -804,9 +804,18 @@ WHAT WE DO PAGE STARTS HERE
             background: url(../img/dan.jpg) no-repeat center center;
         }
         #nelson {
+            top: -40px;
             width: 225px;
             height: 225px;
             background: url(../img/nelsonCorreia.png) no-repeat center center;
+        }
+        .name {
+            h2 {
+                color: #78b7bb;
+            }
+            p {
+                color: #27285a;
+            }
         }
         .campbell-name {
             top: 115px;
@@ -815,7 +824,7 @@ WHAT WE DO PAGE STARTS HERE
             top: 130px;
         }
         .nelson-name {
-            top: 90px;
+            top: 50px;
         }
     }
     .tech-we-love {
