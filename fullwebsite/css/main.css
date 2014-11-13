@@ -168,7 +168,7 @@ div.clear {
 }
 .navbar-default .navbar-collapse .navbar-li a {
   padding: 0px 15px;
-  margin-top: 2vh;
+  margin-top: 15px;
   font-size: 16px;
   color: #265b7d;
 }
@@ -188,9 +188,16 @@ div.clear {
     background-color: #fff;
   }
   .navbar-default .navbar-collapse {
-    background-color: #ffffff;
+    background-color: #282732;
     width: 50%;
     float: right;
+  }
+  .navbar-default .navbar-collapse .navbar-li a {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #84C8DB;
+    padding-bottom: 10px;
+    border-bottom: 1px #6F797C solid;
   }
 }
 @-webkit-keyframes bounce {
@@ -219,7 +226,7 @@ div.clear {
 .home-page .kickstarter {
   height: 125vh;
   background-color: #27285a;
-  background: url(../img/group.jpg) no-repeat center center;
+  background: url(../img/groupsmall.jpg) no-repeat center center;
   background-size: cover;
 }
 .home-page .kickstarter .overlay {
@@ -739,18 +746,18 @@ WHAT WE DO PAGE STARTS HERE
   top: 50px;
   width: 200px;
   height: 200px;
-  background: url(../img/campbell_360.png) no-repeat center center;
+  background: url(../img/mentors/campbell_360.png) no-repeat center center;
 }
 .process-page .mentors #dan {
   width: 300px;
   height: 300px;
-  background: url(../img/dan.jpg) no-repeat center center;
+  background: url(../img/mentors/dan.jpg) no-repeat center center;
 }
 .process-page .mentors #nelson {
   top: -40px;
   width: 225px;
   height: 225px;
-  background: url(../img/nelsonCorreia.png) no-repeat center center;
+  background: url(../img/mentors/nelsonCorreia.png) no-repeat center center;
 }
 .process-page .mentors .name h2 {
   color: #78b7bb;
@@ -770,7 +777,7 @@ WHAT WE DO PAGE STARTS HERE
 }
 .process-page .tech-we-love {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #78b7bb;
+  background-color: #373249;
   text-align: center;
 }
 .process-page .tech-we-love .logo-region {
@@ -863,57 +870,6 @@ WHAT WE DO PAGE STARTS HERE
   height: 60px;
   border-radius: 0;
   border: none;
-}
-.student-page .after-course {
-  height: 100vh;
-  background-color: #006b68;
-  padding-bottom: 40px;
-  text-align: left;
-}
-.student-page .after-course .profit {
-  padding: 0 50px;
-}
-.student-page .after-course .profit h1 {
-  margin-top: 5vw;
-  font-size: 40px;
-  font-weight: 400;
-  color: #75ad74;
-  text-align: left;
-  padding-bottom: 20px;
-}
-.student-page .after-course .profit p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #F7F2E0;
-  font-weight: 300;
-}
-.student-page .after-course .buttons {
-  padding: 20px 50px;
-}
-.student-page .after-course .buttons h2 {
-  color: #75ad74;
-}
-.student-page .after-course .buttons button {
-  margin-top: 20px;
-  width: 100%;
-  height: 60px;
-  border-radius: 0;
-  border: none;
-}
-.student-page .after-course .buttons #get-in-touch {
-  background-color: #60C2BE;
-  color: #27285a;
-}
-.student-page .after-course .buttons #get-in-touch:hover {
-  background-color: #45A5A1;
-}
-.student-page .after-course .buttons #support-us {
-  background-color: #A3CF73;
-  color: #006b68;
-}
-.student-page .after-course .buttons #support-us:hover {
-  background-color: #8BAE64;
 }
 .student-page .schedule {
   height: 100%;
