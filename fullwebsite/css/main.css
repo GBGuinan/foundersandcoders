@@ -960,6 +960,20 @@ WHAT WE DO PAGE STARTS HERE
   padding-top: 5%;
   padding-bottom: 10%;
 }
+.process-page #learn-with-us-section {
+  background-color: #27285a;
+  color: white;
+}
+.process-page #learn-with-us-section h2 {
+  padding-top: 25%;
+  text-align: center;
+}
+.process-page #learn-with-us-section .image-wrapper {
+  padding: 5%;
+}
+.process-page #learn-with-us-section .image-wrapper img {
+  width: 100%;
+}
 .process-page .mentors {
   height: 100%;
   background-color: #fff;
