@@ -171,7 +171,7 @@ div.clear {
         .navbar-li {
             a {
                 padding: 0px 15px;
-                margin-top: 2vh;
+                margin-top: 15px;
                 font-size: 16px;
                 color: #265b7d;
             }
@@ -201,6 +201,8 @@ and (max-device-width : 767px) {
             float: right;
             .navbar-li {
                 a {
+                    margin-right: 15px;
+                    margin-left: 15px;
                     color: #84C8DB;
                     padding-bottom: 10px;
                     border-bottom: 1px #6F797C solid;
