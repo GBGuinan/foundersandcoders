@@ -703,15 +703,16 @@ WHAT WE DO PAGE STARTS HERE
   text-align: center;
   padding-bottom: 20px;
 }
-.process-page .better-together p {
+.process-page .better-together .text p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: #DCDCDD;
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
-  padding-bottom: 50px;
+  padding: 10px 0;
+  background-color: rgba(17, 0, 23, 0.7);
 }
 .process-page .better-together img {
   width: 100%;
