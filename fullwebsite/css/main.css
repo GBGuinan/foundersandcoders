@@ -979,6 +979,86 @@ div.clear {
 /*==========================
     WHAT WE DO PAGE MOBILE
 ===========================*/
+@media only screen and (max-device-width: 767px) {
+  .process-page .bounties-section .subsection-wrapper h1 {
+    font-size: 35px;
+  }
+  .process-page .bounties-section .subsection-wrapper p {
+    font-size: 4vw;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons {
+    margin-top: 0;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons {
+    padding: 0;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
+    font-size: 3vmax;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
+    margin-top: 20px;
+    border: 3px #1F1F24 solid;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button span {
+    font-size: 2vmax;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button:hover {
+    background-color: #22212A;
+  }
+  .process-page #give-projects-section .content-wrapper {
+    padding: 10vh 0;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper {
+    padding: 1%;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper h2 {
+    margin-bottom: 5vh;
+    font-size: 8vw;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper #idea {
+    font-size: 4vw;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper p {
+    font-size: 3vw;
+    padding-bottom: 10px;
+  }
+  .process-page #employ-us-section .content-wrapper {
+    padding: 15% 5%;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper {
+    padding: 7% 0;
+    text-align: center;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper h1 {
+    font-size: 8vw;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper button {
+    padding: 5px 30px;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper button h2 {
+    font-size: 6vw;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper p {
+    font-size: 3.5vw;
+  }
+  .process-page #learn-with-us-section .text-wrapper h2 {
+    padding-top: 5%;
+    font-size: 7vw;
+  }
+  .process-page #learn-with-us-section .text-wrapper p {
+    font-size: 3.5vw;
+    padding-bottom: 10%;
+  }
+  .process-page .tech-we-love .logo-region {
+    padding: 15px 0;
+  }
+  .process-page .tech-we-love .logo-region .brand-logos .logo img {
+    width: 50px;
+    padding-bottom: 0px;
+  }
+}
 /*=============================
  HOW WE LEARN PAGE STARTS HERE
 =============================*/
