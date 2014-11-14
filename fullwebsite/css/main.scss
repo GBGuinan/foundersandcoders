@@ -190,6 +190,7 @@ and (max-device-width : 767px) {
         width: 100%;
         background: none;
         .navbar-brand {
+            margin-top: 1.5vh;
             font-size: 18px;
         }
         .navbar-header {
@@ -233,10 +234,6 @@ and (max-device-width : 767px) {
       animation-timing-function: ease-in;
     }
 }
-
-/*==========================
-  HOME PAGE STYLING
-===========================*/
 
 /*==========================
   HOME PAGE STYLING
@@ -444,265 +441,9 @@ and (max-device-width : 767px) {
                 *zoom: 1;
                 .triptych {
                     padding: 0vw 2.5vw 2vw;
-                        p {
-                            padding-top: 5%;
-                        }
-                        #topOne {
-
-                        }
-                        #topTwo {
-                        }
-                        #topThree {
-                        }
-                }
-            }
-            .h4-givebBackToTheCommunity {
-                font-weight: bold;
-                padding-bottom: 5px;
-            }
-        }
-    }
-    .more-info {
-        background-color: #75ad74;
-        height: 100vh;
-        .container {
-            margin-top: 10%;
-        }
-        h2 {
-            color: rgb(51, 51, 51);
-            font-weight: bold;
-            text-align: center;
-            padding-bottom: 1%;
-            font-family: $FONT;
-        }
-        p#subheading {
-            color: rgb(51, 51, 51);
-            text-align: center;
-            padding-bottom: 3%;
-            font-family: $FONT;
-        }
-        .h4-moreinfo {
-            color: rgb(51, 51, 51);
-            font-weight: bold;
-            padding-bottom: 5px;
-            color: #222;
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-        p {
-            color: rgb(51, 51, 51);
-            font-size: 1em;
-            font-weight: 400;
-            line-height: 2.3em;
-            text-align: justify;
-        }
-    }
-    //branch logos section here
-    .brands {
-        font-family: $FONT;
-        background-color: #78b7bb;
-        text-align: center;
-        .logo-region {
-            margin: 0 auto;
-            padding: 50px 0 0px;
-            .brand-logos {
-                .logo {
-                    img {
-                        width: 100px;
-                        height: auto;
-                        padding-bottom: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen //Phone
-and (max-device-width : 767px) {
-
-    .kickstarter {
-        height: 100%;
-        .overlay {
-            height: 100%;
-        }
-        .container {
-            padding-top: 40vh;
-            font-family: $FONT;
-            text-align: center;
-            text-decoration: none;
-            h1 {
-                font-size: 60px;
-                color: #ffffff;
-                padding-bottom: 5px;
-            }
-            h3 {
-                font-size: 1.7vmax;
-                font-weight: bold;
-                color: #ffffff;
-                letter-spacing: 1px;
-            }
-            a {
-                margin-top: 20px; 
-                margin-bottom: 20px;
-                padding-top: 20px;
-                font-weight: 300;
-                color: #ffffff;
-                button {
-                       border: none;
-                       background: #6FC9D0;
-                       padding: 5px 10px 10px 20px;
-                       color: #ffffff;
-                       font-size: 24px;
-                       font-family: $FONT;
-                       text-decoration: none;
-                       vertical-align: middle;
-                       span {
-                            padding-right: 10px;
-                        }
-                }
-                button:hover {
-                   background: #282732;
-                   color: #fff;
-                }
-                button:active {
-                   background: #282732;
-                   color: #fff;
-                }
-            }
-            p {
-                font-size: 1.3vmax;
-                margin-top: 1.5vh; 
-                padding-bottom: 15px;
-                font-weight: 300;
-                margin-right: 7%;
-                margin-left: 7%;
-                color: #ffffff;
-                letter-spacing: 2.5px;
-                line-height: 1.2;
-            }
-            p#emphasized {
-                font-size: 1.4vmax;
-                margin-top: 2vh; 
-                font-weight: bold;
-                margin-right: 7%;
-                margin-left: 7%;
-                color: #ffffff;
-                letter-spacing: 2.5px;
-                line-height: 1.2;
-            }
-            div {
-                display: inline-block;
-                margin-right: auto;
-                margin-left: auto;
-                div {
-                    margin-right: 1vw;
                     p {
-                        font-size: 1.5vmax;
-                        display: inline-block;
-                        margin: 0 5px 0 0;
-                        padding: 0;
-                        font-weight: bold;
-                        padding-bottom: 5%;
+                        padding-top: 5%;
                     }
-                    p#phone {
-                        font-size: 1.25vmax;
-                        display: inline-block;
-                        margin: 0 5px 0 0;
-                        padding-top: 1%;
-                        font-weight: bold;
-                        padding-bottom: 0;
-                    }
-                    a {
-                        display: inline-block;
-                        margin: 0;
-                        padding-top: 3%;
-                        font-weight: bold;
-                        span {
-                            margin-top: 8%;
-                        }
-                        #twitterlogo {
-                            height: 30px;
-                            margin-right: 10px;
-                        }
-                        #facebooklogo {
-                            height: 30px;
-                            margin-right: 15px;
-                        }
-                    }
-                }
-            }
-            .outer {
-                position: relative;
-                width: 100%;
-                top: 100px;
-                left: -40px;
-                .bouncing {
-                    position: absolute;
-                    -webkit-animation-name: bounce;
-                    -webkit-animation-iteration-count: infinite;
-                    -webkit-animation-duration: 2s;
-                    animation-name: bounce;
-                    animation-iteration-count: infinite;
-                    animation-duration: 2s;
-                    .glyphicon {
-                        color: #ffffff;
-                        font-size: 60px;
-                    }
-                }
-            }
-        }
-
-    }
-    .about-list {
-        font-family: $FONT;
-        .aboutlist_container {
-            padding: 50px 0 100px;
-            height: 100%;
-            *zoom: 1;
-            display: block;
-            margin: 0 auto;
-            p {
-                color: #888;
-                font-size: 1em;
-                font-weight: 400;
-                line-height: 2.3em;
-                text-align: justify;
-                a {
-                    color: #78b7bb;
-                }
-            }
-            h4 {
-                color: #484652;
-                font-weight: bold;
-                font-size: 1.5em;
-            }
-            .container {
-                h2 {
-                    text-align: center;
-                    padding-bottom: 1%;
-                    font-family: $FONT;
-                    font-weight: bold;
-                }
-                p#subheading {
-                    text-align: center;
-                    padding-bottom: 3%;
-                    font-family: $FONT
-                }
-                margin-top: 5%;
-                *zoom: 1;
-                .triptych {
-                    padding: 0vw 2.5vw 2vw;
-                        p {
-                            padding-top: 5%;
-                        }
-                        #topOne {
-
-                        }
-                        #topTwo {
-                        }
-                        #topThree {
-                        }
                 }
             }
             .h4-givebBackToTheCommunity {
@@ -766,8 +507,6 @@ and (max-device-width : 767px) {
         }
     }
 }
-
-
 
 /*=============================
   HOME PAGE STYLING FOR MOBILE
@@ -783,7 +522,7 @@ and (max-device-width : 767px) {
                 height: 100%;
             }
             .container {
-                padding-top: 100px;
+                padding: 20vh 0 10vh;
                 h1 {
                     font-size: 25px;
                 }
@@ -796,9 +535,21 @@ and (max-device-width : 767px) {
                         font-size: 12px;
                         padding: 5px 20px;
                         margin-top: 0;
-                        margin-bottom: 50px;
+                        margin-bottom: 10px;
                         span {
                             padding-right: 5px;
+                        }
+                    }
+                }
+                div {
+                    div {
+                        a {
+                            #twitterlogo {
+                                height: 20px;
+                            }
+                            #facebooklogo {
+                                height: 20px;
+                            }
                         }
                     }
                 }
@@ -943,8 +694,139 @@ and (max-device-width : 767px) {
 
 }
 
+/*=============================
+ ABOUT US PAGE STARTS HERE
+=============================*/
+.story-page {
+    font-family: $FONT;
+    padding: 2.7% 0;
+    .story-section {
+        background: url(../img/timeline.jpg) no-repeat center center;
+        background-size: contain;
+        height: 150vh;
+        .text-outer{
+            height: 100%;
+            h1 {
+                padding: 10vh 0 5vh;
+                font-size: 60px;
+                font-weight: 400;
+                color: #59C7E0;
+            }
+            p {
+                font-size: 1.3vw;
+                line-height: 1.6;
+                color: #0F328B;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        .timeline-outer {
+            margin: 0;
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    .our-model-section {
+        background: linear-gradient(#675D83, #463f60);
+        height: 100%;
+        .text-wrapper { 
+            text-align: center;
+            h2 {
+                font-size: 50px;
+                padding: 8vh 0vh 5vh;
+                color: #fff;
+            }
+            p {
+                font-size: 1.3vw;
+                line-height: 1.6;
+                font-weight: 300;
+                padding-bottom: 6vh;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #9588A0;
+            }
+        }
+    }
+    .meet-the-team {
+        background: linear-gradient(#463f60, #282732);
+        height: 100%;
+        padding-bottom: 15vh;
+        h2 {
+            color: #DDD;
+            font-size: 6vh;
+            text-align: center;
+            padding-bottom: 5vh;
+            padding-top: 15vh;
+        }
+        .selfie {
+            text-align: center;
+            img {
+                padding: 10%;
+                border-radius: 100%;
+                width: 100%;
+            }
+            h3 {
+                margin-bottom: 5vh;
+                color: #fff;
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
 /*==========================
-WHAT WE DO PAGE STARTS HERE
+    ABOUT US PAGE MOBILE
+===========================*/
+
+@media only screen //Phone
+and (max-device-width : 767px) {
+    .story-page {
+        .story-section {
+            padding: 5vh 0 10vh;
+            background-color: #78B7BB;
+            .text-outer{
+                height: 100%;
+                h1 {
+                    margin-top: 10vh;
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        .our-model-section {
+            background-color: #27285a;
+            color: #fff;
+            font: $FONT;
+            height: 100%;
+            padding: 10vh 0 10vh;
+            .text-wrapper { 
+                h2 {
+                    font-size: 8vw;
+                    padding: 0vh 0vh 5vh;
+                }
+                p {
+                    font-size: 4vw;
+                }
+            }
+        }
+        .meet-the-team {
+            background-color: #265b7d;
+            height: 100%;
+            padding: 10vh 0;
+            h2 {
+                font-size: 8vw;
+                padding-bottom: 5vh;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+
+/*==========================
+  PARTNERS PAGE STARTS HERE
 ===========================*/
 
 .process-page {
@@ -1137,76 +1019,6 @@ WHAT WE DO PAGE STARTS HERE
 
 @media only screen //Phone
 and (max-device-width : 767px) {
-}
-
-/*=============================
- STORY PAGE STARTS HERE
-=============================*/
-.story-page {
-    font-family: $FONT;
-    padding: 2.7% 0% 0%;
-    .story-section {
-        background-color: #78B7BB;
-        .text-outer{
-            height: 100vh;
-            h1 {
-                margin-top: 30vh;
-                padding-bottom: 5vh;
-                text-align: center;
-                font-size: 60px;
-                font-weight: 400;
-                color: #fff;
-            }
-            p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.2;
-                color: #000;
-                font-weight: 300;
-                font-family: $FONT;
-            }
-        }
-    }
-    .timeline-section {
-        padding: 0;
-        .timeline-outer {
-            margin: 0;
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-    }
-    .our-model-section {
-        background-color: #27285a;
-        color: #fff;
-        font: $FONT;
-        height: 70vh;
-        .text-wrapper { 
-            h2 {
-                text-align: center;
-                font-size: 8vh;
-                padding: 18vh 0vh 7vh;
-            }
-            p {
-                font-weight: 300;
-            }
-        }
-    }
-    .meet-the-team {
-        background-color: #265b7d;
-        height: 100%;
-        h2 {
-            color: #DDD;
-            font-size: 8vh;
-            text-align: center;
-            padding: 7vh 0;
-        }
-        img {
-            padding: 1%;
-            border-radius: 100%;
-        }
-    }
 }
 
 /*=============================
