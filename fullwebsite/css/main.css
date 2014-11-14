@@ -644,54 +644,54 @@ div.clear {
 =============================*/
 .story-page {
   font-family: "Source Sans Pro", sans-serif;
-  padding: 2.7% 0% 0%;
+  padding: 2.7% 0;
 }
 .story-page .story-section {
-  background-color: #78B7BB;
+  background: url(../img/timeline.jpg) no-repeat center center;
+  background-size: contain;
+  height: 150vh;
 }
 .story-page .story-section .text-outer {
-  height: 100vh;
+  height: 100%;
 }
 .story-page .story-section .text-outer h1 {
-  margin-top: 30vh;
-  padding-bottom: 5vh;
-  text-align: center;
+  padding: 10vh 0 5vh;
   font-size: 60px;
   font-weight: 400;
-  color: #fff;
+  color: #59C7E0;
 }
 .story-page .story-section .text-outer p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #000;
-  font-weight: 300;
-  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3vw;
+  line-height: 1.6;
+  color: #0F328B;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.story-page .timeline-section {
-  padding: 0;
-}
-.story-page .timeline-section .timeline-outer {
+.story-page .story-section .timeline-outer {
   margin: 0;
 }
-.story-page .timeline-section .timeline-outer img {
+.story-page .story-section .timeline-outer img {
   height: auto;
   width: 100%;
 }
 .story-page .our-model-section {
   background: linear-gradient(#675D83, #463f60);
-  color: #fff;
-  font: "Source Sans Pro", sans-serif;
   height: 100%;
 }
-.story-page .our-model-section .text-wrapper h2 {
+.story-page .our-model-section .text-wrapper {
   text-align: center;
-  font-size: 8vh;
+}
+.story-page .our-model-section .text-wrapper h2 {
+  font-size: 50px;
   padding: 8vh 0vh 5vh;
+  color: #fff;
 }
 .story-page .our-model-section .text-wrapper p {
+  font-size: 1.3vw;
+  line-height: 1.6;
   font-weight: 300;
   padding-bottom: 6vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9588A0;
 }
 .story-page .meet-the-team {
   background: linear-gradient(#463f60, #282732);
