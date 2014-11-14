@@ -1193,7 +1193,7 @@ and (max-device-width : 767px) {
     font-family: $FONT;
     .intro {
         height: 100vh;
-        background: #265b7d;
+        background: #373249;
         .row {
             padding-top: 30vh;
             text-align: center;
@@ -1204,7 +1204,7 @@ and (max-device-width : 767px) {
             }
             h2 {
                 font-weight: 300;
-                color: #9AD7F7;
+                color: #9D96BA;
                 padding-top: 3em;
                 font-size: 22px;
                 font-family: $FONT;
@@ -1215,7 +1215,7 @@ and (max-device-width : 767px) {
     }
     .about-brief {
         height: 100vh;
-        background-color: #27285a;
+        background-color: #fff;
         width: 100%;
         text-align: center;
         .course {
@@ -1226,17 +1226,16 @@ and (max-device-width : 767px) {
                 margin-bottom: 50px;
             }
             h1 {
-                font-size: 22px;
+                font-size: 2.4vw;
                 font-weight: 400;
-                color: #64A4CD;
+                color: #78b7bb;
             }
             p {
                 margin-top: 5vh;
-                font-size: 16px;
+                font-size: 1.4vw;
                 font-weight: 400;
-                line-height: 1.2;
-                color: #ADD9F4;
-                font-weight: 300;
+                line-height: 1.3;
+                color: #07456B;
                 font-family: $FONT;
             }
         }
@@ -1244,14 +1243,19 @@ and (max-device-width : 767px) {
             margin-top: 15vh;
             padding: 0 50px;
             #apply-button {
-                background-color: #069490;
+                background-color: #4F7F8C;
                 color: #fff;
+                letter-spacing: 2px;
+                font-weight: 400;
             }
             #apply-button:hover {
-                background-color: #1A7673;
+                background-color: #346876;
             }
             #more-info-button {
-                color: #6E6E6E;
+                color: #51646F;
+                border: 3px #7C7C83 solid;
+                letter-spacing: 2px;
+                font-weight: 400;
             }
             #more-info-button:hover {
                 background-color: #D8D6D6;
@@ -1266,12 +1270,12 @@ and (max-device-width : 767px) {
     }
     .schedule {
         height: 100%;
-        background-color: #81DAF5;
+        background-color: #78b7bb;
         #title {
             margin-top: 50px;
             padding-bottom: 5px;
-            color: #336D8B;
-            border-bottom: 3px #62AED5 solid;
+            color: #D5E8F4;
+            border-bottom: 5px #5F909E solid;
         }
         #accordion {
              margin: 50px 0;
@@ -1282,31 +1286,24 @@ and (max-device-width : 767px) {
                 border: none;
                 border-radius: 0;
                 .panel-heading {
-                    border-bottom: 2px grey solid;
-                    background-color: #BAEDFC;
+                    border-bottom: 2px #5F909E solid;
+                    background-color: #A5DEE2;
                     border-radius: 0;
                 h4 {
-                    color: #5DA1C3;
+                    color: #5F909E;
+                    font-weight: 400;
                     .description {
-                        margin-left: 70px;
+                        float: right;
                         color: #27285a;
                     }
-                    .glyphicon {
-                        float: right;
-                    }
-                }
-            }
-            #headingOne {
-                .description {
-                    margin-left: 40px;
                 }
             }
             .panel-body {
                 border: none;
-                background-color: #81DAF5;
+                background-color: #78b7bb;
                 ul {
                     margin-left: 30px;
-                    color: #336D8B;
+                    color: #D5E8F4;
                     }
                 }
             }
@@ -1318,12 +1315,12 @@ and (max-device-width : 767px) {
                 width: 100%;
                 height: 60px;
                 border-radius: 0;
-                background-color: #3E92B6;
+                background-color: #4F7F8C;
                 color: #fff;
                 border: none;
             }
             #apply-button:hover {
-                background-color: #3A89AB;
+                background-color: #346876;
             }
         }
     }
@@ -1335,4 +1332,76 @@ and (max-device-width : 767px) {
 
 @media only screen //Phone
 and (max-device-width : 767px) {
+
+    .student-page {
+        .intro {
+            height: 100%;
+            padding: 20vh 0;
+            .row {
+                padding-top: 10vh;
+                text-align: center;
+                h1 {
+                    font-size: 8vw;
+                }
+                h2 {
+                    padding-top: 2em;
+                    font-size: 4vw;
+                    line-height: 1.5;
+                }
+            }
+        }
+        .about-brief {
+            height: 100%;
+            padding: 5vh 0;
+            .course {
+                margin: 5vh 0;
+                padding: 0 50px;
+                .icon {
+                    width: 75px;
+                    margin-bottom: 30px;
+                }
+                h1 {
+                    font-size: 8vw;
+                }
+                p {
+                    margin-top: 3vh;
+                    font-size: 4vw;
+                    line-height: 1.3;
+                }
+            }
+            .buttons {
+                margin-top: 5vh;
+                padding: 0 50px;
+                button {
+                    height: 40px;
+                    font-size: 10px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        .schedule {
+            #accordion {
+                .panel-default {
+                    .panel-heading {
+                    h4 {
+                        font-size: 13px;
+                    }
+                }
+                .panel-body {
+                    ul {
+                        font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .buttons {
+                margin-bottom: 5vh;
+                padding: 0 20px;
+                #apply-button {
+                    height: 40px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
 }
