@@ -708,8 +708,8 @@ div.clear {
   overflow: hiddem;
 }
 .story-page .meet-the-team .selfie img {
-  padding: 10%;
-  border-radius: 150px;
+  padding: 15%;
+  border-radius: 100%;
   width: 100%;
   -webkit-filter: grayscale(100%);
   transition: all 1s ease-in-out;
