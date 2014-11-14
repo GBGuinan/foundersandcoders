@@ -733,35 +733,37 @@ and (max-device-width : 767px) {
         }
     }
     .our-model-section {
-        background-color: #27285a;
+        background: linear-gradient(#675D83, #463f60);
         color: #fff;
         font: $FONT;
-        height: 70vh;
+        height: 100%;
         .text-wrapper { 
             h2 {
                 text-align: center;
                 font-size: 8vh;
-                padding: 18vh 0vh 7vh;
+                padding: 8vh 0vh 5vh;
             }
             p {
                 font-weight: 300;
+                padding-bottom: 6vh;
             }
         }
     }
     .meet-the-team {
-        background-color: #265b7d;
+        background: linear-gradient(#463f60, #282732);
         height: 100%;
-        padding: 15vh 0;
+        padding-bottom: 15vh;
         h2 {
             color: #DDD;
-            font-size: 8vh;
+            font-size: 6vh;
             text-align: center;
             padding-bottom: 5vh;
+            padding-top: 15vh;
         }
         .selfie {
             text-align: center;
             img {
-                padding: 5%;
+                padding: 10%;
                 border-radius: 100%;
                 width: 100%;
             }
