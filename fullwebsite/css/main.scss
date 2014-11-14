@@ -765,10 +765,11 @@ and (max-device-width : 767px) {
                 padding: 10%;
                 border-radius: 150px;
                 width: 100%;
-                filter: gray;
+                -webkit-filter: grayscale(100%);
+                transition: all 1s ease-in-out;
             }
             img:hover {
-                filter: none;
+                -webkit-filter: grayscale(0%);
             }
             h3 {
                 margin-bottom: 5vh;

@@ -711,10 +711,11 @@ div.clear {
   padding: 10%;
   border-radius: 150px;
   width: 100%;
-  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease-in-out;
 }
 .story-page .meet-the-team .selfie img:hover {
-  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 .story-page .meet-the-team .selfie h3 {
   margin-bottom: 5vh;
