@@ -615,6 +615,22 @@ div.clear {
   height: auto;
   margin: 10px;
 }
+.contact .contact-region form {
+  padding-top: 20px;
+}
+.contact .contact-region form input {
+  border-radius: 0;
+  border: none;
+}
+.contact .contact-region form button {
+  border-radius: 0;
+  border: 2px #41435E solid;
+  background-color: #282732;
+  color: #6FC9D0;
+}
+.contact .contact-region form button:hover {
+  background-color: #41435E;
+}
 
 /*=============================
         CONTACT US MOBILE
@@ -637,6 +653,17 @@ div.clear {
   }
   .contact .contact-region img {
     width: 30px;
+  }
+  .contact .contact-region form {
+    width: 100%;
+  }
+  .contact .contact-region form input {
+    width: 100%;
+    margin: 0;
+    height: 30px;
+  }
+  .contact .contact-region form button {
+    width: 100%;
   }
 }
 /*=============================

@@ -661,6 +661,22 @@ and (max-device-width : 767px) {
             height: auto;
             margin: 10px;
         }
+        form {
+            padding-top: 20px;
+            input {
+                border-radius: 0;
+                border: none;
+            }
+            button {
+                border-radius: 0;
+                border: 2px #41435E solid;
+                background-color: #282732;
+                color: #6FC9D0;
+            }
+            button:hover {
+                background-color: #41435E;
+            }
+        }
     }
 }
 
@@ -688,6 +704,17 @@ and (max-device-width : 767px) {
             }
             img {
                 width: 30px;
+            }
+            form {
+                width: 100%;
+                input {
+                    width: 100%;
+                    margin: 0;
+                    height: 30px;
+                }
+                button {
+                    width: 100%;
+                }
             }
         }
     }
