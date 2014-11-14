@@ -651,9 +651,6 @@ div.clear {
   background-size: contain;
   height: 150vh;
 }
-.story-page .story-section .text-outer {
-  height: 100%;
-}
 .story-page .story-section .text-outer h1 {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10vh 0 5vh;
@@ -664,7 +661,7 @@ div.clear {
 .story-page .story-section .text-outer p {
   font-size: 1.3vw;
   line-height: 1.6;
-  color: #0F328B;
+  color: #102354;
   font-family: Arial, Helvetica, sans-serif;
 }
 .story-page .story-section .timeline-outer {
@@ -687,7 +684,7 @@ div.clear {
   color: #fff;
 }
 .story-page .our-model-section .text-wrapper p {
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   line-height: 1.6;
   font-weight: 300;
   padding-bottom: 6vh;
@@ -725,18 +722,26 @@ div.clear {
 ===========================*/
 @media only screen and (max-device-width: 767px) {
   .story-page .story-section {
-    padding: 5vh 0 10vh;
-    background-color: #78B7BB;
+    padding: 5vh 0 0vh;
+    background: none;
   }
   .story-page .story-section .text-outer {
-    height: 100%;
+    text-align: center;
   }
   .story-page .story-section .text-outer h1 {
-    margin-top: 10vh;
+    margin-top: 0vh;
     font-size: 30px;
   }
   .story-page .story-section .text-outer p {
     font-size: 13px;
+    padding-bottom: 0;
+  }
+  .story-page .story-section .timeline {
+    content: url(../img/timelinemobile.jpg);
+  }
+  .story-page .story-section .timeline img {
+    width: 120%;
+    height: auto;
   }
   .story-page .our-model-section {
     background-color: #27285a;
@@ -771,20 +776,23 @@ div.clear {
 }
 .process-page .bounties-section {
   height: 100%;
-  background-color: #27285a;
+  background-color: #282732;
   padding: 100px 0;
   text-align: left;
 }
-.process-page .bounties-section .subsection-wrapper h1 {
+.process-page .bounties-section .subsection-wrapper {
   text-align: center;
-  margin-top: 8vw;
-  font-size: 40px;
+}
+.process-page .bounties-section .subsection-wrapper h1 {
+  margin-top: 10vw;
+  font-size: 60px;
   font-weight: 400;
-  color: #6C9FA8;
+  color: #E1E3E4;
   padding-bottom: 20px;
 }
 .process-page .bounties-section .subsection-wrapper p {
   margin-top: 2%;
+  font-size: 1.4vw;
   font-weight: 300;
   color: #6C9FA8;
 }
@@ -796,10 +804,10 @@ div.clear {
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
   font-size: 2vmax;
-  color: #65A5B0;
+  color: #5A7080;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
-  background-color: #27285a;
+  background-color: #282732;
   margin-top: 20px;
   width: 100%;
   height: 60px;
@@ -811,57 +819,85 @@ div.clear {
   font-size: 1.5vmax;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button:hover {
-  background-color: #232456;
+  background-color: #22212A;
 }
 .process-page #give-projects-section {
-  background-color: #78b7bb;
+  background-color: #fff;
   height: 100%;
 }
 .process-page #give-projects-section .content-wrapper {
   padding: 15vh 0;
 }
 .process-page #give-projects-section .content-wrapper .image-wrapper {
-  padding-top: 10vh;
+  text-align: center;
 }
 .process-page #give-projects-section .content-wrapper .image-wrapper img {
   width: 100%;
-  border-radius: 5px;
 }
 .process-page #give-projects-section .content-wrapper .text-wrapper {
-  padding-left: 3vw;
+  height: 100%;
+  padding: 5%;
+  text-align: center;
 }
 .process-page #give-projects-section .content-wrapper .text-wrapper h2 {
-  text-align: center;
-  margin-top: 6vh;
   margin-bottom: 5vh;
+  color: #78b7bb;
+  font-size: 2.5vw;
+}
+.process-page #give-projects-section .content-wrapper .text-wrapper p {
+  font-size: 1.5vw;
+  color: #282732;
 }
 .process-page #employ-us-section {
-  background-color: #fff;
+  background-color: #78b7bb;
   height: 100%;
 }
 .process-page #employ-us-section .content-wrapper {
-  padding-top: 5%;
+  padding: 5%;
 }
 .process-page #employ-us-section .content-wrapper .text-wrapper {
-  padding: 5% 0;
-}
-.process-page #employ-us-section .content-wrapper .text-wrapper h2 {
+  padding: 7% 0;
   text-align: center;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper h1 {
+  font-size: 3vw;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper button {
+  color: #78b7bb;
+  border-radius: 0;
+  padding: 10px 40px;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper button h2 {
+  font-size: 2.5vw;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper h2:hover {
+  text-decoration: none;
 }
 .process-page #employ-us-section .content-wrapper .text-wrapper p {
+  font-size: 1.6vw;
   padding-top: 5%;
   padding-bottom: 10%;
+  color: #2A546B;
 }
 .process-page #learn-with-us-section {
-  background-color: #27285a;
-  color: white;
+  background-color: #fff;
 }
-.process-page #learn-with-us-section h2 {
-  padding-top: 25%;
+.process-page #learn-with-us-section .text-wrapper {
   text-align: center;
 }
+.process-page #learn-with-us-section .text-wrapper h2 {
+  padding-top: 25%;
+  font-size: 2.2vw;
+  color: #78b7bb;
+}
+.process-page #learn-with-us-section .text-wrapper p {
+  font-size: 1.4vw;
+  color: #282732;
+}
 .process-page #learn-with-us-section .image-wrapper {
-  padding: 5%;
+  padding: 5% 0;
 }
 .process-page #learn-with-us-section .image-wrapper img {
   width: 100%;
