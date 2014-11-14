@@ -1057,6 +1057,106 @@ and (max-device-width : 767px) {
 
 @media only screen //Phone
 and (max-device-width : 767px) {
+
+    .process-page {
+        .bounties-section {
+            .subsection-wrapper {
+                h1 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 4vw;
+                }
+                .subsection-buttons {
+                    margin-top: 0;
+                    #buttons {
+                        padding: 0;
+                        h2 {
+                            font-size: 3vmax;
+                        }
+                        button {
+                            margin-top: 20px;
+                            border: 3px #1F1F24 solid;
+                            span {
+                                font-size: 2vmax;
+                            }
+                        }
+                        button:hover {
+                            background-color: #22212A; 
+                        }
+                    }
+                }
+            }
+            
+        }
+        #give-projects-section {
+            .content-wrapper {
+                padding: 10vh 0;
+                .text-wrapper {
+                    padding: 1%;
+                    h2 {
+                        margin-bottom: 5vh;
+                        font-size: 8vw;
+                    }
+                    #idea {
+                        font-size: 4vw;
+                    }
+                    p {
+                        font-size: 3vw;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+        #employ-us-section {
+            .content-wrapper {
+                padding: 15% 5%;
+                .text-wrapper {
+                    padding: 7% 0;
+                    text-align: center;
+                    h1 {
+                        font-size: 8vw;
+                        color: #fff;
+                        letter-spacing: 2px;
+                    }
+                    button {
+                        padding: 5px 30px;
+                        h2 {
+                            font-size: 6vw;
+                        }
+                    }
+                    p {
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+        }
+        #learn-with-us-section {
+            .text-wrapper {
+                h2 {
+                    padding-top: 5%;
+                    font-size: 7vw;
+                }
+                p {
+                    font-size: 3.5vw;
+                    padding-bottom: 10%;
+                }
+            }
+        }
+        .tech-we-love {
+            .logo-region {
+                padding: 15px 0;
+                .brand-logos {
+                    .logo {
+                        img {
+                            width: 50px;
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*=============================
