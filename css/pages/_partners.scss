@@ -1,0 +1,256 @@
+
+
+/*==========================
+  PARTNERS PAGE STARTS HERE
+===========================*/
+
+.process-page {
+    font-family: $font-main;
+    .bounties-section {
+        height: 100%;
+        background: linear-gradient(#4B4551, #23222F);
+        padding: 100px 0;
+        .subsection-wrapper {
+            text-align: center;
+            h1 {
+                margin-top: 12vw;
+                font-size: 6vw;
+                font-weight: 400;
+                color: #fff;
+                letter-spacing: 5px;
+            }
+            .subsection-buttons {
+                margin: 10% 0;
+                #buttons {
+                    padding: 20px 50px;
+                    h2 {
+                        padding: 20px;
+                        font-size: 2vmax;
+                        color: #90C0CF;
+                        width: 100%;
+                        height: 60px;
+                        border-radius: 0;
+                        border: none;
+                        span {
+                            padding-left: 5%;
+                        }
+                    }
+                    h2:hover {
+                        background-color: #22212A; 
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        
+    }
+    #give-projects-section {
+        background-color: #fff;
+        height: 100%;
+        .content-wrapper {
+            padding: 15vh 0;
+            .image-wrapper {
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+            .text-wrapper {
+                height: 100%;
+                padding: 5%;
+                text-align: center;
+
+                h2 {
+                    margin-bottom: 5vh;
+                    color: $turquise;
+                    font-size: 2.5vw;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 1.5vw;
+                    color: $dark-indigo;
+                }
+            }
+        }
+    }
+    #employ-us-section {
+        background-color: $turquise;
+        height: 100%;
+        .content-wrapper {
+            padding: 5%;
+            .text-wrapper {
+                padding: 7% 0;
+                text-align: center;
+                h1 {
+                    font-size: 3vw;
+                    color: #fff;
+                    letter-spacing: 2px;
+                }
+                button {
+                    color: $turquise;
+                    border-radius: 0;
+                    padding: 10px 40px;
+                    h2 {
+                        font-size: 2.5vw;
+                    }
+                }
+                h2:hover {
+                    text-decoration: none;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 1.6vw;
+                    padding-top: 5%;
+                    padding-bottom: 10%;
+                    color: #2A546B;
+                }
+            }
+        }
+    }
+    #learn-with-us-section {
+        background-color: #fff;
+        .text-wrapper {
+            text-align: center;
+            h2 {
+                padding-top: 25%;
+                font-size: 2.2vw;
+                color: $turquise;
+            }
+            p {
+                padding: 0 5%;
+                text-align: justify;
+                font-size: 1.4vw;
+                color: $dark-indigo;
+            }
+        }
+        .image-wrapper {
+            padding: 5% 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .tech-we-love {
+        font-family: $font-main;
+        background-color: $indigo;
+        text-align: center;
+        .logo-region {
+            margin: 0 auto;
+            padding: 50px 0 0px;
+            .brand-logos {
+                .logo {
+                    img {
+                        width: 100px;
+                        height: auto;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==========================
+    PARTNER PAGE MOBILE
+===========================*/
+
+@media (max-width: 767px) {
+
+    .process-page {
+        .bounties-section {
+            .subsection-wrapper {
+                h1 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 4vw;
+                }
+                .subsection-buttons {
+                    margin-top: 10vh;
+                    #buttons {
+                        border: 1px #90C0CF solid;
+                        margin: 5px;
+                        padding: 0;
+                        h2 {
+                            font-size: 3vmax;
+                        }
+
+
+
+                    }
+                }
+            }
+            
+        }
+        #give-projects-section {
+            .content-wrapper {
+                padding: 10vh 0;
+                .text-wrapper {
+                    padding: 1%;
+                    h2 {
+                        margin-bottom: 5vh;
+                        font-size: 8vw;
+                    }
+                    #idea {
+                        font-size: 4.5vw;
+                    }
+                    p {
+                        font-size: 3.5vw;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+        #employ-us-section {
+            .content-wrapper {
+                padding: 15% 5%;
+                .text-wrapper {
+                    padding: 7% 0;
+                    text-align: center;
+                    h1 {
+                        font-size: 8vw;
+                        color: #fff;
+                        letter-spacing: 2px;
+                    }
+                    button {
+                        padding: 5px 30px;
+                        h2 {
+                            font-size: 6vw;
+                        }
+                    }
+                    p {
+                        margin-top: 20px;
+                        font-size: 3.7vw;
+                    }
+                }
+            }
+        }
+        #learn-with-us-section {
+            .text-wrapper {
+                h2 {
+                    padding-top: 5%;
+                    font-size: 7vw;
+                }
+                p {
+                    font-size: 3.7vw;
+                    padding-bottom: 20%;
+                }
+            }
+        }
+        .tech-we-love {
+            .logo-region {
+                padding: 15px 0;
+                .brand-logos {
+                    .logo {
+                        img {
+                            width: 50px;
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
