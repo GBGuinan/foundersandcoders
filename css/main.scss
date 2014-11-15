@@ -733,16 +733,16 @@ div.clear {
             text-align: center;
             h1 {
                 font-size: 50px;
-                padding: 8vh 0vh 5vh;
                 color: #fff;
             }
             h2 {
-                font-size: 1.4vw;
-                line-height: 1.6;
                 font-weight: 300;
-                padding-bottom: 6vh;
-                font-family: Arial, Helvetica, sans-serif;
                 color: #9588A0;
+                padding-top: 3em;
+                font-size: 22px;
+                font-family: $FONT;
+                padding-bottom: 10%;
+                
             }
         }
         .subsection-buttons {
