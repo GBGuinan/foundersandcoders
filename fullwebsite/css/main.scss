@@ -684,8 +684,7 @@ and (max-device-width : 767px) {
         CONTACT US MOBILE
 =============================*/
 
-@media only screen //Phone
-and (max-device-width : 767px) {
+@media only screen (max-width : 767px) {
 
     .contact {
         .contact-region {
@@ -887,7 +886,7 @@ and (max-device-width : 767px) {
             img {
                 border-radius: 100%;
                 width: 75%;
-                -webkit-filter: grayscale(30%);
+                -webkit-filter: grayscale(40%);
                 transition: all 1s ease-in-out;
             }
             img:hover {
