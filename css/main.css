@@ -1161,6 +1161,18 @@ div.clear {
   font-family: "Source Sans Pro", sans-serif;
   padding-bottom: 10%;
 }
+.student-page .intro .row a:hover {
+  text-decoration: none;
+}
+.student-page .intro .row .subsection-buttons h2 {
+  padding: 20px;
+  font-size: 2vmax;
+  font-weight: 400;
+  color: white;
+}
+.student-page .intro .row .subsection-buttons h2:hover {
+  background-color: #22212A;
+}
 .student-page .about-brief {
   height: 100vh;
   background-color: #fff;
@@ -1282,7 +1294,7 @@ div.clear {
     padding: 20vh 0;
   }
   .student-page .intro .row {
-    padding-top: 10vh;
+    padding-top: 0;
     text-align: center;
   }
   .student-page .intro .row h1 {
@@ -1292,6 +1304,13 @@ div.clear {
     padding-top: 2em;
     font-size: 4vw;
     line-height: 1.5;
+  }
+  .student-page .intro .row .subsection-buttons h2 {
+    padding: 20px;
+    font-size: 3vmax;
+  }
+  .student-page .intro .row .subsection-buttons h2:hover {
+    background-color: #22212A;
   }
   .student-page .about-brief {
     height: 100%;
