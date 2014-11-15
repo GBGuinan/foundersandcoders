@@ -674,24 +674,41 @@ div.clear {
   padding: 2.7% 0;
 }
 .story-page .our-model-section {
+  padding-top: 30vh;
   background: linear-gradient(#675D83, #463f60);
   height: 100vh;
 }
 .story-page .our-model-section .text-wrapper {
   text-align: center;
 }
-.story-page .our-model-section .text-wrapper h2 {
+.story-page .our-model-section .text-wrapper h1 {
   font-size: 50px;
   padding: 8vh 0vh 5vh;
   color: #fff;
 }
-.story-page .our-model-section .text-wrapper p {
+.story-page .our-model-section .text-wrapper h2 {
   font-size: 1.4vw;
   line-height: 1.6;
   font-weight: 300;
   padding-bottom: 6vh;
   font-family: Arial, Helvetica, sans-serif;
   color: #9588A0;
+}
+.story-page .our-model-section .subsection-buttons h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2vmax;
+  color: white;
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+}
+.story-page .our-model-section .subsection-buttons h2:hover {
+  background-color: #78b7bb;
+}
+.story-page .our-model-section .subsection-buttons a:hover {
+  text-decoration: none;
 }
 .story-page .timeline-container {
   height: 100%;
