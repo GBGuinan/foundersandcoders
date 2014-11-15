@@ -285,7 +285,7 @@ div.clear {
 }
 .home-page .kickstarter .container a button {
   border: none;
-  background: #6FC9D0;
+  background: #81D0D7;
   padding: 5px 10px 10px 20px;
   color: #ffffff;
   font-size: 24px;
@@ -403,7 +403,7 @@ div.clear {
   text-align: justify;
 }
 .home-page .about-list .aboutlist_container p a {
-  color: #78b7bb;
+  color: #81D0D7;
 }
 .home-page .about-list .aboutlist_container h4 {
   color: #484652;
@@ -472,7 +472,7 @@ div.clear {
 }
 .home-page .brands {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #78b7bb;
+  background-color: #81D0D7;
   text-align: center;
 }
 .home-page .brands .logo-region {
@@ -595,7 +595,7 @@ div.clear {
   font-weight: 400;
 }
 .contact .contact-region h3 {
-  color: #6FC9D0;
+  color: #81D0D7;
   font-size: 1.5em;
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
@@ -626,7 +626,7 @@ div.clear {
   border-radius: 0;
   border: 2px #41435E solid;
   background-color: #282732;
-  color: #6FC9D0;
+  color: #81D0D7;
 }
 .contact .contact-region form button:hover {
   background-color: #41435E;
@@ -675,7 +675,7 @@ div.clear {
 }
 .story-page .timeline-container {
   height: 100%;
-  background-color: #78b7bb;
+  background-color: #81D0D7;
   padding: 20vh 5vw;
 }
 .story-page .timeline-container .title-timeline {
@@ -743,7 +743,7 @@ div.clear {
   margin: 0;
   padding-bottom: 10px;
   font-size: 3vw;
-  color: #83B8C8;
+  color: #81D0D7;
   font-weight: 600;
 }
 .story-page .timeline-container .timeline li .timeline-panel .tl-body p {
@@ -756,7 +756,7 @@ div.clear {
   top: 23px;
   left: 50%;
   text-align: center;
-  background: #78b7bb;
+  background: #81D0D7;
   color: #eee;
   width: 35px;
   height: 35px;
@@ -833,7 +833,7 @@ div.clear {
   transition: all 1s ease-in-out;
 }
 .story-page .meet-the-team .selfie img:hover {
-  -webkit-filter: grayscale(0%);
+  -webkit-filter: grayscale(10%);
 }
 .story-page .meet-the-team .selfie h3 {
   margin-top: 2vh;
@@ -976,7 +976,7 @@ div.clear {
 }
 .process-page #give-projects-section .content-wrapper .text-wrapper h2 {
   margin-bottom: 5vh;
-  color: #78b7bb;
+  color: #81D0D7;
   font-size: 2.5vw;
 }
 .process-page #give-projects-section .content-wrapper .text-wrapper p {
@@ -984,7 +984,7 @@ div.clear {
   color: #282732;
 }
 .process-page #employ-us-section {
-  background-color: #78b7bb;
+  background-color: #81D0D7;
   height: 100%;
 }
 .process-page #employ-us-section .content-wrapper {
@@ -1000,7 +1000,7 @@ div.clear {
   letter-spacing: 2px;
 }
 .process-page #employ-us-section .content-wrapper .text-wrapper button {
-  color: #78b7bb;
+  color: #81D0D7;
   border-radius: 0;
   padding: 10px 40px;
 }
@@ -1025,7 +1025,7 @@ div.clear {
 .process-page #learn-with-us-section .text-wrapper h2 {
   padding-top: 25%;
   font-size: 2.2vw;
-  color: #78b7bb;
+  color: #81D0D7;
 }
 .process-page #learn-with-us-section .text-wrapper p {
   font-size: 1.4vw;
@@ -1190,7 +1190,7 @@ div.clear {
 .student-page .about-brief .course h1 {
   font-size: 2.4vw;
   font-weight: 400;
-  color: #78b7bb;
+  color: #81D0D7;
 }
 .student-page .about-brief .course p {
   margin-top: 5vh;
@@ -1205,13 +1205,13 @@ div.clear {
   padding: 0 50px;
 }
 .student-page .about-brief .buttons #apply-button {
-  background-color: #4F7F8C;
+  background-color: #3D8F96;
   color: #fff;
   letter-spacing: 2px;
   font-weight: 400;
 }
 .student-page .about-brief .buttons #apply-button:hover {
-  background-color: #346876;
+  background-color: #2A747B;
 }
 .student-page .about-brief .buttons #more-info-button {
   color: #51646F;
@@ -1230,13 +1230,13 @@ div.clear {
 }
 .student-page .schedule {
   height: 100%;
-  background-color: #78b7bb;
+  background-color: #81D0D7;
 }
 .student-page .schedule #title {
   margin-top: 50px;
   padding-bottom: 5px;
-  color: #D5E8F4;
-  border-bottom: 5px #5F909E solid;
+  color: #fff;
+  border-bottom: 3px #3D8F96 solid;
 }
 .student-page .schedule #accordion {
   margin: 50px 0;
@@ -1254,7 +1254,7 @@ div.clear {
   border-radius: 0;
 }
 .student-page .schedule #accordion .panel-default .panel-heading h4 {
-  color: #5F909E;
+  color: #3D8F96;
   font-weight: 400;
 }
 .student-page .schedule #accordion .panel-default .panel-heading h4 .description {
@@ -1263,11 +1263,11 @@ div.clear {
 }
 .student-page .schedule #accordion .panel-default .panel-body {
   border: none;
-  background-color: #78b7bb;
+  background-color: #81D0D7;
 }
 .student-page .schedule #accordion .panel-default .panel-body ul {
   margin-left: 30px;
-  color: #D5E8F4;
+  color: #fff;
 }
 .student-page .schedule .buttons {
   margin-bottom: 15vh;
@@ -1277,12 +1277,12 @@ div.clear {
   width: 100%;
   height: 60px;
   border-radius: 0;
-  background-color: #4F7F8C;
+  background-color: #3D8F96;
   color: #fff;
   border: none;
 }
 .student-page .schedule .buttons #apply-button:hover {
-  background-color: #346876;
+  background-color: #2A747B;
 }
 
 /*=============================
