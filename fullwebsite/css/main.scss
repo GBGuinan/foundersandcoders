@@ -932,6 +932,22 @@ div.clear {
 @media (max-width: 767px) {
 
     .story-page {
+        .our-model-section {
+            background-color: #27285a;
+            color: #fff;
+            font: $FONT;
+            height: 100%;
+            padding: 10vh 0 10vh;
+            .text-wrapper { 
+                h1 {
+                    font-size: 8vw;
+                    padding: 0vh 0vh 5vh;
+                }
+                h2 {
+                    font-size: 4vw;
+                }
+            }
+        }
         .timeline-container {
             padding: 15vh 5vw 15vw 0;
             .title-timeline {
@@ -939,22 +955,7 @@ div.clear {
                     font-size: 8vw;
                 }
             }
-            .our-model-section {
-            background-color: #27285a;
-            color: #fff;
-            font: $FONT;
-            height: 100%;
-            padding: 10vh 0 10vh;
-            .text-wrapper { 
-                h2 {
-                    font-size: 8vw;
-                    padding: 0vh 0vh 5vh;
-                }
-                p {
-                    font-size: 4vw;
-                }
-            }
-        }
+            
             .timeline {
                 li {
                     &:before {

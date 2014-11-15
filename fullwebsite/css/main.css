@@ -862,25 +862,25 @@ div.clear {
     ABOUT US PAGE MOBILE
 ===========================*/
 @media (max-width: 767px) {
-  .story-page .timeline-container {
-    padding: 15vh 5vw 15vw 0;
-  }
-  .story-page .timeline-container .title-timeline h1 {
-    font-size: 8vw;
-  }
-  .story-page .timeline-container .our-model-section {
+  .story-page .our-model-section {
     background-color: #27285a;
     color: #fff;
     font: "Source Sans Pro", sans-serif;
     height: 100%;
     padding: 10vh 0 10vh;
   }
-  .story-page .timeline-container .our-model-section .text-wrapper h2 {
+  .story-page .our-model-section .text-wrapper h1 {
     font-size: 8vw;
     padding: 0vh 0vh 5vh;
   }
-  .story-page .timeline-container .our-model-section .text-wrapper p {
+  .story-page .our-model-section .text-wrapper h2 {
     font-size: 4vw;
+  }
+  .story-page .timeline-container {
+    padding: 15vh 5vw 15vw 0;
+  }
+  .story-page .timeline-container .title-timeline h1 {
+    font-size: 8vw;
   }
   .story-page .timeline-container .timeline li .timeline-panel {
     width: calc(100% - 90px);
