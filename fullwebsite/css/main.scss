@@ -1071,6 +1071,7 @@ div.clear {
                     font-size: 2.5vw;
                 }
                 p {
+                    text-align: justify;
                     font-size: 1.5vw;
                     color: #282732;
                 }
@@ -1102,6 +1103,7 @@ div.clear {
                     text-decoration: none;
                 }
                 p {
+                    text-align: justify;
                     font-size: 1.6vw;
                     padding-top: 5%;
                     padding-bottom: 10%;
@@ -1120,6 +1122,8 @@ div.clear {
                 color: #81D0D7;
             }
             p {
+                padding: 0 5%;
+                text-align: justify;
                 font-size: 1.4vw;
                 color: #282732;
             }
@@ -1318,7 +1322,8 @@ div.clear {
                 font-weight: 400;
                 color: #81D0D7;
             }
-            p {
+            .description {
+                text-align: justify;
                 margin-top: 5vh;
                 font-size: 1.4vw;
                 font-weight: 400;
