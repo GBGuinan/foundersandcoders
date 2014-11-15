@@ -1,0 +1,384 @@
+
+/*==========================
+  HOME PAGE STYLING
+===========================*/
+
+.home-page {
+    .kickstarter {
+        height: 125vh;
+        background-color: #27285a;
+        background: url(https://cloud.githubusercontent.com/assets/8774970/5022581/23e44022-6ae0-11e4-9051-9fe6f1570c0f.jpg) no-repeat center center;
+        background-size: cover;
+        .overlay {
+            background-color: rgba(0,0,0,0.65);
+            height: 125vh;
+        }
+        .share_box{
+            position:fixed;
+            width:50px;
+            top:50px;
+            padding:15px;
+            a:hover {
+                text-decoration: none;
+            }
+            z-index: 1;
+            .button {
+                border-radius: 10px;
+                text-align: center;
+                margin: 10px;
+                width: 160px;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
+            .ksbutton {
+                color: #343433;
+                background-color: #ffffff;
+                border: 2px #70a83b solid;
+                span {
+                    color: #70a83b;
+                }
+            }
+        }
+        .container {
+            padding-top: 40vh;
+            font-family: $font-main;
+            text-align: center;
+            text-decoration: none;
+            h1 {
+                font-size: 60px;
+                color: #ffffff;
+                padding-bottom: 5px;
+            }
+            h3 {
+                font-size: 1.7vmax;
+                font-weight: bold;
+                color: #ffffff;
+                letter-spacing: 1px;
+            }
+            a {
+                margin-top: 20px; 
+                margin-bottom: 20px;
+                padding-top: 20px;
+                font-weight: 300;
+                color: #ffffff;
+                button {
+                        height: 44px;
+                        border: none;
+                        background: $turquise;
+                        padding: 7px 20px 10px 20px;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-family: $font-main;
+                        text-decoration: none;
+                        vertical-align: middle;
+                        span {
+                            padding-right: 10px;
+                        }
+                }
+                button:hover {
+                   background: $dark-indigo;
+                   color: #fff;
+                }
+                button:active {
+                   background: $dark-indigo;
+                   color: #fff;
+                }
+            }
+            p {
+                font-size: 1.3vmax;
+                margin-top: 1.5vh; 
+                padding-bottom: 15px;
+                font-weight: 300;
+                margin-right: 7%;
+                margin-left: 7%;
+                color: #ffffff;
+                letter-spacing: 2.5px;
+                line-height: 1.2;
+            }
+            p#emphasized {
+                font-size: 1.4vmax;
+                margin-top: 2vh; 
+                font-weight: bold;
+                margin-right: 7%;
+                margin-left: 7%;
+                color: #ffffff;
+                letter-spacing: 2.5px;
+                line-height: 1.2;
+            }
+            div {
+                display: inline-block;
+                margin-right: auto;
+                margin-left: auto;
+                div {
+                    margin-right: 1vw;
+                    p {
+                        font-size: 1.5vmax;
+                        display: inline-block;
+                        margin: 0 5px 0 0;
+                        padding: 0;
+                        font-weight: bold;
+                        padding-bottom: 5%;
+                    }
+                    p#phone {
+                        font-size: 1.25vmax;
+                        display: inline-block;
+                        margin: 0 5px 0 0;
+                        padding-top: 1%;
+                        font-weight: bold;
+                        padding-bottom: 0;
+                    }
+                    a {
+                        display: inline-block;
+                        margin: 0;
+                        padding-top: 3%;
+                        font-weight: bold;
+                        span {
+                            margin-top: 8%;
+                        }
+                        #twitterlogo {
+                            height: 30px;
+                            margin-right: 10px;
+                        }
+                        #facebooklogo {
+                            height: 30px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+            .outer {
+                position: relative;
+                width: 100%;
+                top: 100px;
+                left: -40px;
+                .bouncing {
+                    position: absolute;
+                    -webkit-animation-name: bounce;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-duration: 2s;
+                    animation-name: bounce;
+                    animation-iteration-count: infinite;
+                    animation-duration: 2s;
+                    .glyphicon {
+                        color: #ffffff;
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+
+    }
+    .about-list {
+        font-family: $font-main;
+        .aboutlist_container {
+            padding: 50px 0 100px;
+            height: 100%;
+            *zoom: 1;
+            display: block;
+            margin: 0 auto;
+            p {
+                color: #888;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 2.3em;
+                text-align: justify;
+                a {
+                    color: $turquise;
+                }
+            }
+            h4 {
+                color: #484652;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+            .container {
+                h2 {
+                    text-align: center;
+                    padding-bottom: 1%;
+                    font-family: $font-main;
+                    font-weight: bold;
+                }
+                p#subheading {
+                    text-align: center;
+                    padding-bottom: 3%;
+                    font-family: $font-main
+                }
+                margin-top: 5%;
+                *zoom: 1;
+                .triptych {
+                    padding: 0vw 2.5vw 2vw;
+                    p {
+                        padding-top: 5%;
+                    }
+                }
+            }
+            .h4-givebBackToTheCommunity {
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .more-info {
+        background-color: #75ad74;
+        height: 100vh;
+        .container {
+            margin-top: 10%;
+        }
+        h2 {
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 1%;
+            font-family: $font-main;
+        }
+        p#subheading {
+            color: rgb(51, 51, 51);
+            text-align: center;
+            padding-bottom: 3%;
+            font-family: $font-main;
+        }
+        .h4-moreinfo {
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+            padding-bottom: 5px;
+            color: #222;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        p {
+            color: rgb(51, 51, 51);
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 2.3em;
+            text-align: justify;
+        }
+    }
+    //branch logos section here
+    .brands {
+        font-family: $font-main;
+        background-color: $turquise;
+        text-align: center;
+        .logo-region {
+            margin: 0 auto;
+            padding: 50px 0 0px;
+            .brand-logos {
+                .logo {
+                    img {
+                        width: 100px;
+                        height: auto;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=============================
+  HOME PAGE STYLING FOR MOBILE
+=============================*/
+
+@media (max-width: 767px) {
+
+    .home-page {
+        .kickstarter {
+            height: 100%;
+            .overlay {
+                height: 100%;
+            }
+            .container {
+                padding: 20vh 0 10vh;
+                h1 {
+                    font-size: 25px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                a {
+                    button {
+                        height: 30px;
+                        font-size: 12px;
+                        padding: 5px 20px;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                        span {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+                div {
+                    div {
+                        a {
+                            #twitterlogo {
+                                height: 20px;
+                            }
+                            #facebooklogo {
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
+                    margin: 20px 0;
+                    padding: 0;
+                }
+                .outer {
+                    top: 0px;
+                    left: -15px;
+                    .bouncing {
+                        position: absolute;
+                        .glyphicon {
+                            color: #ffffff;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .about-list {
+            .aboutlist_container {
+                height: 100%;
+                padding: 10px 0 20px;
+                p {
+                    font-size: 12px;
+                    line-height: 1.5;
+                }
+                h4 {
+                    font-size: 18px;
+                    text-align: center;
+                    letter-spacing: 5px;
+                    margin-top: 20px;
+
+                }
+                img {
+                    width: 45px;
+                    height: auto;
+                    display: block;
+                    float: left;
+                    margin-right: 10px;
+                }
+                #topOne {
+                    margin-top: 30px;
+                }
+                #topThree {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        //branch logos section here
+        .brands {
+            .logo-region {
+                padding: 15px 0 0;
+                .brand-logos {
+                    .logo {
+                        img {
+                            width: 50px;
+                            padding-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
