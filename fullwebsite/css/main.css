@@ -1,129 +1,94 @@
-/*==========================
-    GENERAL STYLING BELOW
-===========================*/
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block;
-}
-
-html {
+.contact {
   font-family: "Source Sans Pro", sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  background-color: #282732;
 }
-
-a:focus {
-  outline: thin dotted;
+.contact .contact-region {
+  text-align: center;
+  padding: 75px 0;
 }
-
-a:active, a:hover {
-  outline: 0;
+.contact .contact-region .container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-
-h1 {
+.contact .contact-region h1 {
+  color: #fff;
   font-size: 2em;
-}
-
-img {
-  border: 0;
-}
-
-button, input, select, textarea {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 100%;
-  margin: 0;
-}
-
-button, input {
-  line-height: normal;
-}
-
-button, select {
-  text-transform: none;
-}
-
-button, html input[type=button], input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-
-button[disabled], html input[disabled] {
-  cursor: default;
-}
-
-input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type=search] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body, html {
-  text-align: left;
-  font-size: 1em;
-  z-index: 1;
-}
-
-body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, li, ol, p, pre, textarea, ul {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
+  padding-bottom: 5px;
   font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
 }
-a img {
+.contact .contact-region h3 {
+  color: #81D0D7;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.2;
+}
+.contact .contact-region hr {
+  width: 25%;
+}
+.contact .contact-region p {
+  color: #FFF;
+  font-size: 1.2em;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 2px;
+}
+.contact .contact-region img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+.contact .contact-region form {
+  padding-top: 20px;
+}
+.contact .contact-region form input {
+  border-radius: 0;
   border: none;
 }
-
-:active, :focus {
-  outline: 0;
-  -moz-outline-style: none;
+.contact .contact-region form button {
+  border-radius: 0;
+  border: 2px #41435E solid;
+  background-color: #282732;
+  color: #81D0D7;
+}
+.contact .contact-region form button:hover {
+  background-color: #41435E;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+/*=============================
+        CONTACT US MOBILE
+=============================*/
+@media (max-width: 767px) {
+  .contact .contact-region {
+    padding: 50px 0;
+  }
+  .contact .contact-region h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+  .contact .contact-region h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .contact .contact-region p {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .contact .contact-region img {
+    width: 30px;
+  }
+  .contact .contact-region form {
+    width: 100%;
+  }
+  .contact .contact-region form input {
+    width: 100%;
+    margin: 0;
+    height: 30px;
+  }
+  .contact .contact-region form button {
+    width: 100%;
+  }
 }
-
-div.clear {
-  clear: both;
-}
-
-.clearfix:after {
-  clear: both;
-  content: ".";
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-
 /*==========================
       NAVBAR STYLING
 ===========================*/
@@ -201,26 +166,6 @@ div.clear {
     border-bottom: 1px #6F797C solid;
   }
 }
-@-webkit-keyframes bounce {
-  from, to {
-    bottom: 0;
-    -webkit-animation-timing-function: ease-out;
-  }
-  50% {
-    bottom: 20px;
-    -webkit-animation-timing-function: ease-in;
-  }
-}
-@keyframes bounce {
-  from, to {
-    botttom: 0;
-    animation-timing-function: ease-out;
-  }
-  50% {
-    bottom: 20px;
-    animation-timing-function: ease-in;
-  }
-}
 /*==========================
   HOME PAGE STYLING
 ===========================*/
@@ -284,11 +229,12 @@ div.clear {
   color: #ffffff;
 }
 .home-page .kickstarter .container a button {
+  height: 44px;
   border: none;
   background: #81D0D7;
-  padding: 5px 10px 10px 20px;
+  padding: 7px 20px 10px 20px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
   vertical-align: middle;
@@ -573,105 +519,11 @@ div.clear {
   }
 }
 /*=============================
-  CONTACT US - ON EVERY PAGE
-=============================*/
-.contact {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #282732;
-}
-.contact .contact-region {
-  text-align: center;
-  padding: 75px 0;
-}
-.contact .contact-region .container {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.contact .contact-region h1 {
-  color: #fff;
-  font-size: 2em;
-  padding-bottom: 5px;
-  font-weight: 400;
-}
-.contact .contact-region h3 {
-  color: #81D0D7;
-  font-size: 1.5em;
-  font-weight: 300;
-  font-family: "Source Sans Pro", sans-serif;
-  line-height: 1.2;
-}
-.contact .contact-region hr {
-  width: 25%;
-}
-.contact .contact-region p {
-  color: #FFF;
-  font-size: 1.2em;
-  font-family: "Source Sans Pro", sans-serif;
-  letter-spacing: 2px;
-}
-.contact .contact-region img {
-  width: 50px;
-  height: auto;
-  margin: 10px;
-}
-.contact .contact-region form {
-  padding-top: 20px;
-}
-.contact .contact-region form input {
-  border-radius: 0;
-  border: none;
-}
-.contact .contact-region form button {
-  border-radius: 0;
-  border: 2px #41435E solid;
-  background-color: #282732;
-  color: #81D0D7;
-}
-.contact .contact-region form button:hover {
-  background-color: #41435E;
-}
-
-/*=============================
-        CONTACT US MOBILE
-=============================*/
-@media (max-width: 767px) {
-  .contact .contact-region {
-    padding: 50px 0;
-  }
-  .contact .contact-region h1 {
-    font-size: 30px;
-    padding-bottom: 5px;
-  }
-  .contact .contact-region h3 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .contact .contact-region p {
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-  .contact .contact-region img {
-    width: 30px;
-  }
-  .contact .contact-region form {
-    width: 100%;
-  }
-  .contact .contact-region form input {
-    width: 100%;
-    margin: 0;
-    height: 30px;
-  }
-  .contact .contact-region form button {
-    width: 100%;
-  }
-}
-/*=============================
  ABOUT US PAGE STARTS HERE
 =============================*/
 .story-page {
   font-family: "Source Sans Pro", sans-serif;
-  padding: 2.7% 0;
+  padding-top: 2.7%;
 }
 .story-page .timeline-container {
   height: 100%;
@@ -926,10 +778,10 @@ div.clear {
 }
 .process-page .bounties-section .subsection-wrapper h1 {
   margin-top: 12vw;
-  font-size: 8vw;
+  font-size: 6vw;
   font-weight: 400;
   color: #fff;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons {
   margin: 10% 0;
@@ -980,6 +832,7 @@ div.clear {
   font-size: 2.5vw;
 }
 .process-page #give-projects-section .content-wrapper .text-wrapper p {
+  text-align: justify;
   font-size: 1.5vw;
   color: #282732;
 }
@@ -1011,6 +864,7 @@ div.clear {
   text-decoration: none;
 }
 .process-page #employ-us-section .content-wrapper .text-wrapper p {
+  text-align: justify;
   font-size: 1.6vw;
   padding-top: 5%;
   padding-bottom: 10%;
@@ -1028,6 +882,8 @@ div.clear {
   color: #81D0D7;
 }
 .process-page #learn-with-us-section .text-wrapper p {
+  padding: 0 5%;
+  text-align: justify;
   font-size: 1.4vw;
   color: #282732;
 }
@@ -1170,6 +1026,9 @@ div.clear {
   font-weight: 400;
   color: white;
 }
+.student-page .intro .row .subsection-buttons h2 .arrow {
+  font-size: 1.5vmax;
+}
 .student-page .intro .row .subsection-buttons h2:hover {
   background-color: #22212A;
 }
@@ -1192,7 +1051,8 @@ div.clear {
   font-weight: 400;
   color: #81D0D7;
 }
-.student-page .about-brief .course p {
+.student-page .about-brief .course .description {
+  text-align: justify;
   margin-top: 5vh;
   font-size: 1.4vw;
   font-weight: 400;
@@ -1354,6 +1214,142 @@ div.clear {
   .student-page .schedule .buttons #apply-button {
     height: 40px;
     font-size: 10px;
+  }
+}
+/*==========================
+    GENERAL STYLING BELOW
+===========================*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+body, html {
+  text-align: left;
+  font-size: 1em;
+  z-index: 1;
+}
+
+body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, li, ol, p, pre, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a img {
+  border: none;
+}
+
+:active, :focus {
+  outline: 0;
+  -moz-outline-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+div.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+@-webkit-keyframes bounce {
+  from, to {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 20px;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce {
+  from, to {
+    botttom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 20px;
+    animation-timing-function: ease-in;
   }
 }
 
