@@ -682,7 +682,7 @@ div.clear {
   text-align: center;
 }
 .story-page .our-model-section .text-wrapper h1 {
-  font-size: 50px;
+  font-size: 5vw;
   color: #fff;
 }
 .story-page .our-model-section .text-wrapper h2 {
@@ -693,7 +693,10 @@ div.clear {
   font-family: "Source Sans Pro", sans-serif;
   padding-bottom: 10%;
 }
-.story-page .our-model-section .subsection-buttons h2 {
+.story-page .our-model-section .subsection-buttons #buttons {
+  padding: 20px 50px;
+}
+.story-page .our-model-section .subsection-buttons #buttons h2 {
   text-align: center;
   padding: 20px;
   font-size: 2vmax;
@@ -703,13 +706,13 @@ div.clear {
   border-radius: 0;
   border: none;
 }
-.story-page .our-model-section .subsection-buttons span {
+.story-page .our-model-section .subsection-buttons #buttons span {
   padding-left: 5%;
 }
-.story-page .our-model-section .subsection-buttons h2:hover {
+.story-page .our-model-section .subsection-buttons #buttons h2:hover {
   background-color: #78b7bb;
 }
-.story-page .our-model-section .subsection-buttons a:hover {
+.story-page .our-model-section .subsection-buttons #buttons a:hover {
   text-decoration: none;
 }
 .story-page .timeline-container {
@@ -870,7 +873,7 @@ div.clear {
     color: #fff;
     font: "Source Sans Pro", sans-serif;
     height: 100%;
-    padding: 10vh 0 10vh;
+    padding: 15vh 0;
   }
   .story-page .our-model-section .text-wrapper h1 {
     font-size: 8vw;
@@ -881,8 +884,12 @@ div.clear {
     font-size: 4vw;
     line-height: 1.5;
   }
-  .story-page .our-model-section .subsection-buttons h2 {
-    padding: 20px;
+  .story-page .our-model-section .subsection-buttons #buttons {
+    padding: 0;
+    border: 1px #81d0d7 solid;
+    margin: 5px;
+  }
+  .story-page .our-model-section .subsection-buttons #buttons h2 {
     font-size: 3vmax;
   }
   .story-page .timeline-container {
@@ -951,10 +958,9 @@ div.clear {
 }
 .process-page .bounties-section .subsection-wrapper h1 {
   margin-top: 12vw;
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 400;
   color: #fff;
-  letter-spacing: 10px;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons {
   margin: 10% 0;
@@ -1091,6 +1097,8 @@ div.clear {
   }
   .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons {
     padding: 0;
+    border: 1px #81d0d7 solid;
+    margin: 5px;
   }
   .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
     font-size: 3vmax;
@@ -1161,13 +1169,16 @@ div.clear {
   background: linear-gradient(#908199, #382842);
 }
 .student-page .intro .row {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 30vh;
   text-align: center;
 }
 .student-page .intro .row h1 {
-  font-size: 60px;
+  font-size: 5vw;
   font-weight: 400;
   color: #fff;
+  line-height: 80%;
 }
 .student-page .intro .row h2 {
   font-weight: 300;
@@ -1180,16 +1191,23 @@ div.clear {
 .student-page .intro .row a:hover {
   text-decoration: none;
 }
-.student-page .intro .row .subsection-buttons h2 {
+.student-page .intro .row .subsection-buttons #buttons {
+  padding: 20px 50px;
+}
+.student-page .intro .row .subsection-buttons #buttons h2 {
   padding: 20px;
   font-size: 2vmax;
   font-weight: 400;
+  width: 100%;
+  height: 60px;
   color: white;
+  border-radius: 0;
+  border: none;
 }
-.student-page .intro .row .subsection-buttons h2:hover {
+.student-page .intro .row .subsection-buttons #buttons h2:hover {
   background-color: #22212A;
 }
-.student-page .intro .row .subsection-buttons span {
+.student-page .intro .row .subsection-buttons #buttons span {
   padding-left: 5%;
 }
 .student-page .about-brief {
@@ -1310,7 +1328,7 @@ div.clear {
 @media (max-width: 767px) {
   .student-page .intro {
     height: 100%;
-    padding: 20vh 0;
+    padding: 15vh 0;
   }
   .student-page .intro .row {
     padding-top: 0;
@@ -1318,18 +1336,20 @@ div.clear {
   }
   .student-page .intro .row h1 {
     font-size: 8vw;
+    padding: 0vh 0vh 5vh;
   }
   .student-page .intro .row h2 {
     padding-top: 2em;
     font-size: 4vw;
     line-height: 1.5;
   }
-  .student-page .intro .row .subsection-buttons h2 {
-    padding: 20px;
-    font-size: 3vmax;
+  .student-page .intro .row .subsection-buttons #buttons {
+    padding: 0;
+    border: 1px #81d0d7 solid;
+    margin: 5px;
   }
-  .student-page .intro .row .subsection-buttons h2:hover {
-    background-color: #22212A;
+  .student-page .intro .row .subsection-buttons #buttons h2 {
+    font-size: 3vmax;
   }
   .student-page .about-brief {
     height: 100%;
