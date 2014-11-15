@@ -727,30 +727,127 @@ and (max-device-width : 767px) {
 .story-page {
     font-family: $FONT;
     padding: 2.7% 0;
-    .story-section {
-        background: url(../img/timeline.jpg) no-repeat center center;
-        background-size: contain;
-        height: 150vh;
-        .text-outer{
+    .timeline-container {
+        height: 100%;
+        background-color: #78b7bb;
+        padding: 20vh 5vw;
+        .title-timeline {
+            text-align: center;
             h1 {
                 font-family: Arial, Helvetica, sans-serif;
-                padding: 10vh 0 5vh;
-                font-size: 60px;
+                padding-bottom: 10vh;
+                font-size: 7vw;
                 font-weight: 400;
-                color: #59C7E0;
-            }
-            p {
-                font-size: 1.3vw;
-                line-height: 1.6;
-                color: #102354;
-                font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
             }
         }
-        .timeline-outer {
-            margin: 0;
-            img {
-                height: auto;
-                width: 100%;
+        .timeline {
+            list-style: none;
+            padding: 20px 0 20px;
+            position: relative;
+            li {
+                margin-bottom: 25px;
+                position: relative;
+                &:before {
+                    content: " ";
+                    display: table;
+                }
+                &:after {
+                    content: " ";
+                    display: table;
+                    clear: both;
+                }
+                .timeline-panel {
+                    width: 46%;
+                    float: left;
+                    background: #fff;
+                    border: 1px solid #d4d4d4;
+                    padding: 20px;
+                    position: relative;
+                    border-radius: 8px;
+                    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+                    &:before {
+                        position: absolute;
+                        top: 26px;
+                        right: -15px;
+                        display: inline-block;
+                        border-top: 15px solid transparent;
+                        border-left: 15px solid #ccc;
+                        border-right: 0 solid #ccc;
+                        border-bottom: 15px solid transparent;
+                        content: " ";
+                    }
+                    &:after {
+                        position: absolute;
+                        top: 27px;
+                        right: -14px;
+                        display: inline-block;
+                        border-top: 14px solid transparent;
+                        border-left: 14px solid #fff;
+                        border-right: 0 solid #fff;
+                        border-bottom: 14px solid transparent;
+                        content: " ";
+                    }
+                    .tl-heading {
+                        h4 {
+                            text-align: center;
+                            margin: 0;
+                            padding-bottom: 10px;
+                            font-size: 3vw;
+                            color: #83B8C8;
+                            font-weight: 600;
+                        }
+                    }
+                    .tl-body {
+                        p {
+                            margin-bottom: 0;
+                            text-align: justify;
+                            color: #282732;
+                        }
+                    }
+                }
+            }
+            .tl-circ {
+                position: absolute;
+                top: 23px;
+                left: 50%;
+                text-align: center;
+                background: #78b7bb;
+                color: #eee;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                margin-left: -16px;
+                border: 5px #eee solid;
+                border-radius: 100%;
+                z-index: 1;
+            }
+            .timeline-inverted {
+                .timeline-panel {
+                    float: right;
+                    &:before {
+                        border-left-width: 0;
+                        border-right-width: 15px;
+                        left: -15px;
+                        right: auto;
+                    }
+                    &:after {
+                        border-left-width: 0;
+                        border-right-width: 14px;
+                        left: -14px;
+                        right: auto;
+                    }
+                }
+            }
+            &:before {
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                content: " ";
+                width: 5px;
+                background-color: #eee;
+                left: 50%;
+                margin-left: -1.5px;
             }
         }
     }
@@ -811,12 +908,62 @@ and (max-device-width : 767px) {
     ABOUT US PAGE MOBILE
 ===========================*/
 
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header h1 { font-size: 1.8em; }
+  
+  ul.timeline:before {
+    left: 40px;
+  }
+  
+  .tldate { width: 140px; }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
 @media only screen //Phone
 and (max-device-width : 767px) {
     .story-page {
         .story-section {
             padding: 5vh 0 0vh;
-            background: none;
             .text-outer{
                 text-align: center;
                 h1 {
@@ -1078,7 +1225,7 @@ and (max-device-width : 767px) {
 }
 
 /*==========================
-    WHAT WE DO PAGE MOBILE
+    PARTNER PAGE MOBILE
 ===========================*/
 
 @media only screen //Phone
@@ -1094,21 +1241,19 @@ and (max-device-width : 767px) {
                     font-size: 4vw;
                 }
                 .subsection-buttons {
-                    margin-top: 0;
+                    margin-top: 10vh;
                     #buttons {
                         padding: 0;
                         h2 {
                             font-size: 3vmax;
                         }
                         button {
-                            margin-top: 20px;
+                            margin-top: 10px;
+                            height: 50px;
                             border: 3px #1F1F24 solid;
                             span {
                                 font-size: 2vmax;
                             }
-                        }
-                        button:hover {
-                            background-color: #22212A; 
                         }
                     }
                 }
@@ -1125,10 +1270,10 @@ and (max-device-width : 767px) {
                         font-size: 8vw;
                     }
                     #idea {
-                        font-size: 4vw;
+                        font-size: 4.5vw;
                     }
                     p {
-                        font-size: 3vw;
+                        font-size: 3.5vw;
                         padding-bottom: 10px;
                     }
                 }
@@ -1152,7 +1297,8 @@ and (max-device-width : 767px) {
                         }
                     }
                     p {
-                        font-size: 3.5vw;
+                        margin-top: 20px;
+                        font-size: 3.7vw;
                     }
                 }
             }
@@ -1164,8 +1310,8 @@ and (max-device-width : 767px) {
                     font-size: 7vw;
                 }
                 p {
-                    font-size: 3.5vw;
-                    padding-bottom: 10%;
+                    font-size: 3.7vw;
+                    padding-bottom: 20%;
                 }
             }
         }
@@ -1186,7 +1332,7 @@ and (max-device-width : 767px) {
 }
 
 /*=============================
- HOW WE LEARN PAGE STARTS HERE
+    STUDENT PAGE STARTS HERE
 =============================*/
 
 .student-page {
@@ -1327,7 +1473,7 @@ and (max-device-width : 767px) {
 }
 
 /*=============================
-    HOW WE LEARN PAGE MOBILE
+       STUDENT PAGE MOBILE
 =============================*/
 
 @media only screen //Phone
