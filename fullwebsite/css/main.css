@@ -1,49 +1,1397 @@
-/*
-Error: Invalid CSS after "...ia only screen ": expected "{", was "(max-width : 76..."
-        on line 687 of ./css/main.scss
+/*==========================
+    GENERAL STYLING BELOW
+===========================*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
 
-682: 
-683: /*=============================
-684:         CONTACT US MOBILE
-685: =============================*\/
-686: 
-687: @media only screen (max-width : 767px) {
-688: 
-689:     .contact {
-690:         .contact-region {
-691:             padding: 50px 0;
-692:             h1 {
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
-Backtrace:
-./css/main.scss:687
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1163:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1099:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1094:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:641:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:401:in `media_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:219:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:194:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:660:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ia only screen \": expected \"{\", was \"(max-width : 76...\"\A         on line 687 of ./css/main.scss\A \A 682: \A 683: /*=============================\A 684:         CONTACT US MOBILE\A 685: =============================*/\A 686: \A 687: @media only screen (max-width : 767px) {\A 688: \A 689:     .contact {\A 690:         .contact-region {\A 691:             padding: 50px 0;\A 692:             h1 {"; }
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  text-align: left;
+  font-size: 1em;
+  z-index: 1;
+}
+
+body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, li, ol, p, pre, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a img {
+  border: none;
+}
+
+:active, :focus {
+  outline: 0;
+  -moz-outline-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+div.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/*==========================
+      NAVBAR STYLING
+===========================*/
+.navbar-default {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+}
+.navbar-default .collapsed {
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+.navbar-default .collapsed .navtoggleimg {
+  height: auto;
+  width: 40px;
+  text-decoration: none;
+}
+.navbar-default .navtoggleimg {
+  height: auto;
+  width: 30px;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+.navbar-default .navbar-brand {
+  padding: 0px 15px;
+  margin-top: 2vh;
+  font-size: 20px;
+  color: #265b7d;
+  height: 100%;
+}
+.navbar-default .navbar-collapse {
+  float: right;
+}
+.navbar-default .navbar-collapse .navbar-li a {
+  padding: 0px 15px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #265b7d;
+}
+
+/*==========================
+  NAVBAR STYLING FOR MOBILE
+===========================*/
+@media (max-width: 767px) {
+  .navbar-default {
+    width: 100%;
+    background: none;
+  }
+  .navbar-default .navbar-brand {
+    margin-top: 1.5vh;
+    font-size: 18px;
+  }
+  .navbar-default .navbar-header {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-collapse {
+    background-color: #282732;
+    width: 50%;
+    float: right;
+  }
+  .navbar-default .navbar-collapse .navbar-li a {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #84C8DB;
+    padding-bottom: 10px;
+    border-bottom: 1px #6F797C solid;
+  }
+}
+@-webkit-keyframes bounce {
+  from, to {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 20px;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce {
+  from, to {
+    botttom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 20px;
+    animation-timing-function: ease-in;
+  }
+}
+/*==========================
+  HOME PAGE STYLING
+===========================*/
+.home-page .kickstarter {
+  height: 125vh;
+  background-color: #27285a;
+  background: url(https://cloud.githubusercontent.com/assets/8774970/5022581/23e44022-6ae0-11e4-9051-9fe6f1570c0f.jpg) no-repeat center center;
+  background-size: cover;
+}
+.home-page .kickstarter .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 125vh;
+}
+.home-page .kickstarter .share_box {
+  position: fixed;
+  width: 50px;
+  top: 50px;
+  padding: 15px;
+  z-index: 1;
+}
+.home-page .kickstarter .share_box a:hover {
+  text-decoration: none;
+}
+.home-page .kickstarter .share_box .button {
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  width: 160px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+.home-page .kickstarter .share_box .ksbutton {
+  color: #343433;
+  background-color: #ffffff;
+  border: 2px #70a83b solid;
+}
+.home-page .kickstarter .share_box .ksbutton span {
+  color: #70a83b;
+}
+.home-page .kickstarter .container {
+  padding-top: 40vh;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.home-page .kickstarter .container h1 {
+  font-size: 60px;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+.home-page .kickstarter .container h3 {
+  font-size: 1.7vmax;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.home-page .kickstarter .container a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.home-page .kickstarter .container a button {
+  border: none;
+  background: #6FC9D0;
+  padding: 5px 10px 10px 20px;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.home-page .kickstarter .container a button span {
+  padding-right: 10px;
+}
+.home-page .kickstarter .container a button:hover {
+  background: #282732;
+  color: #fff;
+}
+.home-page .kickstarter .container a button:active {
+  background: #282732;
+  color: #fff;
+}
+.home-page .kickstarter .container p {
+  font-size: 1.3vmax;
+  margin-top: 1.5vh;
+  padding-bottom: 15px;
+  font-weight: 300;
+  margin-right: 7%;
+  margin-left: 7%;
+  color: #ffffff;
+  letter-spacing: 2.5px;
+  line-height: 1.2;
+}
+.home-page .kickstarter .container p#emphasized {
+  font-size: 1.4vmax;
+  margin-top: 2vh;
+  font-weight: bold;
+  margin-right: 7%;
+  margin-left: 7%;
+  color: #ffffff;
+  letter-spacing: 2.5px;
+  line-height: 1.2;
+}
+.home-page .kickstarter .container div {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.home-page .kickstarter .container div div {
+  margin-right: 1vw;
+}
+.home-page .kickstarter .container div div p {
+  font-size: 1.5vmax;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+.home-page .kickstarter .container div div p#phone {
+  font-size: 1.25vmax;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding-top: 1%;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+.home-page .kickstarter .container div div a {
+  display: inline-block;
+  margin: 0;
+  padding-top: 3%;
+  font-weight: bold;
+}
+.home-page .kickstarter .container div div a span {
+  margin-top: 8%;
+}
+.home-page .kickstarter .container div div a #twitterlogo {
+  height: 30px;
+  margin-right: 10px;
+}
+.home-page .kickstarter .container div div a #facebooklogo {
+  height: 30px;
+  margin-right: 15px;
+}
+.home-page .kickstarter .container .outer {
+  position: relative;
+  width: 100%;
+  top: 100px;
+  left: -40px;
+}
+.home-page .kickstarter .container .outer .bouncing {
+  position: absolute;
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.home-page .kickstarter .container .outer .bouncing .glyphicon {
+  color: #ffffff;
+  font-size: 60px;
+}
+.home-page .about-list {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home-page .about-list .aboutlist_container {
+  padding: 50px 0 100px;
+  height: 100%;
+  *zoom: 1;
+  display: block;
+  margin: 0 auto;
+}
+.home-page .about-list .aboutlist_container p {
+  color: #888;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.3em;
+  text-align: justify;
+}
+.home-page .about-list .aboutlist_container p a {
+  color: #78b7bb;
+}
+.home-page .about-list .aboutlist_container h4 {
+  color: #484652;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.home-page .about-list .aboutlist_container .container {
+  margin-top: 5%;
+  *zoom: 1;
+}
+.home-page .about-list .aboutlist_container .container h2 {
+  text-align: center;
+  padding-bottom: 1%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+.home-page .about-list .aboutlist_container .container p#subheading {
+  text-align: center;
+  padding-bottom: 3%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home-page .about-list .aboutlist_container .container .triptych {
+  padding: 0vw 2.5vw 2vw;
+}
+.home-page .about-list .aboutlist_container .container .triptych p {
+  padding-top: 5%;
+}
+.home-page .about-list .aboutlist_container .h4-givebBackToTheCommunity {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.home-page .more-info {
+  background-color: #75ad74;
+  height: 100vh;
+}
+.home-page .more-info .container {
+  margin-top: 10%;
+}
+.home-page .more-info h2 {
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home-page .more-info p#subheading {
+  color: #333333;
+  text-align: center;
+  padding-bottom: 3%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home-page .more-info .h4-moreinfo {
+  color: #333333;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #222;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.home-page .more-info p {
+  color: #333333;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.3em;
+  text-align: justify;
+}
+.home-page .brands {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #78b7bb;
+  text-align: center;
+}
+.home-page .brands .logo-region {
+  margin: 0 auto;
+  padding: 50px 0 0px;
+}
+.home-page .brands .logo-region .brand-logos .logo img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+/*=============================
+  HOME PAGE STYLING FOR MOBILE
+=============================*/
+@media (max-width: 767px) {
+  .home-page .kickstarter {
+    height: 100%;
+  }
+  .home-page .kickstarter .overlay {
+    height: 100%;
+  }
+  .home-page .kickstarter .container {
+    padding: 20vh 0 10vh;
+  }
+  .home-page .kickstarter .container h1 {
+    font-size: 25px;
+  }
+  .home-page .kickstarter .container h3 {
+    font-size: 16px;
+  }
+  .home-page .kickstarter .container a button {
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .home-page .kickstarter .container a button span {
+    padding-right: 5px;
+  }
+  .home-page .kickstarter .container div div a #twitterlogo {
+    height: 20px;
+  }
+  .home-page .kickstarter .container div div a #facebooklogo {
+    height: 20px;
+  }
+  .home-page .kickstarter .container p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .home-page .kickstarter .container .outer {
+    top: 0px;
+    left: -15px;
+  }
+  .home-page .kickstarter .container .outer .bouncing {
+    position: absolute;
+  }
+  .home-page .kickstarter .container .outer .bouncing .glyphicon {
+    color: #ffffff;
+    font-size: 30px;
+  }
+  .home-page .about-list .aboutlist_container {
+    height: 100%;
+    padding: 10px 0 20px;
+  }
+  .home-page .about-list .aboutlist_container p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .home-page .about-list .aboutlist_container h4 {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 20px;
+  }
+  .home-page .about-list .aboutlist_container img {
+    width: 45px;
+    height: auto;
+    display: block;
+    float: left;
+    margin-right: 10px;
+  }
+  .home-page .about-list .aboutlist_container #topOne {
+    margin-top: 30px;
+  }
+  .home-page .about-list .aboutlist_container #topThree {
+    margin-bottom: 50px;
+  }
+  .home-page .brands .logo-region {
+    padding: 15px 0 0;
+  }
+  .home-page .brands .logo-region .brand-logos .logo img {
+    width: 50px;
+    padding-bottom: 15px;
+  }
+}
+/*=============================
+  CONTACT US - ON EVERY PAGE
+=============================*/
+.contact {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #282732;
+}
+.contact .contact-region {
+  text-align: center;
+  padding: 75px 0;
+}
+.contact .contact-region .container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contact .contact-region h1 {
+  color: #fff;
+  font-size: 2em;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+.contact .contact-region h3 {
+  color: #6FC9D0;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.2;
+}
+.contact .contact-region hr {
+  width: 25%;
+}
+.contact .contact-region p {
+  color: #FFF;
+  font-size: 1.2em;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 2px;
+}
+.contact .contact-region img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+.contact .contact-region form {
+  padding-top: 20px;
+}
+.contact .contact-region form input {
+  border-radius: 0;
+  border: none;
+}
+.contact .contact-region form button {
+  border-radius: 0;
+  border: 2px #41435E solid;
+  background-color: #282732;
+  color: #6FC9D0;
+}
+.contact .contact-region form button:hover {
+  background-color: #41435E;
+}
+
+/*=============================
+        CONTACT US MOBILE
+=============================*/
+@media (max-width: 767px) {
+  .contact .contact-region {
+    padding: 50px 0;
+  }
+  .contact .contact-region h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+  .contact .contact-region h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .contact .contact-region p {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .contact .contact-region img {
+    width: 30px;
+  }
+  .contact .contact-region form {
+    width: 100%;
+  }
+  .contact .contact-region form input {
+    width: 100%;
+    margin: 0;
+    height: 30px;
+  }
+  .contact .contact-region form button {
+    width: 100%;
+  }
+}
+/*=============================
+ ABOUT US PAGE STARTS HERE
+=============================*/
+.story-page {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 2.7% 0;
+}
+.story-page .timeline-container {
+  height: 100%;
+  background-color: #78b7bb;
+  padding: 20vh 5vw;
+}
+.story-page .timeline-container .title-timeline {
+  text-align: center;
+}
+.story-page .timeline-container .title-timeline h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10vh;
+  font-size: 7vw;
+  font-weight: 400;
+  color: #fff;
+}
+.story-page .timeline-container .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.story-page .timeline-container .timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+.story-page .timeline-container .timeline li:before {
+  content: " ";
+  display: table;
+}
+.story-page .timeline-container .timeline li:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.story-page .timeline-container .timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+.story-page .timeline-container .timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.story-page .timeline-container .timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.story-page .timeline-container .timeline li .timeline-panel .tl-heading h4 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 3vw;
+  color: #83B8C8;
+  font-weight: 600;
+}
+.story-page .timeline-container .timeline li .timeline-panel .tl-body p {
+  margin-bottom: 0;
+  text-align: justify;
+  color: #282732;
+}
+.story-page .timeline-container .timeline .tl-circ {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  background: #78b7bb;
+  color: #eee;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 5px #eee solid;
+  border-radius: 100%;
+  z-index: 1;
+}
+.story-page .timeline-container .timeline .timeline-inverted .timeline-panel {
+  float: right;
+}
+.story-page .timeline-container .timeline .timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.story-page .timeline-container .timeline .timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.story-page .timeline-container .timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 5px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.story-page .our-model-section {
+  background: linear-gradient(#675D83, #463f60);
+  height: 100%;
+}
+.story-page .our-model-section .text-wrapper {
+  text-align: center;
+}
+.story-page .our-model-section .text-wrapper h2 {
+  font-size: 50px;
+  padding: 8vh 0vh 5vh;
+  color: #fff;
+}
+.story-page .our-model-section .text-wrapper p {
+  font-size: 1.4vw;
+  line-height: 1.6;
+  font-weight: 300;
+  padding-bottom: 6vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9588A0;
+}
+.story-page .meet-the-team {
+  background: linear-gradient(#463f60, #282732);
+  height: 100%;
+  padding-bottom: 15vh;
+}
+.story-page .meet-the-team h2 {
+  color: #DDD;
+  font-size: 6vw;
+  text-align: center;
+  padding-bottom: 5vh;
+  padding-top: 15vh;
+}
+.story-page .meet-the-team .selfie {
+  text-align: center;
+}
+.story-page .meet-the-team .selfie img {
+  border-radius: 100%;
+  width: 75%;
+  -webkit-filter: grayscale(40%);
+  transition: all 1s ease-in-out;
+}
+.story-page .meet-the-team .selfie img:hover {
+  -webkit-filter: grayscale(0%);
+}
+.story-page .meet-the-team .selfie h3 {
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*==========================
+    ABOUT US PAGE MOBILE
+===========================*/
+@media (max-width: 767px) {
+  .story-page .timeline-container {
+    padding: 15vh 5vw 15vw 0;
+  }
+  .story-page .timeline-container .title-timeline h1 {
+    font-size: 8vw;
+  }
+  .story-page .timeline-container .timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    float: right;
+  }
+  .story-page .timeline-container .timeline li .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .story-page .timeline-container .timeline li .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  .story-page .timeline-container .timeline li .timeline-panel .tl-heading h4 {
+    font-size: 5vw;
+  }
+  .story-page .timeline-container .timeline li .timeline-panel .tl-body p {
+    font-size: 3.5vw;
+  }
+  .story-page .timeline-container .timeline .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+  }
+  .story-page .timeline-container .timeline:before {
+    left: 40px;
+  }
+  .story-page .our-model-section {
+    background-color: #27285a;
+    color: #fff;
+    font: "Source Sans Pro", sans-serif;
+    height: 100%;
+    padding: 10vh 0 10vh;
+  }
+  .story-page .our-model-section .text-wrapper h2 {
+    font-size: 8vw;
+    padding: 0vh 0vh 5vh;
+  }
+  .story-page .our-model-section .text-wrapper p {
+    font-size: 4vw;
+  }
+  .story-page .meet-the-team {
+    background-color: #265b7d;
+    height: 100%;
+    padding: 10vh 0;
+  }
+  .story-page .meet-the-team h2 {
+    font-size: 8vw;
+    padding-bottom: 5vh;
+    padding-top: 0;
+  }
+}
+/*==========================
+  PARTNERS PAGE STARTS HERE
+===========================*/
+.process-page {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.process-page .bounties-section {
+  height: 100%;
+  background: linear-gradient(#4B4551, #23222F);
+  padding: 100px 0;
+}
+.process-page .bounties-section .subsection-wrapper {
+  text-align: center;
+}
+.process-page .bounties-section .subsection-wrapper h1 {
+  margin-top: 12vw;
+  font-size: 8vw;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 10px;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons {
+  margin: 10% 0;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons {
+  padding: 20px 50px;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
+  padding: 20px;
+  font-size: 2vmax;
+  color: #90C0CF;
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 span {
+  padding-left: 5%;
+  font-size: 1.5vmax;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2:hover {
+  background-color: #22212A;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons a:hover {
+  text-decoration: none;
+}
+.process-page #give-projects-section {
+  background-color: #fff;
+  height: 100%;
+}
+.process-page #give-projects-section .content-wrapper {
+  padding: 15vh 0;
+}
+.process-page #give-projects-section .content-wrapper .image-wrapper {
+  text-align: center;
+}
+.process-page #give-projects-section .content-wrapper .image-wrapper img {
+  width: 100%;
+}
+.process-page #give-projects-section .content-wrapper .text-wrapper {
+  height: 100%;
+  padding: 5%;
+  text-align: center;
+}
+.process-page #give-projects-section .content-wrapper .text-wrapper h2 {
+  margin-bottom: 5vh;
+  color: #78b7bb;
+  font-size: 2.5vw;
+}
+.process-page #give-projects-section .content-wrapper .text-wrapper p {
+  font-size: 1.5vw;
+  color: #282732;
+}
+.process-page #employ-us-section {
+  background-color: #78b7bb;
+  height: 100%;
+}
+.process-page #employ-us-section .content-wrapper {
+  padding: 5%;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper {
+  padding: 7% 0;
+  text-align: center;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper h1 {
+  font-size: 3vw;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper button {
+  color: #78b7bb;
+  border-radius: 0;
+  padding: 10px 40px;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper button h2 {
+  font-size: 2.5vw;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper h2:hover {
+  text-decoration: none;
+}
+.process-page #employ-us-section .content-wrapper .text-wrapper p {
+  font-size: 1.6vw;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  color: #2A546B;
+}
+.process-page #learn-with-us-section {
+  background-color: #fff;
+}
+.process-page #learn-with-us-section .text-wrapper {
+  text-align: center;
+}
+.process-page #learn-with-us-section .text-wrapper h2 {
+  padding-top: 25%;
+  font-size: 2.2vw;
+  color: #78b7bb;
+}
+.process-page #learn-with-us-section .text-wrapper p {
+  font-size: 1.4vw;
+  color: #282732;
+}
+.process-page #learn-with-us-section .image-wrapper {
+  padding: 5% 0;
+}
+.process-page #learn-with-us-section .image-wrapper img {
+  width: 100%;
+}
+.process-page .mentors {
+  height: 100%;
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+.process-page .mentors .mentor-text {
+  padding-left: 50px;
+}
+.process-page .mentors .mentor-text h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #78b7bb;
+  padding-top: 60px;
+}
+.process-page .mentors .mentor-text p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #27285a;
+  font-weight: 300;
+}
+.process-page .mentors .circle {
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.process-page .mentors #campbell {
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  background: url(../img/mentors/campbell_360.png) no-repeat center center;
+}
+.process-page .mentors #dan {
+  width: 300px;
+  height: 300px;
+  background: url(../img/mentors/dan.jpg) no-repeat center center;
+}
+.process-page .mentors #nelson {
+  top: -40px;
+  width: 225px;
+  height: 225px;
+  background: url(../img/mentors/nelsonCorreia.png) no-repeat center center;
+}
+.process-page .mentors .name h2 {
+  color: #78b7bb;
+}
+.process-page .mentors .name p {
+  color: #27285a;
+}
+.process-page .mentors .campbell-name {
+  top: 115px;
+}
+.process-page .mentors .dan-name {
+  top: 130px;
+  width: 155px;
+}
+.process-page .mentors .nelson-name {
+  top: 50px;
+}
+.process-page .tech-we-love {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #373249;
+  text-align: center;
+}
+.process-page .tech-we-love .logo-region {
+  margin: 0 auto;
+  padding: 50px 0 0px;
+}
+.process-page .tech-we-love .logo-region .brand-logos .logo img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+/*==========================
+    PARTNER PAGE MOBILE
+===========================*/
+@media (max-width: 767px) {
+  .process-page .bounties-section .subsection-wrapper h1 {
+    font-size: 35px;
+  }
+  .process-page .bounties-section .subsection-wrapper p {
+    font-size: 4vw;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons {
+    margin-top: 10vh;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons {
+    padding: 0;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
+    font-size: 3vmax;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
+    margin-top: 10px;
+    height: 50px;
+    border: 3px #1F1F24 solid;
+  }
+  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button span {
+    font-size: 2vmax;
+  }
+  .process-page #give-projects-section .content-wrapper {
+    padding: 10vh 0;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper {
+    padding: 1%;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper h2 {
+    margin-bottom: 5vh;
+    font-size: 8vw;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper #idea {
+    font-size: 4.5vw;
+  }
+  .process-page #give-projects-section .content-wrapper .text-wrapper p {
+    font-size: 3.5vw;
+    padding-bottom: 10px;
+  }
+  .process-page #employ-us-section .content-wrapper {
+    padding: 15% 5%;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper {
+    padding: 7% 0;
+    text-align: center;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper h1 {
+    font-size: 8vw;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper button {
+    padding: 5px 30px;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper button h2 {
+    font-size: 6vw;
+  }
+  .process-page #employ-us-section .content-wrapper .text-wrapper p {
+    margin-top: 20px;
+    font-size: 3.7vw;
+  }
+  .process-page #learn-with-us-section .text-wrapper h2 {
+    padding-top: 5%;
+    font-size: 7vw;
+  }
+  .process-page #learn-with-us-section .text-wrapper p {
+    font-size: 3.7vw;
+    padding-bottom: 20%;
+  }
+  .process-page .tech-we-love .logo-region {
+    padding: 15px 0;
+  }
+  .process-page .tech-we-love .logo-region .brand-logos .logo img {
+    width: 50px;
+    padding-bottom: 0px;
+  }
+}
+/*=============================
+    STUDENT PAGE STARTS HERE
+=============================*/
+.student-page {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.student-page .intro {
+  height: 100vh;
+  background: #373249;
+}
+.student-page .intro .row {
+  padding-top: 30vh;
+  text-align: center;
+}
+.student-page .intro .row h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: #fff;
+}
+.student-page .intro .row h2 {
+  font-weight: 300;
+  color: #9D96BA;
+  padding-top: 3em;
+  font-size: 22px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 10%;
+}
+.student-page .about-brief {
+  height: 100vh;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.student-page .about-brief .course {
+  margin-top: 15vh;
+  padding: 0 50px;
+}
+.student-page .about-brief .course .icon {
+  width: 75px;
+  margin-bottom: 50px;
+}
+.student-page .about-brief .course h1 {
+  font-size: 2.4vw;
+  font-weight: 400;
+  color: #78b7bb;
+}
+.student-page .about-brief .course p {
+  margin-top: 5vh;
+  font-size: 1.4vw;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #07456B;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.student-page .about-brief .buttons {
+  margin-top: 15vh;
+  padding: 0 50px;
+}
+.student-page .about-brief .buttons #apply-button {
+  background-color: #4F7F8C;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.student-page .about-brief .buttons #apply-button:hover {
+  background-color: #346876;
+}
+.student-page .about-brief .buttons #more-info-button {
+  color: #51646F;
+  border: 3px #7C7C83 solid;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.student-page .about-brief .buttons #more-info-button:hover {
+  background-color: #D8D6D6;
+}
+.student-page .about-brief .buttons button {
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+}
+.student-page .schedule {
+  height: 100%;
+  background-color: #78b7bb;
+}
+.student-page .schedule #title {
+  margin-top: 50px;
+  padding-bottom: 5px;
+  color: #D5E8F4;
+  border-bottom: 5px #5F909E solid;
+}
+.student-page .schedule #accordion {
+  margin: 50px 0;
+}
+.student-page .schedule #accordion a:hover {
+  text-decoration: none;
+}
+.student-page .schedule #accordion .panel-default {
+  border: none;
+  border-radius: 0;
+}
+.student-page .schedule #accordion .panel-default .panel-heading {
+  border-bottom: 2px #5F909E solid;
+  background-color: #A5DEE2;
+  border-radius: 0;
+}
+.student-page .schedule #accordion .panel-default .panel-heading h4 {
+  color: #5F909E;
+  font-weight: 400;
+}
+.student-page .schedule #accordion .panel-default .panel-heading h4 .description {
+  float: right;
+  color: #27285a;
+}
+.student-page .schedule #accordion .panel-default .panel-body {
+  border: none;
+  background-color: #78b7bb;
+}
+.student-page .schedule #accordion .panel-default .panel-body ul {
+  margin-left: 30px;
+  color: #D5E8F4;
+}
+.student-page .schedule .buttons {
+  margin-bottom: 15vh;
+  padding: 0 50px;
+}
+.student-page .schedule .buttons #apply-button {
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  background-color: #4F7F8C;
+  color: #fff;
+  border: none;
+}
+.student-page .schedule .buttons #apply-button:hover {
+  background-color: #346876;
+}
+
+/*=============================
+       STUDENT PAGE MOBILE
+=============================*/
+@media (max-width: 767px) {
+  .student-page .intro {
+    height: 100%;
+    padding: 20vh 0;
+  }
+  .student-page .intro .row {
+    padding-top: 10vh;
+    text-align: center;
+  }
+  .student-page .intro .row h1 {
+    font-size: 8vw;
+  }
+  .student-page .intro .row h2 {
+    padding-top: 2em;
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+  .student-page .about-brief {
+    height: 100%;
+    padding: 5vh 0;
+  }
+  .student-page .about-brief .course {
+    margin: 5vh 0;
+    padding: 0 50px;
+  }
+  .student-page .about-brief .course .icon {
+    width: 75px;
+    margin-bottom: 30px;
+  }
+  .student-page .about-brief .course h1 {
+    font-size: 8vw;
+  }
+  .student-page .about-brief .course p {
+    margin-top: 3vh;
+    font-size: 4vw;
+    line-height: 1.3;
+  }
+  .student-page .about-brief .buttons {
+    margin-top: 5vh;
+    padding: 0 50px;
+  }
+  .student-page .about-brief .buttons button {
+    height: 40px;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  .student-page .schedule #accordion .panel-default .panel-heading h4 {
+    font-size: 13px;
+  }
+  .student-page .schedule #accordion .panel-default .panel-body ul {
+    font-size: 12px;
+  }
+  .student-page .schedule .buttons {
+    margin-bottom: 5vh;
+    padding: 0 20px;
+  }
+  .student-page .schedule .buttons #apply-button {
+    height: 40px;
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

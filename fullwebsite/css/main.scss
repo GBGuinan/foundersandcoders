@@ -183,8 +183,7 @@ div.clear {
   NAVBAR STYLING FOR MOBILE
 ===========================*/
 
-@media only screen //Phone
-and (max-device-width : 767px) {
+@media (max-width: 767px) {
 
     .navbar-default {
         width: 100%;
@@ -512,8 +511,7 @@ and (max-device-width : 767px) {
   HOME PAGE STYLING FOR MOBILE
 =============================*/
 
-@media only screen //Phone
-and (max-device-width : 767px) {
+@media (max-width: 767px) {
 
     .home-page {
         .kickstarter {
@@ -684,7 +682,7 @@ and (max-device-width : 767px) {
         CONTACT US MOBILE
 =============================*/
 
-@media only screen (max-width : 767px) {
+@media (max-width: 767px) {
 
     .contact {
         .contact-region {
@@ -906,81 +904,69 @@ and (max-device-width : 767px) {
     ABOUT US PAGE MOBILE
 ===========================*/
 
-/** media queries **/
-@media (max-width: 991px) {
-  .timeline li .timeline-panel {
-    width: 44%;
-  }
-}
+@media (max-width: 767px) {
 
-@media (max-width: 700px) {
-  .page-header h1 { font-size: 1.8em; }
-  
-  ul.timeline:before {
-    left: 40px;
-  }
-  
-  .tldate { width: 140px; }
-
-  ul.timeline li .timeline-panel {
-    width: calc(100% - 90px);
-    width: -moz-calc(100% - 90px);
-    width: -webkit-calc(100% - 90px);
-  }
-
-  ul.timeline li .tl-circ {
-    top: 22px;
-    left: 22px;
-    margin-left: 0;
-
-  }
-  ul.timeline > li > .tldate {
-    margin: 0;
-  }
-
-  ul.timeline > li > .timeline-panel {
-    float: right;
-  }
-
-  ul.timeline > li > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  ul.timeline > li > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-}
-
-@media only screen //Phone
-and (max-device-width : 767px) {
     .story-page {
-        .story-section {
-            padding: 5vh 0 0vh;
-            .text-outer{
-                text-align: center;
+        .timeline-container {
+            padding: 15vh 5vw 15vw 0;
+            .title-timeline {
                 h1 {
-                    margin-top: 0vh;
-                    font-size: 30px;
-                }
-                p {
-                    font-size: 13px;
-                    padding-bottom: 0;
+                    font-size: 8vw;
                 }
             }
             .timeline {
-                content:url(../img/timelinemobile.jpg);
-                img {
-                    width: 120%;
-                    height: auto;
+                li {
+                    &:before {
+                        
+                    }
+                    &:after {
+                    }
+                    .timeline-panel {
+                        width: calc(100% - 90px);
+                        float: right;
+                        &:before {
+                            border-left-width: 0;
+                            border-right-width: 15px;
+                            left: -15px;
+                            right: auto;
+                        }
+                        &:after {
+                            border-left-width: 0;
+                            border-right-width: 14px;
+                            left: -14px;
+                            right: auto;
+                        }
+                        .tl-heading {
+                            h4 {
+                                font-size: 5vw;
+                            }
+                        }
+                        .tl-body {
+                            p {
+                               font-size: 3.5vw;
+                            }
+                        }
+                    }
+                }
+                .tl-circ {
+                    top: 22px;
+                    left: 22px;
+                    margin-left: 0;
+                }
+                .timeline-inverted {
+                    .timeline-panel {
+                        &:before {
+                        }
+                        &:after {
+                        }
+                    }
+                }
+                &:before {
+                    left: 40px;
                 }
             }
         }
+
         .our-model-section {
             background-color: #27285a;
             color: #fff;
@@ -1226,8 +1212,7 @@ and (max-device-width : 767px) {
     PARTNER PAGE MOBILE
 ===========================*/
 
-@media only screen //Phone
-and (max-device-width : 767px) {
+@media (max-width: 767px) {
 
     .process-page {
         .bounties-section {
@@ -1474,8 +1459,7 @@ and (max-device-width : 767px) {
        STUDENT PAGE MOBILE
 =============================*/
 
-@media only screen //Phone
-and (max-device-width : 767px) {
+@media (max-width: 767px) {
 
     .student-page {
         .intro {
