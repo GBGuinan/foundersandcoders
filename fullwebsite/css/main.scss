@@ -741,7 +741,7 @@ div.clear {
                 padding-top: 3em;
                 font-size: 22px;
                 font-family: $FONT;
-                padding-bottom: 10%;
+                padding-bottom: 5%;
                 
             }
         }
@@ -1318,7 +1318,6 @@ div.clear {
                 font-size: 5vw;
                 font-weight: 400;
                 color: #fff;
-                line-height: 80%;
             }
             h2 {
                 font-weight: 300;
@@ -1326,7 +1325,7 @@ div.clear {
                 padding-top: 3em;
                 font-size: 22px;
                 font-family: $FONT;
-                padding-bottom: 10%;
+                padding-bottom: 5%;
             }           
             a:hover {
                 text-decoration: none;
@@ -1483,6 +1482,7 @@ div.clear {
                 h1 {
                     font-size: 8vw;
                     padding: 0vh 0vh 5vh;
+                    line-height: 80%;
                 }
                 h2 {
                     padding-top: 2em;
