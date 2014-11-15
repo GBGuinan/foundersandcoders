@@ -703,6 +703,9 @@ div.clear {
   border-radius: 0;
   border: none;
 }
+.story-page .our-model-section .subsection-buttons span {
+  padding-left: 5%;
+}
 .story-page .our-model-section .subsection-buttons h2:hover {
   background-color: #78b7bb;
 }
@@ -970,7 +973,6 @@ div.clear {
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 span {
   padding-left: 5%;
-  font-size: 1.5vmax;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2:hover {
   background-color: #22212A;
@@ -1093,14 +1095,6 @@ div.clear {
   .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
     font-size: 3vmax;
   }
-  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
-    margin-top: 10px;
-    height: 50px;
-    border: 3px #1F1F24 solid;
-  }
-  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button span {
-    font-size: 2vmax;
-  }
   .process-page #give-projects-section .content-wrapper {
     padding: 10vh 0;
   }
@@ -1194,6 +1188,9 @@ div.clear {
 }
 .student-page .intro .row .subsection-buttons h2:hover {
   background-color: #22212A;
+}
+.student-page .intro .row .subsection-buttons span {
+  padding-left: 5%;
 }
 .student-page .about-brief {
   height: 100vh;
