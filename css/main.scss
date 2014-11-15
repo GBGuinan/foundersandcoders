@@ -1288,6 +1288,7 @@ div.clear {
             .subsection-buttons {
                 h2 {
                     padding: 20px;
+                    font-size: 2vmax;
                 }
                 h2:hover {
                     background-color: #22212A; 
@@ -1428,6 +1429,15 @@ div.clear {
                     padding-top: 2em;
                     font-size: 4vw;
                     line-height: 1.5;
+                }
+                .subsection-buttons {
+                    h2 {
+                        padding: 20px;
+                        font-size: 2vmax;
+                     }
+                    h2:hover {
+                        background-color: #22212A; 
+                    }
                 }
             }
         }
