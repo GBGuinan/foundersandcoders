@@ -284,11 +284,12 @@ div.clear {
   color: #ffffff;
 }
 .home-page .kickstarter .container a button {
+  height: 44px;
   border: none;
   background: #81D0D7;
-  padding: 5px 10px 10px 20px;
+  padding: 7px 20px 10px 20px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
   vertical-align: middle;
