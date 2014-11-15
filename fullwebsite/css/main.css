@@ -1166,6 +1166,7 @@ div.clear {
 }
 .student-page .intro .row .subsection-buttons h2 {
   padding: 20px;
+  font-size: 2vmax;
 }
 .student-page .intro .row .subsection-buttons h2:hover {
   background-color: #22212A;
@@ -1301,6 +1302,13 @@ div.clear {
     padding-top: 2em;
     font-size: 4vw;
     line-height: 1.5;
+  }
+  .student-page .intro .row .subsection-buttons h2 {
+    padding: 20px;
+    font-size: 2vmax;
+  }
+  .student-page .intro .row .subsection-buttons h2:hover {
+    background-color: #22212A;
   }
   .student-page .about-brief {
     height: 100%;
