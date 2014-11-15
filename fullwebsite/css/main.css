@@ -1161,6 +1161,15 @@ div.clear {
   font-family: "Source Sans Pro", sans-serif;
   padding-bottom: 10%;
 }
+.student-page .intro .row a:hover {
+  text-decoration: none;
+}
+.student-page .intro .row .subsection-buttons h2 {
+  padding: 20px;
+}
+.student-page .intro .row .subsection-buttons h2:hover {
+  background-color: #22212A;
+}
 .student-page .about-brief {
   height: 100vh;
   background-color: #fff;

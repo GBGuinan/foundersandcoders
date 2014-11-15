@@ -1281,7 +1281,17 @@ div.clear {
                 font-size: 22px;
                 font-family: $FONT;
                 padding-bottom: 10%;
-
+            }           
+            a:hover {
+                text-decoration: none;
+            }
+            .subsection-buttons {
+                h2 {
+                    padding: 20px;
+                }
+                h2:hover {
+                    background-color: #22212A; 
+                }
             }
         }
     }
