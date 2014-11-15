@@ -1198,7 +1198,7 @@ div.clear {
 }
 .student-page .intro {
   height: 100vh;
-  background: #373249;
+  background: linear-gradient(#908199, #382842);
 }
 .student-page .intro .row {
   padding-top: 30vh;
@@ -1211,7 +1211,7 @@ div.clear {
 }
 .student-page .intro .row h2 {
   font-weight: 300;
-  color: #9D96BA;
+  color: #B2A8BA;
   padding-top: 3em;
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;

@@ -1322,7 +1322,7 @@ div.clear {
     font-family: $FONT;
     .intro {
         height: 100vh;
-        background: #373249;
+        background: linear-gradient(#908199, #382842);
         .row {
             padding-top: 30vh;
             text-align: center;
@@ -1333,7 +1333,7 @@ div.clear {
             }
             h2 {
                 font-weight: 300;
-                color: #9D96BA;
+                color: #B2A8BA;
                 padding-top: 3em;
                 font-size: 22px;
                 font-family: $FONT;
