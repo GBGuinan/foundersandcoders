@@ -673,6 +673,26 @@ div.clear {
   font-family: "Source Sans Pro", sans-serif;
   padding: 2.7% 0;
 }
+.story-page .our-model-section {
+  background: linear-gradient(#675D83, #463f60);
+  height: 100vh;
+}
+.story-page .our-model-section .text-wrapper {
+  text-align: center;
+}
+.story-page .our-model-section .text-wrapper h2 {
+  font-size: 50px;
+  padding: 8vh 0vh 5vh;
+  color: #fff;
+}
+.story-page .our-model-section .text-wrapper p {
+  font-size: 1.4vw;
+  line-height: 1.6;
+  font-weight: 300;
+  padding-bottom: 6vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9588A0;
+}
 .story-page .timeline-container {
   height: 100%;
   background-color: #78b7bb;
@@ -791,26 +811,6 @@ div.clear {
   left: 50%;
   margin-left: -1.5px;
 }
-.story-page .our-model-section {
-  background: linear-gradient(#675D83, #463f60);
-  height: 100%;
-}
-.story-page .our-model-section .text-wrapper {
-  text-align: center;
-}
-.story-page .our-model-section .text-wrapper h2 {
-  font-size: 50px;
-  padding: 8vh 0vh 5vh;
-  color: #fff;
-}
-.story-page .our-model-section .text-wrapper p {
-  font-size: 1.4vw;
-  line-height: 1.6;
-  font-weight: 300;
-  padding-bottom: 6vh;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #9588A0;
-}
 .story-page .meet-the-team {
   background: linear-gradient(#463f60, #282732);
   height: 100%;
@@ -852,6 +852,20 @@ div.clear {
   .story-page .timeline-container .title-timeline h1 {
     font-size: 8vw;
   }
+  .story-page .timeline-container .our-model-section {
+    background-color: #27285a;
+    color: #fff;
+    font: "Source Sans Pro", sans-serif;
+    height: 100%;
+    padding: 10vh 0 10vh;
+  }
+  .story-page .timeline-container .our-model-section .text-wrapper h2 {
+    font-size: 8vw;
+    padding: 0vh 0vh 5vh;
+  }
+  .story-page .timeline-container .our-model-section .text-wrapper p {
+    font-size: 4vw;
+  }
   .story-page .timeline-container .timeline li .timeline-panel {
     width: calc(100% - 90px);
     float: right;
@@ -881,20 +895,6 @@ div.clear {
   }
   .story-page .timeline-container .timeline:before {
     left: 40px;
-  }
-  .story-page .our-model-section {
-    background-color: #27285a;
-    color: #fff;
-    font: "Source Sans Pro", sans-serif;
-    height: 100%;
-    padding: 10vh 0 10vh;
-  }
-  .story-page .our-model-section .text-wrapper h2 {
-    font-size: 8vw;
-    padding: 0vh 0vh 5vh;
-  }
-  .story-page .our-model-section .text-wrapper p {
-    font-size: 4vw;
   }
   .story-page .meet-the-team {
     background-color: #265b7d;
