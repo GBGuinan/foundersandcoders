@@ -691,7 +691,7 @@ div.clear {
   padding-top: 3em;
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 .story-page .our-model-section .subsection-buttons #buttons {
   padding: 20px 50px;
@@ -1178,7 +1178,6 @@ div.clear {
   font-size: 5vw;
   font-weight: 400;
   color: #fff;
-  line-height: 80%;
 }
 .student-page .intro .row h2 {
   font-weight: 300;
@@ -1186,7 +1185,7 @@ div.clear {
   padding-top: 3em;
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 .student-page .intro .row a:hover {
   text-decoration: none;
@@ -1337,6 +1336,7 @@ div.clear {
   .student-page .intro .row h1 {
     font-size: 8vw;
     padding: 0vh 0vh 5vh;
+    line-height: 80%;
   }
   .student-page .intro .row h2 {
     padding-top: 2em;
