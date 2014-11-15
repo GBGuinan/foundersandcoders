@@ -980,6 +980,7 @@ div.clear {
   font-size: 2.5vw;
 }
 .process-page #give-projects-section .content-wrapper .text-wrapper p {
+  text-align: justify;
   font-size: 1.5vw;
   color: #282732;
 }
@@ -1011,6 +1012,7 @@ div.clear {
   text-decoration: none;
 }
 .process-page #employ-us-section .content-wrapper .text-wrapper p {
+  text-align: justify;
   font-size: 1.6vw;
   padding-top: 5%;
   padding-bottom: 10%;
@@ -1028,6 +1030,8 @@ div.clear {
   color: #81D0D7;
 }
 .process-page #learn-with-us-section .text-wrapper p {
+  padding: 0 5%;
+  text-align: justify;
   font-size: 1.4vw;
   color: #282732;
 }
@@ -1195,7 +1199,8 @@ div.clear {
   font-weight: 400;
   color: #81D0D7;
 }
-.student-page .about-brief .course p {
+.student-page .about-brief .course .description {
+  text-align: justify;
   margin-top: 5vh;
   font-size: 1.4vw;
   font-weight: 400;
