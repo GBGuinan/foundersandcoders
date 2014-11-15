@@ -687,7 +687,7 @@ div.clear {
 }
 .story-page .our-model-section .text-wrapper h2 {
   font-weight: 300;
-  color: #9588A0;
+  color: #B2A8BA;
   padding-top: 3em;
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
@@ -874,7 +874,13 @@ div.clear {
     padding: 0vh 0vh 5vh;
   }
   .story-page .our-model-section .text-wrapper h2 {
+    padding-top: 2em;
     font-size: 4vw;
+    line-height: 1.5;
+  }
+  .story-page .our-model-section .subsection-buttons h2 {
+    padding: 20px;
+    font-size: 3vmax;
   }
   .story-page .timeline-container {
     padding: 15vh 5vw 15vw 0;
