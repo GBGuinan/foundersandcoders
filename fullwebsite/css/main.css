@@ -954,7 +954,7 @@ div.clear {
 }
 .process-page .bounties-section {
   height: 100%;
-  background-color: #282732;
+  background: linear-gradient(#4B4551, #23222F);
   padding: 100px 0;
 }
 .process-page .bounties-section .subsection-wrapper {
@@ -964,7 +964,7 @@ div.clear {
   margin-top: 12vw;
   font-size: 8vw;
   font-weight: 400;
-  color: #C1C6C8;
+  color: #fff;
   letter-spacing: 10px;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons {
@@ -974,23 +974,23 @@ div.clear {
   padding: 20px 50px;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
+  padding: 20px;
   font-size: 2vmax;
-  color: #5A7080;
-}
-.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
-  background-color: #282732;
-  margin-top: 20px;
+  color: #90C0CF;
   width: 100%;
   height: 60px;
   border-radius: 0;
   border: none;
 }
-.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button span {
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 span {
   padding-left: 5%;
   font-size: 1.5vmax;
 }
-.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button:hover {
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2:hover {
   background-color: #22212A;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons a:hover {
+  text-decoration: none;
 }
 .process-page #give-projects-section {
   background-color: #fff;
