@@ -683,16 +683,15 @@ div.clear {
 }
 .story-page .our-model-section .text-wrapper h1 {
   font-size: 50px;
-  padding: 8vh 0vh 5vh;
   color: #fff;
 }
 .story-page .our-model-section .text-wrapper h2 {
-  font-size: 1.4vw;
-  line-height: 1.6;
   font-weight: 300;
-  padding-bottom: 6vh;
-  font-family: Arial, Helvetica, sans-serif;
   color: #9588A0;
+  padding-top: 3em;
+  font-size: 22px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 10%;
 }
 .story-page .our-model-section .subsection-buttons h2 {
   text-align: center;
