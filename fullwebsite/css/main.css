@@ -825,19 +825,18 @@ div.clear {
 }
 .story-page .meet-the-team .selfie {
   text-align: center;
-  overflow: hiddem;
 }
 .story-page .meet-the-team .selfie img {
-  padding: 15%;
   border-radius: 100%;
-  width: 100%;
-  -webkit-filter: grayscale(100%);
+  width: 75%;
+  -webkit-filter: grayscale(30%);
   transition: all 1s ease-in-out;
 }
 .story-page .meet-the-team .selfie img:hover {
   -webkit-filter: grayscale(0%);
 }
 .story-page .meet-the-team .selfie h3 {
+  margin-top: 2vh;
   margin-bottom: 5vh;
   color: #fff;
   font-size: 20px;

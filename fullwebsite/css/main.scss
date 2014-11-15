@@ -884,18 +884,17 @@ and (max-device-width : 767px) {
         }
         .selfie {
             text-align: center;
-            overflow: hiddem;
             img {
-                padding: 15%;
                 border-radius: 100%;
-                width: 100%;
-                -webkit-filter: grayscale(100%);
+                width: 75%;
+                -webkit-filter: grayscale(30%);
                 transition: all 1s ease-in-out;
             }
             img:hover {
                 -webkit-filter: grayscale(0%);
             }
             h3 {
+                margin-top: 2vh;
                 margin-bottom: 5vh;
                 color: #fff;
                 font-size: 20px;
