@@ -1170,6 +1170,9 @@ div.clear {
   font-weight: 400;
   color: white;
 }
+.student-page .intro .row .subsection-buttons h2 .arrow {
+  font-size: 1.5vmax;
+}
 .student-page .intro .row .subsection-buttons h2:hover {
   background-color: #22212A;
 }
