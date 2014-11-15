@@ -756,6 +756,9 @@ div.clear {
                 border-radius: 0;
                 border: none;
             }
+            span {
+                padding-left: 5%;
+            }            
             h2:hover {
                 background-color: #78b7bb
             }
@@ -1070,7 +1073,6 @@ div.clear {
                         border: none;
                         span {
                             padding-left: 5%;
-                            font-size: 1.5vmax;
                         }
                     }
                     h2:hover {
@@ -1208,14 +1210,9 @@ div.clear {
                         h2 {
                             font-size: 3vmax;
                         }
-                        button {
-                            margin-top: 10px;
-                            height: 50px;
-                            border: 3px #1F1F24 solid;
-                            span {
-                                font-size: 2vmax;
-                            }
-                        }
+                            // margin-top: 10px;
+                            // height: 50px;
+                            // border: 3px #1F1F24 solid;
                     }
                 }
             }
@@ -1329,6 +1326,9 @@ div.clear {
                 }
                 h2:hover {
                     background-color: #22212A; 
+                }
+                span {
+                    padding-left: 5%;
                 }
             }
         }
