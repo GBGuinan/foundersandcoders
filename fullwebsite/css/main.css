@@ -176,7 +176,7 @@ div.clear {
 /*==========================
   NAVBAR STYLING FOR MOBILE
 ===========================*/
-@media only screen and (max-device-width: 767px) {
+@media (max-width: 767px) {
   .navbar-default {
     width: 100%;
     background: none;
@@ -488,7 +488,7 @@ div.clear {
 /*=============================
   HOME PAGE STYLING FOR MOBILE
 =============================*/
-@media only screen and (max-device-width: 767px) {
+@media (max-width: 767px) {
   .home-page .kickstarter {
     height: 100%;
   }
@@ -635,7 +635,7 @@ div.clear {
 /*=============================
         CONTACT US MOBILE
 =============================*/
-@media only screen and (max-device-width: 767px) {
+@media (max-width: 767px) {
   .contact .contact-region {
     padding: 50px 0;
   }
@@ -825,19 +825,18 @@ div.clear {
 }
 .story-page .meet-the-team .selfie {
   text-align: center;
-  overflow: hiddem;
 }
 .story-page .meet-the-team .selfie img {
-  padding: 15%;
   border-radius: 100%;
-  width: 100%;
-  -webkit-filter: grayscale(100%);
+  width: 75%;
+  -webkit-filter: grayscale(40%);
   transition: all 1s ease-in-out;
 }
 .story-page .meet-the-team .selfie img:hover {
   -webkit-filter: grayscale(0%);
 }
 .story-page .meet-the-team .selfie h3 {
+  margin-top: 2vh;
   margin-bottom: 5vh;
   color: #fff;
   font-size: 20px;
@@ -846,80 +845,42 @@ div.clear {
 /*==========================
     ABOUT US PAGE MOBILE
 ===========================*/
-/** media queries **/
-@media (max-width: 991px) {
-  .timeline li .timeline-panel {
-    width: 44%;
+@media (max-width: 767px) {
+  .story-page .timeline-container {
+    padding: 15vh 5vw 15vw 0;
   }
-}
-@media (max-width: 700px) {
-  .page-header h1 {
-    font-size: 1.8em;
+  .story-page .timeline-container .title-timeline h1 {
+    font-size: 8vw;
   }
-
-  ul.timeline:before {
-    left: 40px;
-  }
-
-  .tldate {
-    width: 140px;
-  }
-
-  ul.timeline li .timeline-panel {
+  .story-page .timeline-container .timeline li .timeline-panel {
     width: calc(100% - 90px);
-    width: -moz-calc(100% - 90px);
-    width: -webkit-calc(100% - 90px);
-  }
-
-  ul.timeline li .tl-circ {
-    top: 22px;
-    left: 22px;
-    margin-left: 0;
-  }
-
-  ul.timeline > li > .tldate {
-    margin: 0;
-  }
-
-  ul.timeline > li > .timeline-panel {
     float: right;
   }
-
-  ul.timeline > li > .timeline-panel:before {
+  .story-page .timeline-container .timeline li .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
     right: auto;
   }
-
-  ul.timeline > li > .timeline-panel:after {
+  .story-page .timeline-container .timeline li .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto;
   }
-}
-@media only screen and (max-device-width: 767px) {
-  .story-page .story-section {
-    padding: 5vh 0 0vh;
+  .story-page .timeline-container .timeline li .timeline-panel .tl-heading h4 {
+    font-size: 5vw;
   }
-  .story-page .story-section .text-outer {
-    text-align: center;
+  .story-page .timeline-container .timeline li .timeline-panel .tl-body p {
+    font-size: 3.5vw;
   }
-  .story-page .story-section .text-outer h1 {
-    margin-top: 0vh;
-    font-size: 30px;
+  .story-page .timeline-container .timeline .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
   }
-  .story-page .story-section .text-outer p {
-    font-size: 13px;
-    padding-bottom: 0;
-  }
-  .story-page .story-section .timeline {
-    content: url(../img/timelinemobile.jpg);
-  }
-  .story-page .story-section .timeline img {
-    width: 120%;
-    height: auto;
+  .story-page .timeline-container .timeline:before {
+    left: 40px;
   }
   .story-page .our-model-section {
     background-color: #27285a;
@@ -938,12 +899,15 @@ div.clear {
   .story-page .meet-the-team {
     background-color: #265b7d;
     height: 100%;
-    padding: 10vh 0;
+    padding: 0;
   }
   .story-page .meet-the-team h2 {
     font-size: 8vw;
     padding-bottom: 5vh;
     padding-top: 0;
+  }
+  .story-page .meet-the-team .selfie h3 {
+    font-size: 12px;
   }
 }
 /*==========================
@@ -954,7 +918,7 @@ div.clear {
 }
 .process-page .bounties-section {
   height: 100%;
-  background-color: #282732;
+  background: linear-gradient(#4B4551, #23222F);
   padding: 100px 0;
 }
 .process-page .bounties-section .subsection-wrapper {
@@ -964,7 +928,7 @@ div.clear {
   margin-top: 12vw;
   font-size: 8vw;
   font-weight: 400;
-  color: #C1C6C8;
+  color: #fff;
   letter-spacing: 10px;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons {
@@ -974,23 +938,23 @@ div.clear {
   padding: 20px 50px;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
+  padding: 20px;
   font-size: 2vmax;
-  color: #5A7080;
-}
-.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
-  background-color: #282732;
-  margin-top: 20px;
+  color: #90C0CF;
   width: 100%;
   height: 60px;
   border-radius: 0;
   border: none;
 }
-.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button span {
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 span {
   padding-left: 5%;
   font-size: 1.5vmax;
 }
-.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button:hover {
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2:hover {
   background-color: #22212A;
+}
+.process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons a:hover {
+  text-decoration: none;
 }
 .process-page #give-projects-section {
   background-color: #fff;
@@ -1073,65 +1037,6 @@ div.clear {
 .process-page #learn-with-us-section .image-wrapper img {
   width: 100%;
 }
-.process-page .mentors {
-  height: 100%;
-  background-color: #fff;
-  padding-bottom: 40px;
-}
-.process-page .mentors .mentor-text {
-  padding-left: 50px;
-}
-.process-page .mentors .mentor-text h1 {
-  font-size: 40px;
-  font-weight: 400;
-  color: #78b7bb;
-  padding-top: 60px;
-}
-.process-page .mentors .mentor-text p {
-  font-size: 17px;
-  line-height: 1.5;
-  color: #27285a;
-  font-weight: 300;
-}
-.process-page .mentors .circle {
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-}
-.process-page .mentors #campbell {
-  top: 50px;
-  width: 200px;
-  height: 200px;
-  background: url(../img/mentors/campbell_360.png) no-repeat center center;
-}
-.process-page .mentors #dan {
-  width: 300px;
-  height: 300px;
-  background: url(../img/mentors/dan.jpg) no-repeat center center;
-}
-.process-page .mentors #nelson {
-  top: -40px;
-  width: 225px;
-  height: 225px;
-  background: url(../img/mentors/nelsonCorreia.png) no-repeat center center;
-}
-.process-page .mentors .name h2 {
-  color: #78b7bb;
-}
-.process-page .mentors .name p {
-  color: #27285a;
-}
-.process-page .mentors .campbell-name {
-  top: 115px;
-}
-.process-page .mentors .dan-name {
-  top: 130px;
-  width: 155px;
-}
-.process-page .mentors .nelson-name {
-  top: 50px;
-}
 .process-page .tech-we-love {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #373249;
@@ -1150,7 +1055,7 @@ div.clear {
 /*==========================
     PARTNER PAGE MOBILE
 ===========================*/
-@media only screen and (max-device-width: 767px) {
+@media (max-width: 767px) {
   .process-page .bounties-section .subsection-wrapper h1 {
     font-size: 35px;
   }
@@ -1237,7 +1142,7 @@ div.clear {
 }
 .student-page .intro {
   height: 100vh;
-  background: #373249;
+  background: linear-gradient(#908199, #382842);
 }
 .student-page .intro .row {
   padding-top: 30vh;
@@ -1250,7 +1155,7 @@ div.clear {
 }
 .student-page .intro .row h2 {
   font-weight: 300;
-  color: #9D96BA;
+  color: #B2A8BA;
   padding-top: 3em;
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
@@ -1371,7 +1276,7 @@ div.clear {
 /*=============================
        STUDENT PAGE MOBILE
 =============================*/
-@media only screen and (max-device-width: 767px) {
+@media (max-width: 767px) {
   .student-page .intro {
     height: 100%;
     padding: 20vh 0;
