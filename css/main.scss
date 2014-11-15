@@ -1281,7 +1281,20 @@ div.clear {
                 font-size: 22px;
                 font-family: $FONT;
                 padding-bottom: 10%;
-
+            }           
+            a:hover {
+                text-decoration: none;
+            }
+            .subsection-buttons {
+                h2 {
+                    padding: 20px;
+                    font-size: 2vmax;
+                    font-weight: 400;
+                    color: white;
+                }
+                h2:hover {
+                    background-color: #22212A; 
+                }
             }
         }
     }
@@ -1409,7 +1422,7 @@ div.clear {
             height: 100%;
             padding: 20vh 0;
             .row {
-                padding-top: 10vh;
+                padding-top: 0;
                 text-align: center;
                 h1 {
                     font-size: 8vw;
@@ -1418,6 +1431,15 @@ div.clear {
                     padding-top: 2em;
                     font-size: 4vw;
                     line-height: 1.5;
+                }
+                .subsection-buttons {
+                    h2 {
+                        padding: 20px;
+                        font-size: 3vmax;
+                     }
+                    h2:hover {
+                        background-color: #22212A; 
+                    }
                 }
             }
         }
