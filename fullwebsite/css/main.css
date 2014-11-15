@@ -1,3 +1,6 @@
+/*=============================
+  CONTACT US - ON EVERY PAGE
+=============================*/
 .contact {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #282732;
@@ -525,6 +528,49 @@
   font-family: "Source Sans Pro", sans-serif;
   padding-top: 2.7%;
 }
+.story-page .our-model-section {
+  background: linear-gradient(#675D83, #463f60);
+  height: 100vh;
+}
+.story-page .our-model-section .text-wrapper {
+  text-align: center;
+  padding-top: 30vh;
+}
+.story-page .our-model-section .text-wrapper h1 {
+  font-size: 60px;
+  color: #fff;
+}
+.story-page .our-model-section .text-wrapper h2 {
+  font-weight: 300;
+  color: #B2A8BA;
+  font-size: 1.4vw;
+  line-height: 1.6;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 6vh;
+  padding-top: 3em;
+}
+.story-page .our-model-section .subsection-buttons #buttons {
+  padding: 20px 50px;
+}
+.story-page .our-model-section .subsection-buttons #buttons h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2vmax;
+  color: white;
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+}
+.story-page .our-model-section .subsection-buttons #buttons span {
+  padding-left: 5%;
+}
+.story-page .our-model-section .subsection-buttons #buttons h2:hover {
+  background-color: #78b7bb;
+}
+.story-page .our-model-section .subsection-buttons #buttons a:hover {
+  text-decoration: none;
+}
 .story-page .timeline-container {
   height: 100%;
   background-color: #81D0D7;
@@ -643,26 +689,6 @@
   left: 50%;
   margin-left: -1.5px;
 }
-.story-page .our-model-section {
-  background: linear-gradient(#675D83, #463f60);
-  height: 100%;
-}
-.story-page .our-model-section .text-wrapper {
-  text-align: center;
-}
-.story-page .our-model-section .text-wrapper h2 {
-  font-size: 50px;
-  padding: 8vh 0vh 5vh;
-  color: #fff;
-}
-.story-page .our-model-section .text-wrapper p {
-  font-size: 1.4vw;
-  line-height: 1.6;
-  font-weight: 300;
-  padding-bottom: 6vh;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #9588A0;
-}
 .story-page .meet-the-team {
   background: linear-gradient(#463f60, #282732);
   height: 100%;
@@ -698,6 +724,33 @@
     ABOUT US PAGE MOBILE
 ===========================*/
 @media (max-width: 767px) {
+  .story-page .our-model-section {
+    background-color: #27285a;
+    color: #fff;
+    font: "Source Sans Pro", sans-serif;
+    height: 100vh;
+    padding-top: 0;
+  }
+  .story-page .our-model-section .text-wrapper {
+    padding-top: 15vh;
+  }
+  .story-page .our-model-section .text-wrapper h1 {
+    font-size: 8vw;
+    padding: 0;
+  }
+  .story-page .our-model-section .text-wrapper h2 {
+    padding-top: 2em;
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+  .story-page .our-model-section .subsection-buttons #buttons {
+    padding: 0;
+    border: 1px #81d0d7 solid;
+    margin: 5px;
+  }
+  .story-page .our-model-section .subsection-buttons #buttons h2 {
+    font-size: 3vmax;
+  }
   .story-page .timeline-container {
     padding: 15vh 5vw 15vw 0;
   }
@@ -733,20 +786,6 @@
   }
   .story-page .timeline-container .timeline:before {
     left: 40px;
-  }
-  .story-page .our-model-section {
-    background-color: #27285a;
-    color: #fff;
-    font: "Source Sans Pro", sans-serif;
-    height: 100%;
-    padding: 10vh 0 10vh;
-  }
-  .story-page .our-model-section .text-wrapper h2 {
-    font-size: 8vw;
-    padding: 0vh 0vh 5vh;
-  }
-  .story-page .our-model-section .text-wrapper p {
-    font-size: 4vw;
   }
   .story-page .meet-the-team {
     background-color: #265b7d;
@@ -800,7 +839,6 @@
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 span {
   padding-left: 5%;
-  font-size: 1.5vmax;
 }
 .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2:hover {
   background-color: #22212A;
@@ -922,18 +960,12 @@
     margin-top: 10vh;
   }
   .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons {
+    border: 1px #90C0CF solid;
+    margin: 5px;
     padding: 0;
   }
   .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons h2 {
     font-size: 3vmax;
-  }
-  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button {
-    margin-top: 10px;
-    height: 50px;
-    border: 3px #1F1F24 solid;
-  }
-  .process-page .bounties-section .subsection-wrapper .subsection-buttons #buttons button span {
-    font-size: 2vmax;
   }
   .process-page #give-projects-section .content-wrapper {
     padding: 10vh 0;
@@ -1001,6 +1033,8 @@
   background: linear-gradient(#908199, #382842);
 }
 .student-page .intro .row {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 30vh;
   text-align: center;
 }
@@ -1014,6 +1048,7 @@
   color: #B2A8BA;
   padding-top: 3em;
   font-size: 22px;
+  line-height: 1.6;
   font-family: "Source Sans Pro", sans-serif;
   padding-bottom: 10%;
 }
@@ -1026,11 +1061,11 @@
   font-weight: 400;
   color: white;
 }
-.student-page .intro .row .subsection-buttons h2 .arrow {
-  font-size: 1.5vmax;
-}
 .student-page .intro .row .subsection-buttons h2:hover {
   background-color: #22212A;
+}
+.student-page .intro .row .subsection-buttons span {
+  padding-left: 5%;
 }
 .student-page .about-brief {
   height: 100vh;
@@ -1165,12 +1200,13 @@
     font-size: 4vw;
     line-height: 1.5;
   }
-  .student-page .intro .row .subsection-buttons h2 {
-    padding: 20px;
-    font-size: 3vmax;
+  .student-page .intro .row .subsection-buttons #buttons {
+    padding: 0;
+    border: 1px #81d0d7 solid;
+    margin: 5px;
   }
-  .student-page .intro .row .subsection-buttons h2:hover {
-    background-color: #22212A;
+  .student-page .intro .row .subsection-buttons #buttons h2 {
+    font-size: 3vmax;
   }
   .student-page .about-brief {
     height: 100%;
@@ -1187,7 +1223,7 @@
   .student-page .about-brief .course h1 {
     font-size: 8vw;
   }
-  .student-page .about-brief .course p {
+  .student-page .about-brief .course .description {
     margin-top: 3vh;
     font-size: 4vw;
     line-height: 1.3;

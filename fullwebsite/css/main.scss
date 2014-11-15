@@ -142,7 +142,7 @@ div.clear {
       -webkit-animation-timing-function: ease-in;
     }
   }
-  @keyframes bounce {
+@keyframes bounce {
     from, to  {
       botttom: 0;
       animation-timing-function: ease-out;
@@ -152,3 +152,6 @@ div.clear {
       animation-timing-function: ease-in;
     }
 }
+
+
+

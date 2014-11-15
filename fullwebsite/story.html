@@ -4,7 +4,32 @@ layout: default
 
 <!-- The content of our app -->
 <region template="Body" contents="Body"><div><region data-id="content" default="HomePage" contents="HomePage"><div class="story-page" style="display: block;">
-<div class="container-fluid timeline-container">
+
+<div class="container-fluid clearfix our-model-section">
+	<div class="col-sm-12 col-md-10 col-md-offset-1 text-wrapper">
+			<h1>Our Model</h1>
+			<h2> The course's self-funding model will have two main streams of income: renting workspace to our graduates (and other developers), and sponsorship from companies who wish to employ them. Some of our previous graduates are currently working on a complex Node-based content management system after 16-weeks.</h2>
+			<!--This allows alumni to enhance their practices and product ideas while surrounded by other developers-->
+	</div>
+	<div class="subsection-buttons clearfix col-md-12">
+				<div class="col-xs-12 col-sm-4 col-md-4" id="buttons">
+					<a href="#timeline">
+						<h2>Our story<span class="glyphicon glyphicon-chevron-right"></span></h2>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" id="buttons">
+					<a href="#team">
+						<h2>The team<span class="glyphicon glyphicon-chevron-right"></span></h2>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" id="buttons">
+					<a href="#contact">
+						<h2>Contact us<span class="glyphicon glyphicon-chevron-right"></span></h2>
+					</a>
+				</div>
+			</div>
+</div>
+<div  class="container-fluid timeline-container" id="timeline">
   	<div class="title-timeline">
     	<h1>The story so far</h1>
   	</div>
@@ -109,16 +134,10 @@ layout: default
   	</ul>
 </div>
 
-<div class="container-fluid clearfix our-model-section">
-	<div class="col-sm-12 col-md-10 col-md-offset-1 text-wrapper">
-			<h2>Our Model</h2>
-			<p> The course's self-funding model will have two main streams of income: renting workspace to our graduates (and other developers), and sponsorship from companies who wish to employ them. Some of our previous graduates are currently working on a complex Node-based content management system after 16-weeks.</p>
-			<!--This allows alumni to enhance their practices and product ideas while surrounded by other developers-->
-	</div>
-</div>
-<div class="container-fluid clearfix meet-the-team">
+
+<div class="container-fluid clearfix meet-the-team" id="team">
 	<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" id="line">
-		<hr>
+	<br>	
 	</div>
 	<h2>Meet the Team</h2>
 	<div class="images-container">

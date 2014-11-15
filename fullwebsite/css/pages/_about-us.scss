@@ -5,6 +5,54 @@
 .story-page {
     font-family: $font-main;
     padding-top: 2.7%;
+    .our-model-section {
+        background: linear-gradient(#675D83, #463f60);
+        height: 100vh;
+        .text-wrapper { 
+            text-align: center;
+            padding-top: 30vh;
+            h1 {
+                font-size: 60px;
+                color: #fff;
+            }
+            h2 {
+                font-weight: 300;
+                color: #B2A8BA;
+                font-size: 1.4vw;
+                line-height: 1.6;
+                font-family: $font-main;
+                padding-bottom: 6vh;
+                padding-top: 3em;
+                
+            }
+        }
+        .subsection-buttons {
+            #buttons {
+                padding: 20px 50px;
+                h2 {
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 2vmax;
+                    color: white;
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 0;
+                    border: none;
+
+                }
+                span {
+                    padding-left: 5%;
+                }            
+                h2:hover {
+                    background-color: #78b7bb
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+                
+            }
+        }
+    }
     .timeline-container {
         height: 100%;
         background-color: $turquise;
@@ -129,26 +177,7 @@
             }
         }
     }
-    .our-model-section {
-        background: linear-gradient(#675D83, #463f60);
-        height: 100%;
-        .text-wrapper { 
-            text-align: center;
-            h2 {
-                font-size: 50px;
-                padding: 8vh 0vh 5vh;
-                color: #fff;
-            }
-            p {
-                font-size: 1.4vw;
-                line-height: 1.6;
-                font-weight: 300;
-                padding-bottom: 6vh;
-                font-family: $font-secondary;
-                color: #9588A0;
-            }
-        }
-    }
+
     .meet-the-team {
         background: linear-gradient(#463f60, $dark-indigo);
         height: 100%;
@@ -188,7 +217,37 @@
 @media (max-width: 767px) {
 
     .story-page {
-        .timeline-container {
+        .our-model-section {
+                background-color: #27285a;
+                color: #fff;
+                font: $font-main;
+                height: 100vh;
+                padding-top: 0;
+                .text-wrapper { 
+                    padding-top: 15vh;
+                    h1 {
+                        font-size: 8vw;
+                        padding: 0;
+                    }
+                    h2 {
+                        padding-top: 2em;
+                        font-size: 4vw;
+                        line-height: 1.5;
+                    }
+                }
+                .subsection-buttons {
+                #buttons {
+                    padding: 0;
+                    border: 1px #81d0d7 solid;
+                    margin: 5px;
+                    h2 {
+                        font-size: 3vmax;
+                    }               
+                }
+            }
+        }
+
+  .timeline-container {
             padding: 15vh 5vw 15vw 0;
             .title-timeline {
                 h1 {
@@ -248,22 +307,7 @@
             }
         }
 
-        .our-model-section {
-            background-color: #27285a;
-            color: #fff;
-            font: $font-main;
-            height: 100%;
-            padding: 10vh 0 10vh;
-            .text-wrapper { 
-                h2 {
-                    font-size: 8vw;
-                    padding: 0vh 0vh 5vh;
-                }
-                p {
-                    font-size: 4vw;
-                }
-            }
-        }
+
         .meet-the-team {
             background-color: #265b7d;
             height: 100%;
