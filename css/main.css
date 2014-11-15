@@ -1167,6 +1167,8 @@ div.clear {
 .student-page .intro .row .subsection-buttons h2 {
   padding: 20px;
   font-size: 2vmax;
+  font-weight: 400;
+  color: white;
 }
 .student-page .intro .row .subsection-buttons h2:hover {
   background-color: #22212A;
@@ -1292,7 +1294,7 @@ div.clear {
     padding: 20vh 0;
   }
   .student-page .intro .row {
-    padding-top: 10vh;
+    padding-top: 0;
     text-align: center;
   }
   .student-page .intro .row h1 {
@@ -1305,7 +1307,7 @@ div.clear {
   }
   .student-page .intro .row .subsection-buttons h2 {
     padding: 20px;
-    font-size: 2vmax;
+    font-size: 3vmax;
   }
   .student-page .intro .row .subsection-buttons h2:hover {
     background-color: #22212A;
