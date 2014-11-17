@@ -8,5 +8,11 @@ url: "http://www.foundersandcoders.org" # the base hostname & protocol for your 
 twitter_username: founderscoders
 github_username: selforganising
 
+sass:
+  style: compressed
+
+assets:
+  js_compressor: yui
+
 # Build settings
 markdown: kramdown
