@@ -7,15 +7,19 @@ layout: default
 			<h1>Follow our journey</h1>
 		</div>
 		<ul class="timeline">
-			<li>
+			{% for post in site.posts %}
+			<li class = "{{post.timeline}}">
 				<div class="tl-circ"></div>
 				<div class="timeline-panel">
 					<div>
 						<img src="/img/picsOfUs/dan.jpg"/>
 					</div>
 					<div class="tl-heading">
-						<h4>Dan Sofer: The start of an exciting journey</h4>
-						<h6>17th November</h6>
+						<a href="2014/11/17/dan-1-blogpost.html" target="_blank">
+							<h4>{{post.title}}</h4>
+						</a>
+						<h6>{{post.blog-date}}</h6>
+						<h6>{{post.author}}</h6>
 					</div>
 					<div class="tl-body">
 						<p>Finally the kickstarter has launched! The day we have all been waiting for.</p>
@@ -24,6 +28,7 @@ layout: default
 					</div>
 				</div>
 			</li>
+			{% endfor %}
 		
 <!-- 			<li class="timeline-inverted">
 				<div class="tl-circ"></div>
