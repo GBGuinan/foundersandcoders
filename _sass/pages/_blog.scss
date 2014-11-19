@@ -1,0 +1,219 @@
+
+/*=============================
+ BLOG PAGE STARTS HERE
+=============================*/
+.blog-page {
+    font-family: $font-main;
+    padding-top: 2.7%;
+    .timeline-container {
+        height: 100%;
+        background-color: $turquise;
+        padding: 20vh 5vw;
+        .title-timeline {
+            text-align: center;
+            h1 {
+                font-family: $font-secondary;
+                padding-bottom: 10vh;
+                font-size: 7vw;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+        .timeline {
+            list-style: none;
+            padding: 20px 0 20px;
+            position: relative;
+            li {
+                margin-bottom: 25px;
+                position: relative;
+                &:before {
+                    content: " ";
+                    display: table;
+                }
+                &:after {
+                    content: " ";
+                    display: table;
+                    clear: both;
+                }
+                .timeline-panel {
+                    width: 46%;
+                    float: left;
+                    background: #fff;
+                    border: 1px solid #d4d4d4;
+                    padding: 20px;
+                    position: relative;
+                    border-radius: 8px;
+                    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+                    &:before {
+                        position: absolute;
+                        top: 26px;
+                        right: -15px;
+                        display: inline-block;
+                        border-top: 15px solid transparent;
+                        border-left: 15px solid #ccc;
+                        border-right: 0 solid #ccc;
+                        border-bottom: 15px solid transparent;
+                        content: " ";
+                    }
+                    &:after {
+                        position: absolute;
+                        top: 27px;
+                        right: -14px;
+                        display: inline-block;
+                        border-top: 14px solid transparent;
+                        border-left: 14px solid #fff;
+                        border-right: 0 solid #fff;
+                        border-bottom: 14px solid transparent;
+                        content: " ";
+                    }
+                    img {
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                        border-radius: 100%;
+                        width: 65%;
+                        -webkit-filter: grayscale(40%);
+                        transition: all 1s ease-in-out;
+                    }                    
+                    .tl-heading {  
+                        padding-top: 10px;                     
+                        h4 {
+                            text-align: left;
+                            margin: 0;
+                            padding-bottom: 10px;
+                            font-size: 2.5vw;
+                            color: $dark-turquise;
+                            font-weight: 600;
+                        }
+                        h6 {
+                            text-align: right;
+                            margin: 0;
+                            padding-bottom: 10px;
+                            font-size: 2vw;
+                            color: $turquise;
+                            font-weight: 600;
+                        }
+                    }
+                    .tl-body {
+                        p {
+                            margin-bottom: 0;
+                            text-align: justify;
+                            color: $dark-indigo;
+                        }
+                    }
+                }
+            }
+            .tl-circ {
+                position: absolute;
+                top: 23px;
+                left: 50%;
+                text-align: center;
+                background: $turquise;
+                color: #eee;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                margin-left: -16px;
+                border: 5px #eee solid;
+                border-radius: 100%;
+                z-index: 0;
+            }
+            .timeline-inverted {
+                .timeline-panel {
+                    float: right;
+                    &:before {
+                        border-left-width: 0;
+                        border-right-width: 15px;
+                        left: -15px;
+                        right: auto;
+                    }
+                    &:after {
+                        border-left-width: 0;
+                        border-right-width: 14px;
+                        left: -14px;
+                        right: auto;
+                    }
+                }
+            }
+            &:before {
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                content: " ";
+                width: 5px;
+                background-color: #eee;
+                left: 50%;
+                margin-left: -1.5px;
+            }
+        }
+    }
+}
+
+/*==========================
+    BLOG PAGE MOBILE
+===========================*/
+
+@media (max-width: 767px) {
+
+    .story-page {
+        .timeline-container {
+            padding: 15vh 5vw 15vw 0;
+            .title-timeline {
+                h1 {
+                    font-size: 8vw;
+                }
+            }
+            .timeline {
+                li {
+                    &:before {
+                        
+                    }
+                    &:after {
+                    }
+                    .timeline-panel {
+                        width: calc(100% - 90px);
+                        float: right;
+                        &:before {
+                            border-left-width: 0;
+                            border-right-width: 15px;
+                            left: -15px;
+                            right: auto;
+                        }
+                        &:after {
+                            border-left-width: 0;
+                            border-right-width: 14px;
+                            left: -14px;
+                            right: auto;
+                        }
+                        .tl-heading {
+                            h4 {
+                                font-size: 5vw;
+                            }
+                        }
+                        .tl-body {
+                            p {
+                               font-size: 3.5vw;
+                            }
+                        }
+                    }
+                }
+                .tl-circ {
+                    top: 22px;
+                    left: 22px;
+                    margin-left: 0;
+                }
+                .timeline-inverted {
+                    .timeline-panel {
+                        &:before {
+                        }
+                        &:after {
+                        }
+                    }
+                }
+                &:before {
+                    left: 40px;
+                }
+            }
+        }
+    }
+}
