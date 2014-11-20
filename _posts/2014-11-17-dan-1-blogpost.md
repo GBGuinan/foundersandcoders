@@ -5,9 +5,11 @@ blog-date: 17th November
 author: Dan Sofer
 picture: "/img/picsOfUs/dan.jpg"
 timeline: timeline-inverted
+href: 2014/11/17/dan-1-blogpost.html
 ---
 
-How Founders & Coders came about
+###How Founders & Coders came about
+<br />
 
 Founders & Coders has been largely unplanned. It started a couple of years ago when I discovered Coursera, the website that offers academic courses online, and started studying Andrew Ng’s course on machine learning.
 
