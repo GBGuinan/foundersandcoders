@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Alumni perspective"
-blog-date: 19th November 
+blog-date: 18th November 
 author: Pastor
-href: 2014/11/19/pastor-blogpost.html
+picture: "/img/icons-symbols/favicon.png"
+href: 2014/11/18/pastor-blogpost.html
 summary: I studied philosophy, I worked in customer service for a mobile company, strategy in a pharmaceutical laboratory, accounting in an insurance company and a company that worked with fashion. I was avolunteer in different charities, I worked for the government. Later on I studied an MBA. But I was not happy and I always liked computers. Last year I decided to start programming and I started teaching myself...
 ---
 
