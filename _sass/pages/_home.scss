@@ -39,19 +39,19 @@
             }
         }
         .container {
-            padding-top: 12em;
             font-family: $font-main;
             text-align: center;
             text-decoration: none;
             h1 {
-                font-size: 4em;
+        		font-size: 2.4em;
+        		padding: 2.4em 0 1em;
                 color: #ffffff;
             }
-	    h2 {
-                font-size: 2.4em;
+    	    h2 {
+                font-size: 1.6em;
                 color: #ffffff;
-                padding: 1.2em 0;		
-	    }
+                padding: 1em 0;		
+           }
             h3 {
                 font-size: 1.7vmax;
                 font-weight: bold;
@@ -290,9 +290,9 @@
                 height: 100%;
             }
             .container {
-                padding: 20vh 0 10vh;
-                h1 {
-                    font-size: 2em;
+                //padding: 20vh 0 10vh;
+                h1 {                    
+		          font-size: 2em;
                 }
                 h2 {
                     font-size: 1.2em;
