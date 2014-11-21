@@ -3,7 +3,7 @@ layout: post
 title: "The history of Founders & Coders"
 blog-date: 17. November '14
 author: Dan Sofer
-picture: "/img/picsOfUs/Dan.jpg"
+picture: "/img/picsOfUs/Dan.JPG"
 timeline: timeline-inverted
 href: 2014/11/17/dan-1-blogpost.html
 summary: Founders & Coders has been largely unplanned. It started a couple of years ago when I discovered Coursera, the website that offers academic courses online, and started studying Andrew Ng’s course on machine learning...
