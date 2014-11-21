@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "The history of founders and coders"
-blog-date: 17th November 
+title: "The history of Founders & Coders"
+blog-date: 17. November '14
 author: Dan Sofer
 picture: "/img/picsOfUs/dan.jpg"
 timeline: timeline-inverted
 href: 2014/11/17/dan-1-blogpost.html
+summary: Founders & Coders has been largely unplanned. It started a couple of years ago when I discovered Coursera, the website that offers academic courses online, and started studying Andrew Ng’s course on machine learning...
 ---
-
-###How Founders & Coders came about
-<br />
 
 Founders & Coders has been largely unplanned. It started a couple of years ago when I discovered Coursera, the website that offers academic courses online, and started studying Andrew Ng’s course on machine learning.
 
@@ -21,4 +19,3 @@ The course has changed radically over the course of the year. When we started, o
 
 The end of funding has led directly to the crowdfunding campaign and the move to open a school. The timing probably could not have been better. There is no way I could have contemplated doing this alone, but the energy and commitment of the group of students who have just graduated is incredible. We still have an awful lot of work to do, but we are confident that we can open our doors to the first cohort of students at the new venue on January 12th.
 
-[apply link] | [campaign link]

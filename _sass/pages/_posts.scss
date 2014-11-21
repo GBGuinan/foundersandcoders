@@ -1,0 +1,51 @@
+/*=============================
+ POST PAGE STARTS HERE
+=============================*/
+
+.post-page {
+	font-family: $font-main;
+    padding-top: 2.7%;
+    background: linear-gradient(#675D83, #463f60);
+    text-align: center;
+    .post-header {
+        padding-top: 30vh;
+        .post-title {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 400,
+        };
+        .post-meta {
+            color: #B2A8BA;
+            font-size: 22px;
+            padding-bottom: 5vh;
+            padding-top: 1em;
+        };
+        .author-pic {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 100%;
+            width: 40%;
+            -webkit-filter: grayscale(40%);
+            transition: all 1s ease-in-out;
+        };
+    }
+    .backtoblog {
+        padding-bottom: 2em;
+        font-size: 17px;
+        a {
+        color: #81D0D7;
+        }
+        a:hover {
+            color:#fff;
+        }
+    }; 
+    article {
+        font-size: 19px;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        padding-left: 3em;
+        padding-right: 3em;
+        color: #B2A8BA;
+    }     
+}

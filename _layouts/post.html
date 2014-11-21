@@ -1,17 +1,28 @@
 ---
 layout: default
 ---
-<div class="post-page">
+<html>
+	<body>
+		<div class="post-page">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-  
-	  <article class="post-content">
-	    {{ content }}
-	  </article>
+			<header class="post-header">
+				<h1 class="post-title">{{ page.title }}</h1>
+				<p class="post-meta">
+					{{page.author}} • {{page.date | date: "%d. %B '%y" }}
+				</p>
+				<p>{{% if page.picture %}} <img class= "author-pic" src="{{page.picture}}"></p>
+			</header>
+		  
+			<article>
+				<p class="post-content">
+					{{ content }}
+				</p>
+			</article>
+			<div class="backtoblog">
+				<a href="/blog.html">Back to the blog</a>
+			</div>
+		</div>
+	</body>
+</html>
 
-	  <p class = "author-info">{{page.author}} {{% if page.picture %}} • <img class= "author-pic" src="{{page.picture}}"> </p>
-  	  
-</div>
+
