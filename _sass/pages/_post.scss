@@ -4,15 +4,17 @@
 
 .post-page {
 	font-family: $font-main;
-    padding-top: 5%;
-	img {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 100%;
-        width: 65%;
-        -webkit-filter: grayscale(40%);
-        transition: all 1s ease-in-out;
-    }             
-
+    padding-top: 10%;
+    background-color: §indigo;
+    .post-header {
+        .author-pic {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 100%;
+            width: 50%;
+            -webkit-filter: grayscale(40%);
+            transition: all 1s ease-in-out;
+        }
+    }         
 }
