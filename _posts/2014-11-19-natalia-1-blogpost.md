@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creative Empowerment"
-blog-date: 19th November 
+blog-date: 19. November '14
 author: Natalia Baltazar
 picture: "/img/picsOfUs/natalia.jpg"
 timeline: timeline-inverted

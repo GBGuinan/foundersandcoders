@@ -2,28 +2,27 @@
 layout: default
 ---
 <html>
-
 	<body>
-
-
 		<div class="post-page">
 
 			<header class="post-header">
 				<h1 class="post-title">{{ page.title }}</h1>
 				<p class="post-meta">
-					{{page.author}} • {{page.date | date: "%b %-d, %Y" }}
+					{{page.author}} • {{page.date | date: "%d. %B '%y" }}
 				</p>
 				<p>{{% if page.picture %}} <img class= "author-pic" src="{{page.picture}}"></p>
 			</header>
 		  
-			<article class="post-content">
-				{{ content }}
+			<article>
+				<p class="post-content">
+					{{ content }}
+				</p>
 			</article>
-			  
+			<div class="backtoblog">
+				<a href="/blog.html">Back to the blog</a>
+			</div>
 		</div>
-
 	</body>
-
 </html>
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Alumni perspective"
-blog-date: 18th November 
+blog-date: 18. November '14 
 author: Pastor
 picture: "/img/icons-symbols/favicon.png"
 href: 2014/11/18/pastor-blogpost.html
