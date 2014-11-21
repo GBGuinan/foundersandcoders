@@ -1,6 +1,6 @@
 # Site settings
 title: Founders & Coders
-email: contact@foundersandcoders.org
+email: dan@foundersandcoders.org
 description: > # this means to ignore newlines until "baseurl:"
   The Founders & Coders website
 baseurl: "" # the subpath of your site, e.g. /blog/
