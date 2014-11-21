@@ -11,13 +11,15 @@ layout: default
 			<li class = "{{post.timeline}}">
 				<div class="tl-circ"></div>
 				<div class="timeline-panel">
+					<div class="tl-heading">
+						<a href="{{post.href}}">
+							<h4>{{post.title}}</h4>
+						</a>	
+					</div>				
 					<div>
 						<img src="{{post.picture}}"/>
 					</div>
 					<div class="tl-heading">
-						<a href="{{post.href}}">
-							<h4>{{post.title}}</h4>
-						</a>
 						<h6>{{post.author}}, {{post.blog-date}}</h6>
 					</div>
 					<div class="tl-body">
