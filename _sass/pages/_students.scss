@@ -24,14 +24,20 @@
                 line-height: 1.6;
                 font-family: $font-main;
             }           
+	    h3 {
+		color: white;
+                padding: 1em 0 3em;
+	    }
             a:hover {
                 text-decoration: none;
             }
 	    p {
                 color: #B2A8BA;
 	    }
+	    .taster-buttons {
+		padding: 3em 0;
+	    }
             button {
-		margin: 2em 0 0.2em;
                 height: 2em;
 		width: 12em;
                 border: none;
@@ -62,10 +68,6 @@
                     padding-left: 5%;
                 }
             }
-	    h3 {
-	       color: white;
-                padding: 1em;
-	    }
         }
     }
     .about-brief {
