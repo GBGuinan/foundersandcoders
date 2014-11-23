@@ -42,7 +42,7 @@ We cannot guarantee any level of income. What we will offer is continued mentori
 We do not expect to. Our first priority is for our students to be able to earn the equivalent of the [London Living Wage](http://www.livingwage.org.uk/). This is an ambitious target for an inexperienced developer. We do not expect to generate any surplus.
 
 **What happens at the end of the programme**  
-There are two outcomes that we are aiming for: either you find employment as a full-stack developer (preferably with one of our commercial partners) or you join the Founders & Coders community as a freelance developer. 
+There are two outcomes that we are aiming for: either you find employment as a full-stack developer (preferably with one of our partners organisations) or you join the Founders & Coders community as a freelance developer. 
 
 **What does joining the Founders & Coders community entail**    
 You will be invited to remain at our Campus in Mile End, help us develop our programme, mentor future cohorts of students, and continue to develop your own freelance practice. 
