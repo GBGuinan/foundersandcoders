@@ -26,16 +26,13 @@
             }           
 	    h3 {
 		color: white;
-                padding: 1em 0 3em;
+                padding: 1em 0;
 	    }
             a:hover {
                 text-decoration: none;
             }
 	    p {
                 color: #B2A8BA;
-	    }
-	    .taster-buttons {
-		padding: 3em 0;
 	    }
             button {
                 height: 2em;
@@ -54,22 +51,22 @@
                 color: #fff;
             }
 
-            .subsection-buttons {
-                h2 {
-                    padding: 20px;
-                    font-size: 2vmax;
-                    font-weight: 400;
-                    color: white;
-                }
-                h2:hover {
-                    background-color: #22212A; 
-                }
-                span {
-                    padding-left: 5%;
-                }
+        }
+        .subsection-buttons {
+	    margin-top: 2em;
+            h2 {
+                font-weight: 400;
+                color: white;
+            }
+            h2:hover {
+                background-color: #22212A; 
+            }
+            span {
+                padding-left: 5%;
             }
         }
     }
+
     .about-brief {
         height: 100vh;
         background-color: #fff;
