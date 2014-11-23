@@ -183,6 +183,15 @@
             }
         }
     }
+
+    .faq {
+        h2 {
+            margin: 2em 0 1em;
+            padding-bottom: 5px;
+            border-bottom: 3px $dark-turquise solid;
+        }
+    }
+
 }
 
 /*=============================
