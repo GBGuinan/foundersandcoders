@@ -48,7 +48,10 @@ There are two outcomes that we are aiming for: either you find employment as a f
 You will be invited to remain at our Campus in Mile End, help us develop our programme, mentor future cohorts of students, and continue to develop your own freelance practice. 
 
 **How are you supporting yourselves?**    
-We are supporting ourselves by working on our own freelance projects. Currently, none of us are paid for the teaching or mentoring on the programme.
+We are supporting ourselves by working on our own freelance work and on projects from Founders & Coders partner organisations. Currently, none of us are paid for the teaching or mentoring on the programme.
+
+**Who are your partner organisations?**    
+It is very early days. We have only just started reaching out to potential partners, but they already include a digital agency with whom we have previously placed our graduates, a local authority, a publishing company, a handful of established businesses, and some early-stage startups. 
 
 **Who exactly are you?**    
 We are (or shortly will be) a Community Interest Company, formed by over a dozen alumni of the last two courses that ran at Collective and Dan, the teacher. 
